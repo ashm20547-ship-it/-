@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#867274","tertiary-fixed":"#f4ded8","error-container":"#ffdad6","on-error":"#ffffff","tertiary-container":"#3c2f2b","outline-variant":"#d8c1c3","on-surface-variant":"#534344","on-secondary-container":"#795726","inverse-primary":"#ffb2bc","surface":"#fff8f6","on-secondary-fixed":"#2a1800","primary":"#3f0515","primary-fixed":"#ffd9dd","on-surface":"#241916","surface-container-low":"#fff1ed","tertiary-fixed-dim":"#d7c2bc","inverse-on-surface":"#ffede8","error":"#ba1a1a","primary-container":"#5b1b29","surface-container-high":"#f9e4de","surface-variant":"#f3ded8","on-tertiary-fixed-variant":"#52443f","background":"#fff8f6","inverse-surface":"#3a2e2a","tertiary":"#261a17","on-tertiary":"#ffffff","on-secondary":"#ffffff","secondary-fixed-dim":"#edbe85","on-primary-fixed":"#3d0414","on-tertiary-container":"#a99691","surface-container-highest":"#f3ded8","secondary-container":"#ffcf94","on-primary":"#ffffff","on-tertiary-fixed":"#241916","surface-container-lowest":"#ffffff","surface-tint":"#934754","surface-dim":"#ebd6d0","secondary-fixed":"#ffddb5","on-background":"#241916","surface-container":"#ffe9e4","primary-fixed-dim":"#ffb2bc","on-error-container":"#93000a","on-primary-fixed-variant":"#76303d","on-secondary-fixed-variant":"#604012","surface-bright":"#fff8f6","secondary":"#7b5827","on-primary-container":"#d9808e"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"3rem","space-md":"1rem","space-lg":"1.75rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","margin":"3rem","gutter-mobile":"1rem","margin-mobile":"1.25rem"},fontFamily:{"display-hero-mobile":["Playfair Display"],"display-hero":["Playfair Display"],"label-sm":["Manrope"],"headline-lg-mobile":["Playfair Display"],"title-md":["Playfair Display"],"label-lg":["Manrope"],"body-lg":["Manrope"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"body-md":["Manrope"],"label-md":["Manrope"],"headline-sm":["Playfair Display"],"body-sm":["Manrope"]},fontSize:{"display-hero-mobile":["38px",{lineHeight:"46px",letterSpacing:"-0.01em",fontWeight:"400"}],"display-hero":["56px",{lineHeight:"68px",letterSpacing:"-0.01em",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.14em",fontWeight:"700"}],"headline-lg-mobile":["30px",{lineHeight:"38px",fontWeight:"400"}],"title-md":["18px",{lineHeight:"24px",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.08em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"50px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.1em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"28px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(91,27,41,0.06)]"><div class="bg-primary-container text-on-primary py-space-xs px-margin-mobile lg:px-margin"><div class="max-w-7xl mx-auto flex items-center justify-between font-label-sm text-label-sm tracking-widest uppercase"><div class="hidden md:flex items-center gap-space-sm font-label-sm text-label-sm"><span class="text-secondary-container">DEV:</span><span>XAF (FCFA)</span></div><div class="flex-1 text-center font-label-sm text-label-sm font-medium tracking-wider text-surface-container-lowest"><span>Livraison gratuite dès 50,000 XAF • Fast &amp; Secure Delivery • Beauty for You ❤</span></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><button class="hover:text-secondary-container transition-colors" type="button">FR</button><span class="opacity-40">|</span><button class="hover:text-secondary-container transition-colors" type="button">EN</button><span class="opacity-40">|</span><button class="hover:text-secondary-container transition-colors" type="button">العربية</button></div></div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-sm flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight font-serif uppercase group-hover:text-primary-container transition-colors">Soussou TCHAD</span><span class="font-label-sm text-label-sm tracking-[0.25em] text-secondary uppercase -mt-1">Haute Cosmétique</span></div></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg"><div class="relative w-full"><input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm pl-10 pr-space-md py-space-xs rounded-full border border-outline-variant/40 focus:outline-none focus:border-secondary transition-all placeholder:text-on-surface-variant/60 shadow-[0_2px_12px_rgba(91,27,41,0.03)]" placeholder="Rechercher un soin, sérum, parfum..." type="search"/><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span></div></div><div class="flex items-center gap-space-sm lg:gap-space-md"><a class="p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="account" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span></a><a class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center justify-center text-[10px] font-bold">0</span></a><a class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center text-[10px] font-bold">0</span></a></div></div><div class="bg-surface-container-low/80"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><nav class="flex items-center gap-space-md overflow-x-auto py-space-xs" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="products" href="#">Products / Shop</a><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="categories" href="#">Categories</a><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="makeup-artist-booking" href="#">Makeup Artist Booking</a><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface-variant hover:text-primary transition-colors py-1 whitespace-nowrap" data-path="contact-us" href="#">Contact Us</a></nav><div class="hidden lg:block py-space-xs"><a class="inline-flex items-center px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_4px_16px_rgba(91,27,41,0.12)]" data-path="makeup-artist-booking" href="#">Book a Service</a></div></div></div></header><main class="w-full pt-[168px] bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- MVP Interactive State Simulator Bar -->
+<aside aria-label="Simulateur d'état MVP" class="w-full bg-surface-container-high/80 backdrop-blur-md px-margin-mobile lg:px-margin py-space-xs shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px]">ST</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Simulateur de Test ST-07</span>
+</div>
+<div aria-label="Boutons de scénarios" class="flex items-center flex-wrap gap-1.5" id="mvp-state-toggles" role="group">
+<button class="state-btn active-state px-space-sm py-1 rounded-full font-label-sm text-[10px] tracking-wider uppercase transition-all bg-primary-container text-on-primary shadow-sm hover:opacity-90" data-scenario="default" type="button">
+          1. Formulaire Prêt (Complet)
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-sm text-[10px] tracking-wider uppercase transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary shadow-sm" data-scenario="mobilemoney" type="button">
+          2. Airtel / Moov Money
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-sm text-[10px] tracking-wider uppercase transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary shadow-sm" data-scenario="provinces" type="button">
+          3. Zone Provinces (+7.500 XAF)
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-sm text-[10px] tracking-wider uppercase transition-all bg-surface-container-lowest text-error hover:bg-error-container shadow-sm" data-scenario="validation-error" type="button">
+          4. Erreur Validation
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-sm text-[10px] tracking-wider uppercase transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary shadow-sm" data-scenario="loading" type="button">
+          5. Traitement en cours
+        </button>
+</div>
+</div>
+</aside>
+<!-- Editorial Page Banner & Progress Pathway -->
+<section class="w-full bg-gradient-to-b from-surface-container-low via-surface to-background px-margin-mobile lg:px-margin pt-space-lg pb-space-md">
+<div class="max-w-7xl mx-auto">
+<!-- Breadcrumb + Arabic sub-notation -->
+<nav aria-label="Fil d'Ariane" class="flex flex-wrap items-center justify-between gap-space-xs mb-space-sm font-label-md text-label-md text-on-surface-variant">
+<ol class="flex items-center gap-space-xs">
+<li>
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Accueil</span>
+</a>
+</li>
+<li class="opacity-40">/</li>
+<li>
+<a class="hover:text-primary transition-colors" data-path="cart" href="#">Panier d'Achat</a>
+</li>
+<li class="opacity-40">/</li>
+<li aria-current="page" class="text-primary font-semibold">Finalisation de Commande</li>
+</ol>
+<span class="text-secondary font-serif text-[15px] tracking-wide" dir="rtl" lang="ar">
+          إتمام الطلب • دار سوسو للتجميل الراقي
+        </span>
+</nav>
+<!-- Stepper / Ritual Progress -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative">
+<!-- Step 1: Panier (Complété) -->
+<div class="flex items-center gap-space-sm opacity-80 group">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Étape 01 • Complétée</span>
+<span class="font-title-md text-[15px] leading-tight text-on-surface font-serif truncate">Panier de Rituels</span>
+<span class="text-[11px] text-on-surface-variant/80 font-body-sm" dir="rtl" lang="ar">سلة المشتريات المعتمدة</span>
+</div>
+</div>
+<!-- Step 2: Informations & Livraison (Active) -->
+<div class="flex items-center gap-space-sm relative">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-widest">Étape 02 • En cours</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<span class="font-title-md text-[15px] leading-tight text-primary font-serif truncate">Livraison &amp; Coordonnées</span>
+<span class="text-[11px] text-secondary font-body-sm" dir="rtl" lang="ar">بيانات الشحن والتوصيل التشادي</span>
+</div>
+</div>
+<!-- Step 3: Confirmation -->
+<div class="flex items-center gap-space-sm opacity-60">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-widest">Étape 03</span>
+<span class="font-title-md text-[15px] leading-tight text-on-surface-variant font-serif truncate">Paiement &amp; Confirmation ST-08</span>
+<span class="text-[11px] text-on-surface-variant/70 font-body-sm" dir="rtl" lang="ar">التأكيد النهائي للطلب</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Regal Editorial Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-space-xs text-secondary font-label-md text-label-md tracking-[0.2em] uppercase mb-1">
+<span class="w-6 h-[1px] bg-secondary"></span>
+<span>Protocole d'Expédition Privilège</span>
+<span class="w-6 h-[1px] bg-secondary"></span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary font-serif tracking-tight">
+            Finaliser ma Commande
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Rituels impériaux et cosmétiques d'exception prêts pour l'expédition sous contrôle d'authenticité certifié.
+          </p>
+</div>
+<div class="text-right hidden md:block">
+<div class="text-[13px] text-secondary font-serif" dir="rtl" lang="ar">
+            خدمة التوصيل السريع لجميع مناطق نجامينا والأقاليم التشادية
+          </div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/70">Maison Soussou Tchad • N'Djamena</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Checkout Workflow Canvas: 2-Column Desktop Grid -->
+<div class="w-full px-margin-mobile lg:px-margin py-space-lg">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Input Architecture (62%) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Error Notification Banner (Hidden by default, triggered by toggle) -->
+<div class="hidden p-space-md rounded-xl bg-error-container text-on-error-container shadow-sm flex items-start gap-space-sm" id="validation-alert">
+<span class="material-symbols-outlined text-[24px] text-error shrink-0">error</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-error">Champs obligatoires manquants ou erronés</span>
+<p class="font-body-sm text-body-sm text-on-error-container mt-0.5">
+              Veuillez renseigner votre nom complet, un numéro de téléphone tchadien joignable (+235) pour le coursier, ainsi que votre quartier précis à N'Djamena.
+            </p>
+</div>
+</div>
+<!-- Section 1: Customer Information Form -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm">
+<header class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-serif font-bold text-[14px]">
+                01
+              </span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">
+                  Coordonnées Personnelles
+                </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                  Informations de Contact • بيانات المستلم
+                </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded-full">
+              Étape Essentielle
+            </span>
+</header>
+<form class="space-y-space-md" id="checkout-form" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold flex items-center justify-between" for="cust-fullname">
+<span>Nom &amp; Prénom Complet <span class="text-error">*</span></span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">الاسم الثلاثي</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-space-md py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:bg-surface-container-lowest transition-all shadow-inner" id="cust-fullname" placeholder="ex. Khadidja Mahamat" required="" type="text" value="Fatimé Al-Hadj Hassan"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">person</span>
+</div>
+<span class="error-msg hidden font-label-sm text-label-sm text-error">Veuillez renseigner votre nom complet.</span>
+</div>
+<!-- Phone Number (+235 prefix) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold flex items-center justify-between" for="cust-phone">
+<span>Téléphone / WhatsApp Tchad <span class="text-error">*</span></span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">رقم الهاتف أو الواتساب</span>
+</label>
+<div class="flex rounded-lg shadow-inner overflow-hidden focus-within:ring-2 focus-within:ring-secondary/40">
+<div class="bg-surface-container-high px-space-sm flex items-center gap-1 shrink-0 text-primary font-label-md text-label-md font-bold">
+<span class="text-base leading-none">🇹🇩</span>
+<span>+235</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-space-md py-2.5 focus:outline-none focus:bg-surface-container-lowest transition-all" id="cust-phone" placeholder="66 XX XX XX ou 99 XX XX XX" required="" type="tel" value="66 28 44 91"/>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 text-[11px]">
+                    Requis pour la remise en main propre par le coursier.
+                  </span>
+<span class="error-msg hidden font-label-sm text-label-sm text-error">Numéro valide requis.</span>
+</div>
+</div>
+</div>
+<!-- Email Address (Optional for Digital Receipt) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold flex items-center justify-between" for="cust-email">
+<span class="flex items-center gap-1.5">
+                  Adresse e-mail
+                  <span class="text-[11px] text-on-surface-variant font-normal lowercase">(optionnel • pour le carnet de soin &amp; reçu)</span>
+</span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">البريد الإلكتروني</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-space-md py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:bg-surface-container-lowest transition-all shadow-inner" id="cust-email" placeholder="contact@exemple.td" type="email" value="fatime.hassan@ndjamena-prestige.td"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">mail</span>
+</div>
+</div>
+</form>
+</article>
+<!-- Section 2: Delivery Destination & Chadian Territorial Zones -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm">
+<header class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-serif font-bold text-[14px]">
+                02
+              </span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">
+                  Destination &amp; Zone de Livraison
+                </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                  Expédition Officielle • وجهة التوصيل
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="hidden sm:inline">Tarification Fixe Officielle</span>
+</div>
+</header>
+<div class="space-y-space-md">
+<!-- Region / City Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold flex items-center justify-between" for="delivery-city-select">
+<span>Ville / Région de destination <span class="text-error">*</span></span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">المدينة أو الإقليم</span>
+</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-space-md py-2.5 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:bg-surface-container-lowest transition-all shadow-inner cursor-pointer pr-10" id="delivery-city-select">
+<option selected="" value="ndjamena_center">N'Djamena (Centre-ville, Sabangali, Djambal Bahr, Klémat, Ridina)</option>
+<option value="ndjamena_periphery">N'Djamena Périphérie (Farcha, Chagoua, Habena, Walia, Dembé, Gassi)</option>
+<option value="provinces">Provinces du Tchad (Abéché, Moundou, Sarh, Am Timan, Mongo - Agence certifiée)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Delivery Address / Landmarks -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold flex items-center justify-between" for="cust-address">
+<span>Adresse Précise &amp; Repères Géographiques <span class="text-error">*</span></span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">الحي والشارع والمعالم القريبة</span>
+</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md px-space-md py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:bg-surface-container-lowest transition-all shadow-inner" id="cust-address" placeholder="Ex. Farcha, derrière le rond-point, portail blanc" required="" type="text" value="Quartier Sabangali, Rue 1042, Villa 28, non loin du Grand Marché et Pharmacie de la Paix"/>
+<span class="error-msg hidden font-label-sm text-label-sm text-error">Veuillez indiquer un quartier ou un repère connu.</span>
+</div>
+<!-- Zone Selection Cards (Dynamic according to admin specification) -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">
+                  Options Logistiques Soussou TCHAD
+                </span>
+<span class="font-label-sm text-[11px] text-secondary">Traçabilité directe</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="zone-cards-container">
+<!-- Zone 1: N'Djamena Express (Active & Free above 50,000 XAF) -->
+<label class="zone-option relative cursor-pointer flex flex-col p-space-sm rounded-xl bg-surface-container-low transition-all hover:bg-surface-container shadow-sm ring-2 ring-primary-container" data-fee="0" data-original-fee="3000" data-zone="z1">
+<input checked="" class="sr-only" name="shipping_zone" type="radio" value="z1"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Zone 1 • Express</span>
+<span class="w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px]">✓</span>
+</div>
+<span class="font-title-md text-[14px] leading-snug text-primary font-serif">N'Djamena Coursier VIP</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1">
+                    Livraison en main propre en 24h par véhicule climatisé.
+                  </p>
+<div class="mt-space-sm pt-space-xs flex items-baseline justify-between">
+<span class="font-title-md text-[15px] font-bold text-secondary">OFFERTE</span>
+<span class="text-[11px] line-through text-on-surface-variant">3.000 XAF</span>
+</div>
+<div class="mt-1">
+<span class="font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">
+                      Débloquée dès 50k XAF
+                    </span>
+</div>
+</label>
+<!-- Zone 2: Périphérie -->
+<label class="zone-option relative cursor-pointer flex flex-col p-space-sm rounded-xl bg-surface-container-lowest transition-all hover:bg-surface-container-low shadow-sm" data-fee="5000" data-zone="z2">
+<input class="sr-only" name="shipping_zone" type="radio" value="z2"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Zone 2 • Périphérie</span>
+<span class="w-4 h-4 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant text-[10px] radio-indicator">○</span>
+</div>
+<span class="font-title-md text-[14px] leading-snug text-on-surface font-serif">Farcha, Chagoua, Walia</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1">
+                    Distribution sécurisée sous 24h à 48h selon accessibilité.
+                  </p>
+<div class="mt-space-sm pt-space-xs flex items-baseline justify-between">
+<span class="font-title-md text-[15px] font-bold text-on-surface">5.000 XAF</span>
+<span class="text-[11px] text-on-surface-variant">Standard</span>
+</div>
+</label>
+<!-- Zone 3: Provinces -->
+<label class="zone-option relative cursor-pointer flex flex-col p-space-sm rounded-xl bg-surface-container-lowest transition-all hover:bg-surface-container-low shadow-sm" data-fee="7500" data-zone="z3">
+<input class="sr-only" name="shipping_zone" type="radio" value="z3"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Zone 3 • Provinces</span>
+<span class="w-4 h-4 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant text-[10px] radio-indicator">○</span>
+</div>
+<span class="font-title-md text-[14px] leading-snug text-on-surface font-serif">Abéché, Moundou, Sarh</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1">
+                    Expédition scellée par agence de fret certifiée (2 à 4 jours).
+                  </p>
+<div class="mt-space-sm pt-space-xs flex items-baseline justify-between">
+<span class="font-title-md text-[15px] font-bold text-on-surface">7.500 XAF</span>
+<span class="text-[11px] text-on-surface-variant">Fret sécurisé</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Additional Delivery Notes -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold flex items-center justify-between" for="cust-instructions">
+<span>Instructions particulières pour le livreur (Optionnel)</span>
+<span class="text-[11px] font-normal text-on-surface-variant font-serif" dir="rtl" lang="ar">ملاحظات خاصة بالتسليم</span>
+</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-space-md py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:bg-surface-container-lowest transition-all shadow-inner placeholder:text-on-surface-variant/60 resize-none" id="cust-instructions" placeholder="Ex. Privilégier une livraison après 15h ou appeler 15 minutes avant arrivée au portail." rows="2"></textarea>
+</div>
+</div>
+</article>
+<!-- Section 3: Payment Method Selection -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm">
+<header class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-serif font-bold text-[14px]">
+                03
+              </span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">
+                  Mode de Règlement Sécurisé
+                </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                  Transaction Protégée • طريقة الدفع المعتمدة
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[11px] font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>Cryptage SSL 256-Bit</span>
+</div>
+</header>
+<div class="space-y-space-sm" id="payment-methods-group">
+<!-- 1. Cash on Delivery (Selected by Default) -->
+<label class="payment-card flex flex-col p-space-md rounded-xl bg-surface-container-low cursor-pointer ring-2 ring-primary-container transition-all shadow-sm" data-payment="cod">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] shrink-0 mt-0.5">
+                    ✓
+                  </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-[16px] text-primary font-serif">Paiement à la Livraison (Espèces au Coursier)</span>
+<span class="font-label-sm text-[10px] uppercase bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">
+                        Recommandé à N'Djamena
+                      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Réglez le montant exact en espèces en mains propres lors de la remise de votre colis scellé.
+                    </p>
+<span class="text-[12px] text-secondary font-serif mt-0.5 block" dir="rtl" lang="ar">
+                      الدفع نقدًا عند الاستلام مباشرة لمندوب التوصيل
+                    </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px] shrink-0">payments</span>
+</div>
+</label>
+<!-- 2. Airtel Money Tchad -->
+<label class="payment-card flex flex-col p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm" data-payment="airtel">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] shrink-0 mt-0.5 radio-dot">
+                    ○
+                  </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-[16px] text-on-surface font-serif">Airtel Money Tchad</span>
+<span class="font-label-sm text-[10px] uppercase bg-surface-container-high text-primary px-2 py-0.5 rounded font-semibold">
+                        Compte Marchand Officiel
+                      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Transfert direct instantané via votre portefeuille Airtel Money au numéro marchand Soussou Tchad.
+                    </p>
+<span class="text-[12px] text-on-surface-variant/70 font-serif mt-0.5 block" dir="rtl" lang="ar">
+                      الدفع عبر إيرتل موني تشاد - التحويل المباشر
+                    </span>
+</div>
+</div>
+<div class="px-2 py-1 bg-surface-container rounded text-primary font-bold text-[12px] tracking-tight shrink-0 font-label-md">
+                  AIRTEL
+                </div>
+</div>
+<!-- Mobile Money instruction container (hidden by default) -->
+<div class="hidden mt-space-sm pt-space-sm border-t border-surface-container-high text-body-sm" id="airtel-details">
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Numéro Marchand Officiel :</span>
+<span class="font-mono text-primary font-bold ml-2 text-[14px]">+235 66 00 24 00 (SOUSSOU BEAUTY)</span>
+</div>
+<span class="font-label-sm text-[11px] text-secondary">Référence générée à l'étape ST-08</span>
+</div>
+</div>
+</label>
+<!-- 3. Moov Money Tchad -->
+<label class="payment-card flex flex-col p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm" data-payment="moov">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] shrink-0 mt-0.5 radio-dot">
+                    ○
+                  </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-[16px] text-on-surface font-serif">Moov Money Tchad</span>
+<span class="font-label-sm text-[10px] uppercase bg-surface-container-high text-primary px-2 py-0.5 rounded font-semibold">
+                        Paiement Mobile Rapide
+                      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Paiement rapide via USSD ou application Moov Money Tchad sans frais cachés.
+                    </p>
+<span class="text-[12px] text-on-surface-variant/70 font-serif mt-0.5 block" dir="rtl" lang="ar">
+                      الدفع عبر موف موني تشاد
+                    </span>
+</div>
+</div>
+<div class="px-2 py-1 bg-surface-container rounded text-primary font-bold text-[12px] tracking-tight shrink-0 font-label-md">
+                  MOOV
+                </div>
+</div>
+<div class="hidden mt-space-sm pt-space-sm border-t border-surface-container-high text-body-sm" id="moov-details">
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Code Marchand Moov :</span>
+<span class="font-mono text-primary font-bold ml-2 text-[14px]">#144*4*1*8830#</span>
+</div>
+<span class="font-label-sm text-[11px] text-secondary">Validation SMS immédiate</span>
+</div>
+</div>
+</label>
+<!-- 4. Carte Bancaire Visa / Mastercard -->
+<label class="payment-card flex flex-col p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm" data-payment="card">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-[10px] shrink-0 mt-0.5 radio-dot">
+                    ○
+                  </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-[16px] text-on-surface font-serif">Carte Bancaire Visa / Mastercard</span>
+<span class="font-label-sm text-[10px] uppercase bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-medium">
+                        International &amp; UBA
+                      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Paiement en ligne hautement sécurisé pour les cartes tchadiennes et internationales.
+                    </p>
+<span class="text-[12px] text-on-surface-variant/70 font-serif mt-0.5 block" dir="rtl" lang="ar">
+                      بطاقات فيزا وماستركارد الدولية
+                    </span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+</div>
+</label>
+</div>
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container-low/80 flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">verified</span>
+<span>
+<strong>Garantie Soussou TCHAD :</strong> Aucun frais supplémentaire ou taxe cachée lors du règlement de votre commande.
+            </span>
+</div>
+</article>
+</div>
+<!-- RIGHT COLUMN: Sticky Order Summary (38%) -->
+<aside class="lg:col-span-5 xl:col-span-4 sticky top-[190px] flex flex-col gap-space-md">
+<!-- Summary Card with Jewel-Box Finish -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-md relative overflow-hidden">
+<!-- Subtle Accent Header Bar -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary via-secondary to-primary-container absolute top-0 left-0 right-0"></div>
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high mb-space-md">
+<div>
+<h2 class="font-headline-sm text-[20px] text-primary font-serif">
+                Récapitulatif de Commande
+              </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                Écrin de 4 Articles • ملخص الطلب
+              </span>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-primary hover:text-secondary transition-colors underline offset-4" data-path="cart" href="#">
+              Modifier
+            </a>
+</div>
+<!-- Product Item 1: Huile Botanique Chébé -->
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden bg-surface-container-low shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Bouteille luxueuse en verre ambré d'huile précieuse de Chébé du Sahel de Soussou TCHAD sur lit de graines de Chébé dorées du Guéra, éclairage chaud royal cosmétique de haute parfumerie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhIosOM8vG5KBbrGnXE6U_7Ql2m9AHHC3k4MyC1_DgRqTqPXynjVnXaItVfghuIxEyoqGT4HrGg_YKG9xUH-Z3SZ9GnF8xDXN6J3fkHn_0M4WxidFFu_1NVgCwpxOToIiyS-ymk1n_XgBptctuC5-SUnqPxg215SpBGNtzb0vFf2bLXlo8RQ-CygtE0a3wyZXcLF7cg-irTFAgF0FGaC0UiP6gqndFNDOkG5iL6cKQ"/>
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary font-label-sm text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider block">Soin Capillaire Ancestral</span>
+<h3 class="font-title-md text-[14px] text-on-surface font-serif leading-snug truncate">
+                  Huile Botanique Chébé du Sahel
+                </h3>
+<span class="font-body-sm text-[12px] text-on-surface-variant block">Format Précieux 100ml (x2)</span>
+<span class="font-label-md text-label-md font-bold text-primary mt-1 block">37.000 XAF</span>
+</div>
+</div>
+<!-- Product Item 2: Beurre Fondant de Chébé -->
+<div class="flex items-start gap-space-sm">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden bg-surface-container-low shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Pot cosmétique haut de gamme en verre givré contenant du Beurre Fondant de Chébé et Karité Doré tchadien texture onctueuse et opulente, esthétique minimaliste éditoriale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADNIzt8e6GSlIhfgNAWIVd5mchxAHGWaImwzgZqapfRrYnS3VrSUQ7nUj_y0cQiEC-6j8H6JnVcIbA6K1o8UiLZKGBMxN6J2uiwRHRW0L7j3WFwr7n9zzLV-clEIXaA3ndC1xv7gIyfPEQvAf2OJpvwwXhZYjix1hUz7edg21v_B6PMDB5XUaBT1zCUca-kUXAToOwXIqIW2oRdAGKbbZwCphmz15AumCf17t95sRD"/>
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary font-label-sm text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider block">Nutrition Royale</span>
+<h3 class="font-title-md text-[14px] text-on-surface font-serif leading-snug truncate">
+                  Beurre Fondant Chébé &amp; Karité Doré
+                </h3>
+<span class="font-body-sm text-[12px] text-on-surface-variant block">Format 200ml (x1)</span>
+<span class="font-label-md text-label-md font-bold text-primary mt-1 block">21.000 XAF</span>
+</div>
+</div>
+<!-- Product Item 3: Khomra Royale -->
+<div class="flex items-start gap-space-sm">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden bg-surface-container-low shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Flacon de parfum traditionnel tchadien Khomra Royale de N'Djamena avec bouchon doré ouvragé et reflets ambrés précieux sur fond soyeux de velours bordeaux" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLJ7cKjy7HDD5SgTEjkGUH4hxnxye7PzWtBkSiIDKH7WPxMpSKky74DD3cF2pWXR_O-cMBf3Ty77Torpx8C9V7XbXn1rqZcDCFhT0NcCt2Gnpe06TPt6_i8bWICUVUTh7V1aZN5_6x0P7Ux0deaZr_LNCeBlaPcIeg0o9beSQKQzs8r4bH0Ma49HEPYwliIksrBjCxLLBT8wJrJZm80JW8OK0p7-l5INdRDI8_aXjS"/>
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary font-label-sm text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider block">Haute Parfumerie Tchadienne</span>
+<h3 class="font-title-md text-[14px] text-on-surface font-serif leading-snug truncate">
+                  Khomra Royale de N'Djamena
+                </h3>
+<span class="font-body-sm text-[12px] text-on-surface-variant block">Élixir Concentré 50ml (x1)</span>
+<span class="font-label-md text-label-md font-bold text-primary mt-1 block">32.000 XAF</span>
+</div>
+</div>
+</div>
+<!-- Applied Privilege Code Banner -->
+<div class="mt-space-md p-space-xs px-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">loyalty</span>
+<span class="font-mono font-bold text-primary text-[11px] uppercase tracking-wider">SOUSSOU-ROYAL</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase text-secondary font-semibold">Remise Privilège Activée</span>
+</div>
+<!-- Financial Breakdown Table -->
+<div class="mt-space-md pt-space-md border-t border-surface-container-high space-y-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Sous-total (4 rituels cosmétiques)</span>
+<span class="font-medium text-on-surface">90.000 XAF</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span>Frais d'expédition &amp; acheminement</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Calculé d'après votre zone de livraison">info</span>
+</div>
+<div class="text-right">
+<span class="font-semibold text-secondary" id="shipping-display">OFFERTE</span>
+<span class="block text-[10px] text-primary font-label-sm uppercase font-bold" id="shipping-savings">Économie 3.000 XAF</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Avantage fidélité Cercle Soussou</span>
+<span class="font-medium text-secondary">-0 XAF</span>
+</div>
+<div class="pt-space-sm border-t border-surface-container flex items-baseline justify-between">
+<div>
+<span class="font-title-md text-[18px] text-primary font-serif font-bold">Montant Total TTC</span>
+<span class="block text-[11px] text-on-surface-variant/80 font-serif" dir="rtl" lang="ar">المبلغ الإجمالي المستحق</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary font-serif" id="grand-total-display">
+                  90.000 XAF
+                </span>
+<span class="block text-[11px] text-on-surface-variant uppercase tracking-wider font-label-sm">
+                  FCFA • Taxes Incluses
+                </span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button (Leading to ST-08) -->
+<div class="mt-space-lg">
+<button class="w-full relative group overflow-hidden bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-xl font-label-lg text-[13px] tracking-widest uppercase transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2" id="submit-order-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">lock</span>
+<span class="font-bold" id="cta-label-text">CONFIRMER ET PLACER LA COMMANDE • <span id="btn-price-display">90.000 XAF</span></span>
+<!-- Spinner (Hidden by default) -->
+<span class="hidden w-5 h-5 border-2 border-on-primary border-t-transparent rounded-full animate-spin" id="cta-spinner"></span>
+</button>
+<p class="font-body-sm text-center text-[11px] text-on-surface-variant mt-2">
+              En confirmant, vous acceptez les conditions de vente de la Maison Soussou TCHAD.
+            </p>
+</div>
+<!-- Trust & Heritage Reassurance Badges -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container-high space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-primary font-bold">100% Chébé Traditionnel du Guéra</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Graines authentiques écrasées selon la tradition tchadienne</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-primary font-bold">Emballage Isotherme &amp; Verre Ambré</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Protection maximale contre la chaleur sahélienne</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-primary font-bold">Conciergerie VIP N'Djamena WhatsApp</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">+235 66 28 44 91 • Assistance dédiée 7j/7</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Local Currency Guarantee Card -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-[11px] uppercase tracking-wider">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">flag</span>
+<span>Facturation en Franc CFA (XAF)</span>
+</span>
+<span class="font-serif normal-case text-secondary text-[12px]" dir="rtl" lang="ar">جمهورية تشاد</span>
+</div>
+</aside>
+</div>
+</div>
+<!-- Interactive JavaScript controller for MVP states & seamless checkout reactivity -->
+<script>
+    (function () {
+      const BASE_SUBTOTAL = 90000;
+      let currentShippingFee = 0;
+      let isFormValid = true;
+
+      // Elements
+      const zoneCards = document.querySelectorAll('.zone-option');
+      const citySelect = document.getElementById('delivery-city-select');
+      const shippingDisplay = document.getElementById('shipping-display');
+      const shippingSavings = document.getElementById('shipping-savings');
+      const grandTotalDisplay = document.getElementById('grand-total-display');
+      const btnPriceDisplay = document.getElementById('btn-price-display');
+      const submitBtn = document.getElementById('submit-order-btn');
+      const ctaLabelText = document.getElementById('cta-label-text');
+      const ctaSpinner = document.getElementById('cta-spinner');
+      const validationAlert = document.getElementById('validation-alert');
+      const stateButtons = document.querySelectorAll('#mvp-state-toggles .state-btn');
+      const paymentCards = document.querySelectorAll('.payment-card');
+      const airtelDetails = document.getElementById('airtel-details');
+      const moovDetails = document.getElementById('moov-details');
+
+      // Helper: Format XAF
+      function formatXAF(amount) {
+        return amount.toLocaleString('fr-FR') + ' XAF';
+      }
+
+      // Recalculate totals
+      function updateSummary(shippingCost, isFreeFromThreshold = false) {
+        currentShippingFee = shippingCost;
+        const finalTotal = BASE_SUBTOTAL + shippingCost;
+
+        if (shippingCost === 0) {
+          shippingDisplay.textContent = 'OFFERTE';
+          shippingDisplay.className = 'font-semibold text-secondary';
+          shippingSavings.classList.remove('hidden');
+          shippingSavings.textContent = 'Économie 3.000 XAF';
+        } else {
+          shippingDisplay.textContent = formatXAF(shippingCost);
+          shippingDisplay.className = 'font-semibold text-on-surface';
+          shippingSavings.classList.add('hidden');
+        }
+
+        grandTotalDisplay.textContent = formatXAF(finalTotal);
+        btnPriceDisplay.textContent = formatXAF(finalTotal);
+      }
+
+      // Zone Selection logic
+      zoneCards.forEach((card) => {
+        card.addEventListener('click', function () {
+          zoneCards.forEach(c => {
+            c.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container-lowest');
+            const ind = c.querySelector('.radio-indicator');
+            if (ind) ind.textContent = '○';
+          });
+
+          this.classList.add('ring-2', 'ring-primary-container', 'bg-surface-container-low');
+          this.classList.remove('bg-surface-container-lowest');
+          const myInd = this.querySelector('.radio-indicator');
+          if (myInd) myInd.textContent = '✓';
+
+          const zoneKey = this.dataset.zone;
+          if (zoneKey === 'z1') {
+            citySelect.value = 'ndjamena_center';
+            updateSummary(0);
+          } else if (zoneKey === 'z2') {
+            citySelect.value = 'ndjamena_periphery';
+            updateSummary(5000);
+          } else if (zoneKey === 'z3') {
+            citySelect.value = 'provinces';
+            updateSummary(7500);
+          }
+        });
+      });
+
+      // Synchronize dropdown with cards
+      if (citySelect) {
+        citySelect.addEventListener('change', function () {
+          if (this.value === 'ndjamena_center') {
+            const z1 = document.querySelector('[data-zone="z1"]');
+            if (z1) z1.click();
+          } else if (this.value === 'ndjamena_periphery') {
+            const z2 = document.querySelector('[data-zone="z2"]');
+            if (z2) z2.click();
+          } else if (this.value === 'provinces') {
+            const z3 = document.querySelector('[data-zone="z3"]');
+            if (z3) z3.click();
+          }
+        });
+      }
+
+      // Payment Selection logic
+      paymentCards.forEach((pCard) => {
+        pCard.addEventListener('click', function () {
+          paymentCards.forEach(c => {
+            c.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container-lowest');
+            const dot = c.querySelector('.radio-dot');
+            if (dot) dot.textContent = '○';
+          });
+
+          this.classList.add('ring-2', 'ring-primary-container', 'bg-surface-container-low');
+          this.classList.remove('bg-surface-container-lowest');
+          const activeDot = this.querySelector('.radio-dot');
+          if (activeDot) activeDot.textContent = '✓';
+
+          const method = this.dataset.payment;
+          if (airtelDetails) airtelDetails.classList.toggle('hidden', method !== 'airtel');
+          if (moovDetails) moovDetails.classList.toggle('hidden', method !== 'moov');
+        });
+      });
+
+      // Submit Button handler (Simulate order routing to ST-08)
+      if (submitBtn) {
+        submitBtn.addEventListener('click', function () {
+          const nameInput = document.getElementById('cust-fullname');
+          const phoneInput = document.getElementById('cust-phone');
+          const addressInput = document.getElementById('cust-address');
+
+          if (!nameInput.value.trim() || !phoneInput.value.trim() || !addressInput.value.trim()) {
+            triggerScenario('validation-error');
+            return;
+          }
+
+          // Trigger smooth simulated placement
+          triggerScenario('loading');
+          setTimeout(() => {
+            alert("Commande validée avec succès dans l'écosystème Soussou TCHAD ! Redirection vers la page de confirmation ST-08.");
+            resetLoadingState();
+          }, 2200);
+        });
+      }
+
+      function resetLoadingState() {
+        ctaSpinner.classList.add('hidden');
+        ctaLabelText.classList.remove('opacity-50');
+        submitBtn.disabled = false;
+      }
+
+      // MVP Scenario Switcher
+      function triggerScenario(scenario) {
+        // Toggle button styling
+        stateButtons.forEach(btn => {
+          if (btn.dataset.scenario === scenario) {
+            btn.classList.add('bg-primary-container', 'text-on-primary');
+            btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          } else {
+            btn.classList.remove('bg-primary-container', 'text-on-primary');
+            btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          }
+        });
+
+        const nameInput = document.getElementById('cust-fullname');
+        const phoneInput = document.getElementById('cust-phone');
+        const addressInput = document.getElementById('cust-address');
+
+        if (scenario === 'default') {
+          validationAlert.classList.add('hidden');
+          nameInput.value = 'Fatimé Al-Hadj Hassan';
+          phoneInput.value = '66 28 44 91';
+          addressInput.value = 'Quartier Sabangali, Rue 1042, Villa 28, N\'Djamena';
+          document.querySelectorAll('.error-msg').forEach(el => el.classList.add('hidden'));
+          const z1 = document.querySelector('[data-zone="z1"]');
+          if (z1) z1.click();
+          const cod = document.querySelector('[data-payment="cod"]');
+          if (cod) cod.click();
+          resetLoadingState();
+        } else if (scenario === 'mobilemoney') {
+          validationAlert.classList.add('hidden');
+          document.querySelectorAll('.error-msg').forEach(el => el.classList.add('hidden'));
+          const airtel = document.querySelector('[data-payment="airtel"]');
+          if (airtel) airtel.click();
+          resetLoadingState();
+        } else if (scenario === 'provinces') {
+          validationAlert.classList.add('hidden');
+          document.querySelectorAll('.error-msg').forEach(el => el.classList.add('hidden'));
+          const z3 = document.querySelector('[data-zone="z3"]');
+          if (z3) z3.click();
+          addressInput.value = 'Agence de fret Abéché Centre, devant la grande place';
+          resetLoadingState();
+        } else if (scenario === 'validation-error') {
+          nameInput.value = '';
+          phoneInput.value = '';
+          addressInput.value = '';
+          validationAlert.classList.remove('hidden');
+          document.querySelectorAll('.error-msg').forEach(el => el.classList.remove('hidden'));
+          window.scrollTo({ top: 180, behavior: 'smooth' });
+          resetLoadingState();
+        } else if (scenario === 'loading') {
+          validationAlert.classList.add('hidden');
+          ctaSpinner.classList.remove('hidden');
+          ctaLabelText.classList.add('opacity-50');
+          submitBtn.disabled = true;
+        }
+      }
+
+      stateButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          triggerScenario(this.dataset.scenario);
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 pt-space-xl pb-space-lg text-on-surface"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-sm"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-serif">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Maison de Beauté</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Célébration des rituels ancestraux et de l'élégance tchadienne. Formulations rares, noblesse végétale et éclat authentique façonnés pour sublimer chaque teint.</p><div class="flex items-center gap-space-xs text-secondary"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">N'Djamena, Tchad</span></div></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary font-semibold mb-space-md">Service Clientèle</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="contact-us" href="#">Assistance &amp; Conciergerie VIP</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-policy" href="#">Livraisons &amp; Expéditions</a></li><li><a class="hover:text-primary transition-colors" data-path="returns-policy" href="#">Politique d'Échange &amp; Retours</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="#">Questions Fréquentes (FAQ)</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Suivre ma Commande</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary font-semibold mb-space-md">Paiement Sécurisé</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Options de règlement locales &amp; internationales garanties:</p><div class="space-y-space-xs font-label-md text-label-md text-on-surface"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Airtel Money Tchad</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Moov Money Tchad</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Paiement à la Livraison (Cash on Delivery)</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Cartes Bancaires Visa &amp; Mastercard</span></div></div></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary font-semibold mb-space-sm">Le Cercle Privilège</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Recevez les invitations privées, découvertes botaniques et accès exclusifs aux lancements.</p><form class="flex flex-col gap-space-xs"><div class="flex"><input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-sm py-space-xs rounded-l border border-outline-variant/40 focus:outline-none focus:border-secondary transition-colors placeholder:text-on-surface-variant/50" placeholder="Votre adresse e-mail..." type="email"/><button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-space-md py-space-xs rounded-r hover:bg-primary-container hover:text-on-primary transition-colors" type="button">Rejoindre</button></div><span class="font-label-sm text-label-sm text-on-surface-variant/70">Désabonnement en un clic à tout moment.</span></form></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 Soussou TCHAD Beauty. Tous droits réservés. Haute Parfumerie &amp; Cosmétique Tchadienne.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="#">Mentions Légales</a><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">Politique de Confidentialité</a><a class="hover:text-primary transition-colors" data-path="contact-us" href="#">Boutique N'Djamena</a></div></div></div></footer></body></html>

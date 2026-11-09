@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#f3ded8","surface-tint":"#934754","surface":"#fff8f6","on-tertiary-fixed-variant":"#52443f","error-container":"#ffdad6","tertiary-fixed-dim":"#d7c2bc","tertiary-container":"#3c2f2b","primary-fixed":"#ffd9dd","error":"#ba1a1a","on-tertiary":"#ffffff","outline":"#867274","on-background":"#241916","on-primary-container":"#d9808e","tertiary":"#261a17","surface-dim":"#ebd6d0","on-error":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#604012","primary-fixed-dim":"#ffb2bc","secondary":"#7b5827","on-primary":"#ffffff","tertiary-fixed":"#f4ded8","on-secondary":"#ffffff","inverse-surface":"#3a2e2a","on-tertiary-container":"#a99691","on-primary-fixed":"#3d0414","secondary-fixed":"#ffddb5","surface-bright":"#fff8f6","inverse-primary":"#ffb2bc","on-secondary-container":"#795726","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#76303d","surface-container":"#ffe9e4","on-secondary-fixed":"#2a1800","inverse-on-surface":"#ffede8","outline-variant":"#d8c1c3","on-surface-variant":"#534344","secondary-container":"#ffcf94","primary-container":"#5b1b29","background":"#fff8f6","secondary-fixed-dim":"#edbe85","on-tertiary-fixed":"#241916","surface-container-high":"#f9e4de","on-surface":"#241916","surface-variant":"#f3ded8","surface-container-low":"#fff1ed","primary":"#3f0515"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-lg":"1.75rem","margin":"3rem","space-xs":"0.25rem","margin-mobile":"1.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"3rem","space-md":"1rem"},fontFamily:{"headline-lg":["Playfair Display"],"label-sm":["Manrope"],"body-md":["Manrope"],"body-sm":["Manrope"],"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Manrope"],"display-hero-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"title-md":["Playfair Display"],"display-hero":["Playfair Display"],"label-lg":["Manrope"],"body-lg":["Manrope"]},fontSize:{"headline-lg":["40px",{"lineHeight":"50px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.08em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-container-highest selection:text-primary"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_4px_20px_-2px_rgba(91,27,41,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-xl"><div class="relative flex items-center justify-center p-0.5 rounded-full ring-1 ring-secondary/30 bg-surface-container-lowest"><img alt="Soussou TCHAD Beauty" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-1">Imperial Beauty Admin</span></div></div><div class="space-y-space-md"><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Vue Globale</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2.5 transition-colors text-on-surface-variant" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span>Tableau de Bord</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Catalogue &amp; Stock</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="products-management" href="#"><span class="material-symbols-outlined text-lg">spa</span><span>Produits</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories-management" href="#"><span class="material-symbols-outlined text-lg">category</span><span>Catégories</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inventory-management" href="#"><span class="material-symbols-outlined text-lg">inventory_2</span><span>Gestion de Stock</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="stock-movements" href="#"><span class="material-symbols-outlined text-lg">swap_horiz</span><span>Mouvements Stock</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Ventes &amp; Relation Client</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="orders-management" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span>Commandes</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customers-management" href="#"><span class="material-symbols-outlined text-lg">group</span><span>Clients</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="invoices" href="#"><span class="material-symbols-outlined text-lg">request_quote</span><span>Factures</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Institut &amp; Beauté</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="services-management" href="#"><span class="material-symbols-outlined text-lg">hotel_class</span><span>Soins &amp; Rituels</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portfolio-management" href="#"><span class="material-symbols-outlined text-lg">photo_library</span><span>Portfolio</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="appointments-calendar" href="#"><span class="material-symbols-outlined text-lg">calendar_month</span><span>Rendez-vous</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Administration</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-lg">analytics</span><span>Rapports &amp; Audit</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="users-permissions" href="#"><span class="material-symbols-outlined text-lg">admin_panel_settings</span><span>Utilisateurs &amp; Droits</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="store-settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span>Configuration Boutique</span></a></nav></div></div></div><div class="p-space-lg"><div class="bg-surface-container-highest/60 rounded-xl p-space-md flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Boutique Ouverte</span></div><span class="font-label-sm text-label-sm text-secondary font-bold">N'Djamena</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(91,27,41,0.03)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><button aria-label="Basculer le volet latéral" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">menu_open</span></button><div class="relative w-80 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-4 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline/80 font-body-sm text-body-sm ring-1 ring-secondary/20 focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Rechercher un rituel, commande, client..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center bg-surface-container-lowest rounded-xl px-2.5 py-1 ring-1 ring-secondary/20"><span class="material-symbols-outlined text-sm text-secondary mr-1.5">language</span><select aria-label="Langue" class="bg-transparent font-label-md text-label-md text-on-surface cursor-pointer focus:outline-none pr-1"><option selected="" value="fr">Français</option><option value="ar">العربية</option><option value="en">English</option></select></div><div class="relative"><button aria-label="Notifications" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-1"><div class="flex items-center gap-2.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Mme Soussou</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Directrice</span></div></div><div class="flex items-center gap-0.5 ml-1"><a aria-label="Paramètres utilisateur" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="store-settings" href="#"><span class="material-symbols-outlined text-lg">tune</span></a><a aria-label="Déconnexion" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-lg">logout</span></a></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- MVP Scenario Interactive Simulator Bar -->
+<aside aria-label="Simulateur d'états MVP" class="w-full bg-surface-container-high px-space-lg py-2.5 shadow-sm">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-3 text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">tune</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Simulateur d'États MVP (AD-08)</span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5" id="simulator-pills">
+<button class="px-3 py-1 rounded-full text-xs font-label-md bg-primary text-on-primary transition-all shadow-sm" id="btn-state-default" onclick="setViewState('default')" type="button">
+          1. Vue Normale (Standard)
+        </button>
+<button class="px-3 py-1 rounded-full text-xs font-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all" id="btn-state-preview" onclick="setViewState('preview')" type="button">
+          2. Tiroir A4 (#FAC-2025-104)
+        </button>
+<button class="px-3 py-1 rounded-full text-xs font-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all" id="btn-state-paid" onclick="setViewState('paid')" type="button">
+          3. Filtre: Encaissées
+        </button>
+<button class="px-3 py-1 rounded-full text-xs font-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all" id="btn-state-empty" onclick="setViewState('empty')" type="button">
+          4. Sans Résultat
+        </button>
+<button class="px-3 py-1 rounded-full text-xs font-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all" id="btn-state-skeleton" onclick="setViewState('skeleton')" type="button">
+          5. Chargement (Skeleton)
+        </button>
+</div>
+</div>
+</aside>
+<!-- Main Canvas Container -->
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-lg space-y-space-lg">
+<!-- Header Section with Bilingual Title & MVP Guardrails -->
+<header class="flex flex-col md:flex-row md:items-start md:justify-between gap-space-md">
+<div class="space-y-1.5 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase tracking-widest">
+            AD-08 • MODULE FINANCES
+          </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Registre Légal Tchad</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary leading-tight">
+          Gestion des Factures <span class="font-headline-sm text-headline-sm text-secondary font-normal">/ إدارة الفواتير والمستندات المالية</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Consultez, recherchez, prévisualisez et téléchargez les factures officielles générées automatiquement lors de la validation des commandes clientes. Document comptable certifié scellé à l'émission.
+        </p>
+</div>
+<!-- Action Buttons (Strict MVP: Export & Print Only, no manual invoice creation) -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-all shadow-sm" onclick="triggerExportNotice()" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Exporter Registre (CSV)</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all shadow-md" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Imprimer Registre</span>
+</button>
+</div>
+</header>
+<!-- MVP Immutability Compliance Callout -->
+<section aria-label="Règle d'intégrité légale" class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="space-y-0.5">
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Règle de Scellement Comptable &amp; Non-Modifiabilité (Audit Trail)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Conformément aux normes OHADA et au cadre fiscal tchadien, les factures sont strictement générées depuis la commande originale confirmée. Aucune suppression manuelle n'est autorisée sans contre-passation d'avoir.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-label-md text-secondary shrink-0 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Registre Certifié Conforme</span>
+</div>
+</section>
+<!-- Summary KPI Cards (4 Cards) -->
+<section aria-label="Indicateurs clés" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Total Factures Émises</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary">142</span>
+<span class="font-label-md text-label-md text-secondary font-medium">factures</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-xs text-secondary">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="font-label-sm text-label-sm">+8% ce mois (N'Djamena)</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Mois en Cours</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary">38</span>
+<span class="font-label-md text-label-md text-secondary font-medium">factures</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Période : Octobre 2025</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Montant Total Facturé</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-base">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">7.845.000</span>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold">XAF</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-xs text-secondary">
+<span class="font-label-sm text-label-sm">Valeur TTC certifiée</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Règlements &amp; Encaissés</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-base">paid</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary">142</span>
+<span class="font-label-md text-label-md text-secondary font-medium">commandes</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary font-semibold">72 encaissées</span>
+<span>• 70 COD en cours</span>
+</div>
+</div>
+</section>
+<!-- Search & Filter Toolbar -->
+<section aria-label="Recherche et filtres" class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Bar -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="invoice-search" oninput="handleSearch(this.value)" placeholder="Rechercher par N° Facture (#FAC-...), N° Commande (#ST-ORD-...) ou Nom Cliente..." type="text"/>
+</div>
+<!-- Filter Dropdowns -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Payment Filter -->
+<div class="relative flex items-center bg-surface-container-low rounded-xl px-3 h-11">
+<span class="material-symbols-outlined text-outline text-base mr-2">credit_card</span>
+<select aria-label="Statut du paiement" class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-2" id="payment-filter" onchange="handlePaymentFilter(this.value)">
+<option value="all">Tous les Statuts Règlement</option>
+<option value="pending">En attente (COD à la livraison)</option>
+<option value="paid">Payé / Encaissé</option>
+<option value="refunded">Remboursé / Avoir</option>
+</select>
+</div>
+<!-- Date Filter -->
+<div class="relative flex items-center bg-surface-container-low rounded-xl px-3 h-11">
+<span class="material-symbols-outlined text-outline text-base mr-2">calendar_month</span>
+<select aria-label="Période temporelle" class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-2" id="date-filter">
+<option selected="" value="current-month">Ce mois-ci (Octobre 2025)</option>
+<option value="30-days">30 derniers jours</option>
+<option value="q3">3e Trimestre 2025</option>
+<option value="custom">Période personnalisée...</option>
+</select>
+</div>
+<!-- Reset Filter Button -->
+<button class="h-11 px-3.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant flex items-center gap-1.5 transition-colors" onclick="resetFilters()" title="Réinitialiser tous les filtres" type="button">
+<span class="material-symbols-outlined text-base">filter_alt_off</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Réinitialiser</span>
+</button>
+</div>
+</div>
+<!-- Active Filters Quick Bar -->
+<div class="flex flex-wrap items-center justify-between pt-1 gap-2 text-xs">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span>FILTRES ACTIFS :</span>
+<span class="bg-surface-container-high text-primary px-2.5 py-1 rounded-full flex items-center gap-1 font-semibold">
+            Octobre 2025
+            <button aria-label="Supprimer filtre Octobre 2025" class="material-symbols-outlined text-xs hover:text-error" type="button">close</button>
+</span>
+<span class="hidden bg-secondary-fixed text-on-secondary-fixed px-2.5 py-1 rounded-full items-center gap-1 font-semibold" id="active-status-tag">
+<span id="active-status-text">Payé</span>
+<button aria-label="Supprimer filtre statut" class="material-symbols-outlined text-xs" onclick="resetPaymentFilter()" type="button">close</button>
+</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">
+          Affichage de <span class="font-bold text-primary" id="visible-count">5</span> sur <span class="font-bold">142</span> factures certifiées
+        </div>
+</div>
+</section>
+<!-- Invoices Data Table View -->
+<section aria-label="Table des factures" class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Standard Table -->
+<div class="overflow-x-auto" id="table-container">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm uppercase tracking-widest text-outline">
+<th class="py-3.5 px-4 font-semibold">N° Facture</th>
+<th class="py-3.5 px-4 font-semibold">N° Commande Liée</th>
+<th class="py-3.5 px-4 font-semibold">Date d'Émission</th>
+<th class="py-3.5 px-4 font-semibold">Nom de la Cliente &amp; Quartier</th>
+<th class="py-3.5 px-4 font-semibold">Téléphone</th>
+<th class="py-3.5 px-4 font-semibold text-right">Sous-Total</th>
+<th class="py-3.5 px-4 font-semibold text-right">Frais Livr.</th>
+<th class="py-3.5 px-4 font-semibold text-right">Total TTC</th>
+<th class="py-3.5 px-4 font-semibold text-center">Règlement</th>
+<th class="py-3.5 px-4 font-semibold text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface font-body-sm text-body-sm" id="invoice-tbody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-customer="Amina Mahamat Hassan" data-invoice="FAC-2025-104" data-order="ST-ORD-2025-104" data-status="pending">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-bold">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">description</span>
+<span>#FAC-2025-104</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<a class="text-secondary hover:text-primary underline underline-offset-4 decoration-secondary/30 flex items-center gap-1" href="#" onclick="showQuickToast('Lien vers la commande AD-06: #ST-ORD-2025-104'); return false;">
+<span>#ST-ORD-2025-104</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</td>
+<td class="py-4 px-4 whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm">
+                24 Oct 2025 <span class="text-outline text-xs block">11:20 GMT+1</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">Amina Mahamat Hassan</div>
+<div class="text-xs text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Sabangali, N'Djamena</span>
+</div>
+</td>
+<td class="py-4 px-4 font-mono text-xs text-on-surface-variant whitespace-nowrap">
+                +235 66 12 34 56
+              </td>
+<td class="py-4 px-4 text-right font-medium">65.000 XAF</td>
+<td class="py-4 px-4 text-right text-xs text-secondary font-semibold">Gratuit</td>
+<td class="py-4 px-4 text-right font-bold text-primary font-headline-sm text-sm">65.000 XAF</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                  En attente (COD)
+                </span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary transition-colors flex items-center justify-center" onclick="openInvoiceDrawer('FAC-2025-104')" title="Voir Facture A4" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="downloadInvoicePDF('FAC-2025-104')" title="Télécharger PDF" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="printSingleInvoice('FAC-2025-104')" title="Imprimer" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-customer="Khadidja Brahim" data-invoice="FAC-2025-103" data-order="ST-ORD-2025-103" data-status="paid">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-bold">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">description</span>
+<span>#FAC-2025-103</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<a class="text-secondary hover:text-primary underline underline-offset-4 decoration-secondary/30 flex items-center gap-1" href="#" onclick="showQuickToast('Lien vers la commande AD-06: #ST-ORD-2025-103'); return false;">
+<span>#ST-ORD-2025-103</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</td>
+<td class="py-4 px-4 whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm">
+                24 Oct 2025 <span class="text-outline text-xs block">09:45 GMT+1</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">Khadidja Brahim</div>
+<div class="text-xs text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Farcha, N'Djamena</span>
+</div>
+</td>
+<td class="py-4 px-4 font-mono text-xs text-on-surface-variant whitespace-nowrap">
+                +235 99 45 67 89
+              </td>
+<td class="py-4 px-4 text-right font-medium">120.000 XAF</td>
+<td class="py-4 px-4 text-right text-xs text-secondary font-semibold">Offert</td>
+<td class="py-4 px-4 text-right font-bold text-primary font-headline-sm text-sm">120.000 XAF</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Payé (Encaissé)
+                </span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary transition-colors flex items-center justify-center" onclick="openInvoiceDrawer('FAC-2025-103')" title="Voir Facture A4" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="downloadInvoicePDF('FAC-2025-103')" title="Télécharger PDF" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="printSingleInvoice('FAC-2025-103')" title="Imprimer" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-customer="Fatimé Abdelkerim" data-invoice="FAC-2025-102" data-order="ST-ORD-2025-102" data-status="pending">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-bold">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">description</span>
+<span>#FAC-2025-102</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<a class="text-secondary hover:text-primary underline underline-offset-4 decoration-secondary/30 flex items-center gap-1" href="#" onclick="showQuickToast('Lien vers la commande AD-06: #ST-ORD-2025-102'); return false;">
+<span>#ST-ORD-2025-102</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</td>
+<td class="py-4 px-4 whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm">
+                23 Oct 2025 <span class="text-outline text-xs block">17:15 GMT+1</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">Fatimé Abdelkerim</div>
+<div class="text-xs text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Dembé, N'Djamena</span>
+</div>
+</td>
+<td class="py-4 px-4 font-mono text-xs text-on-surface-variant whitespace-nowrap">
+                +235 63 21 89 00
+              </td>
+<td class="py-4 px-4 text-right font-medium">42.000 XAF</td>
+<td class="py-4 px-4 text-right text-xs text-secondary font-semibold">Offert</td>
+<td class="py-4 px-4 text-right font-bold text-primary font-headline-sm text-sm">42.000 XAF</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                  En attente (COD)
+                </span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary transition-colors flex items-center justify-center" onclick="openInvoiceDrawer('FAC-2025-102')" title="Voir Facture A4" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="downloadInvoicePDF('FAC-2025-102')" title="Télécharger PDF" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="printSingleInvoice('FAC-2025-102')" title="Imprimer" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-customer="Mariam Abakar" data-invoice="FAC-2025-101" data-order="ST-ORD-2025-101" data-status="pending">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-bold">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">description</span>
+<span>#FAC-2025-101</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<a class="text-secondary hover:text-primary underline underline-offset-4 decoration-secondary/30 flex items-center gap-1" href="#" onclick="showQuickToast('Lien vers la commande AD-06: #ST-ORD-2025-101'); return false;">
+<span>#ST-ORD-2025-101</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</td>
+<td class="py-4 px-4 whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm">
+                23 Oct 2025 <span class="text-outline text-xs block">14:02 GMT+1</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">Mariam Abakar</div>
+<div class="text-xs text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Centre-Ville, N'Djamena</span>
+</div>
+</td>
+<td class="py-4 px-4 font-mono text-xs text-on-surface-variant whitespace-nowrap">
+                +235 66 77 88 99
+              </td>
+<td class="py-4 px-4 text-right font-medium">18.500 XAF</td>
+<td class="py-4 px-4 text-right text-xs text-secondary font-semibold">Gratuit</td>
+<td class="py-4 px-4 text-right font-bold text-primary font-headline-sm text-sm">18.500 XAF</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                  En attente (COD)
+                </span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary transition-colors flex items-center justify-center" onclick="openInvoiceDrawer('FAC-2025-101')" title="Voir Facture A4" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="downloadInvoicePDF('FAC-2025-101')" title="Télécharger PDF" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="printSingleInvoice('FAC-2025-101')" title="Imprimer" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-customer="Zara Oumar" data-invoice="FAC-2025-100" data-order="ST-ORD-2025-100" data-status="paid">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-bold">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">description</span>
+<span>#FAC-2025-100</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<a class="text-secondary hover:text-primary underline underline-offset-4 decoration-secondary/30 flex items-center gap-1" href="#" onclick="showQuickToast('Lien vers la commande AD-06: #ST-ORD-2025-100'); return false;">
+<span>#ST-ORD-2025-100</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</td>
+<td class="py-4 px-4 whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm">
+                22 Oct 2025 <span class="text-outline text-xs block">18:40 GMT+1</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-medium text-on-surface">Zara Oumar</div>
+<div class="text-xs text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Chagoua, N'Djamena</span>
+</div>
+</td>
+<td class="py-4 px-4 font-mono text-xs text-on-surface-variant whitespace-nowrap">
+                +235 95 11 22 33
+              </td>
+<td class="py-4 px-4 text-right font-medium">75.000 XAF</td>
+<td class="py-4 px-4 text-right text-xs text-secondary font-semibold">Gratuit</td>
+<td class="py-4 px-4 text-right font-bold text-primary font-headline-sm text-sm">75.000 XAF</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Payé (Encaissé)
+                </span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary transition-colors flex items-center justify-center" onclick="openInvoiceDrawer('FAC-2025-100')" title="Voir Facture A4" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="downloadInvoicePDF('FAC-2025-100')" title="Télécharger PDF" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant transition-colors flex items-center justify-center" onclick="printSingleInvoice('FAC-2025-100')" title="Imprimer" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- State 4: Empty Search State -->
+<div class="hidden p-space-xl flex-col items-center justify-center text-center space-y-3" id="state-empty">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+</div>
+<div class="space-y-1">
+<div class="font-headline-sm text-headline-sm text-primary">Aucune facture trouvée</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Aucun enregistrement ne correspond à vos critères de recherche. Vérifiez l'orthographe du numéro ou réinitialisez les filtres.
+          </p>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-sm" onclick="resetFilters()" type="button">
+          Réinitialiser tous les filtres
+        </button>
+</div>
+<!-- State 5: Skeleton Loading State -->
+<div class="hidden p-space-md space-y-3 animate-pulse" id="state-skeleton">
+<div class="h-10 bg-surface-container-high rounded-lg w-full"></div>
+<div class="h-14 bg-surface-container rounded-lg w-full"></div>
+<div class="h-14 bg-surface-container rounded-lg w-full"></div>
+<div class="h-14 bg-surface-container rounded-lg w-full"></div>
+<div class="h-14 bg-surface-container rounded-lg w-full"></div>
+<div class="h-14 bg-surface-container rounded-lg w-full"></div>
+</div>
+<!-- Pagination Footer -->
+<div class="bg-surface-container-low px-space-md py-3 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-xs font-label-md text-on-surface-variant" id="table-pagination">
+<div class="flex items-center gap-2">
+<span>Affichage de 1 à 5 sur 142 factures</span>
+<span class="text-outline">•</span>
+<span class="text-secondary font-semibold">29 pages au total</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface flex items-center justify-center disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">first_page</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface flex items-center justify-center disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-bold flex items-center justify-center" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex items-center justify-center" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex items-center justify-center" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex items-center justify-center" type="button">29</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-sm">last_page</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Professional Guidance & Sahélien Legal Heritage Note -->
+<footer class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2 pb-space-lg text-xs font-body-sm text-on-surface-variant">
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-1 shadow-sm">
+<div class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">gavel</span>
+<span>Valeur Juridique &amp; Fiscale</span>
+</div>
+<p class="text-outline">
+          Facturation conforme aux arrêtés du Ministère des Finances du Tchad. Archivage numérique des originaux horodatés pendant 10 ans.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-1 shadow-sm">
+<div class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">local_shipping</span>
+<span>Bordereaux de Livraison COD</span>
+</div>
+<p class="text-outline">
+          Toute facture mentionnée "En attente (COD)" est remise en double exemplaire à l'équipe de coursiers express N'Djamena.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-1 shadow-sm">
+<div class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">support_agent</span>
+<span>Assistance Comptable</span>
+</div>
+<p class="text-outline">
+          Pour toute régularisation ou émission d'avoir comptable, contactez la Direction Administrative : direction@soussoutchadleuxury.td.
+        </p>
+</div>
+</footer>
+</div>
+<!-- A4 Slide-Over Drawer Overlay & Container (State 2 & Interactive) -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 transition-opacity opacity-0 pointer-events-none duration-300" id="drawer-backdrop" onclick="closeInvoiceDrawer()"></div>
+<div class="fixed top-0 right-0 h-full w-full max-w-3xl bg-surface z-50 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out" id="invoice-drawer">
+<!-- Drawer Action Bar -->
+<div class="h-16 bg-surface-container-lowest px-space-lg flex items-center justify-between shrink-0 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Prévisualisation Document A4</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Facture Officielle Horodatée</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="downloadInvoicePDF('FAC-2025-104')" type="button">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>PDF A4</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="printSingleInvoice('FAC-2025-104')" type="button">
+<span class="material-symbols-outlined text-sm">print</span>
+<span>Imprimer</span>
+</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="closeInvoiceDrawer()" title="Fermer le tiroir" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable A4 Sheet Viewer -->
+<div class="flex-1 overflow-y-auto p-4 md:p-8 bg-surface-container-low/80 flex justify-center">
+<!-- Authentic A4 Paper Sheet -->
+<article class="w-full max-w-[620px] bg-surface-container-lowest text-tertiary p-8 md:p-10 rounded shadow-md flex flex-col justify-between space-y-6 relative" style="min-height: 870px;">
+<!-- Watermark seal background -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
+<span class="material-symbols-outlined text-[360px] text-primary">verified</span>
+</div>
+<div class="space-y-6 relative z-10">
+<!-- A4 Header: Logo & Store Info -->
+<div class="flex items-start justify-between gap-4 pb-6 border-b border-surface-container">
+<div class="flex items-center gap-3.5">
+<img alt="Soussou TCHAD Imperial Beauty" class="w-16 h-16 rounded-full object-cover shadow-sm bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc31IE_kQJyGjokn2L00620SbO3z1d5WkYPs6w6mF0TF9L5eU0THGAqmB-_b0DBKClrHWQanT43cMAQmvTK-HlMh27ip2ZXeOqEmFCHterrhvVTfJVvU5CT4aimY-Slr3wa2RMEecdyN8yBAP0YAVR4wHjxiN9Dndw2mUO9-XKUPnT8rylU4z1vHzHEswA1u0ypQIMBMTKNO21iv-W5B7oHXG_Dn0u51LtLFfVZ1DKd6FF6FXoCOKGlA"/>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight">SOUSSOU TCHAD</h3>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Imperial Beauty &amp; Parfumerie Sahélienne</div>
+<div class="text-[11px] text-on-surface-variant font-body-sm mt-0.5">
+                  N'Djamena, Quartier Sabangali - République du Tchad<br/>
+                  Tél : +235 66 00 00 00 | RC / NIF : Conforme Régl. Tchad
+                </div>
+</div>
+</div>
+<!-- Invoice Badge & Type -->
+<div class="text-right">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+                FACTURE OFFICIELLE
+              </span>
+<div class="font-headline-sm text-headline-sm text-primary mt-2">#FAC-2025-104</div>
+<div class="text-[11px] text-outline font-label-sm">Émise le : 24 Octobre 2025 • 11:20</div>
+</div>
+</div>
+<!-- Metadata & Client Grid -->
+<div class="grid grid-cols-2 gap-4 bg-surface-container-low/50 p-4 rounded-xl text-xs">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Facturé à (Cliente) :</span>
+<div class="font-headline-sm text-sm font-bold text-primary">Amina Mahamat Hassan</div>
+<div class="text-on-surface-variant">Sabangali, Rue des Jardins, Villa 14</div>
+<div class="text-on-surface-variant">N'Djamena - Tchad</div>
+<div class="font-mono text-outline">+235 66 12 34 56</div>
+</div>
+<div class="space-y-1 text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Références Dossier :</span>
+<div><span class="text-outline">Réf. Commande : </span><span class="font-semibold text-primary font-mono">#ST-ORD-2025-104</span></div>
+<div><span class="text-outline">Mode Expédition : </span><span class="font-semibold">Livraison Coursier Express</span></div>
+<div><span class="text-outline">Zone Tarifaire : </span><span class="font-semibold">Zone 1 (Sabangali / Centre)</span></div>
+<div><span class="text-outline">Devise : </span><span class="font-semibold">Franc CFA (XAF)</span></div>
+</div>
+</div>
+<!-- Historical Products Line Items Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs border-collapse">
+<thead>
+<tr class="bg-surface-container-high/70 text-outline font-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3">Description du Soin / Cosmétique</th>
+<th class="py-2.5 px-2 text-center">Réf</th>
+<th class="py-2.5 px-2 text-center">Qté</th>
+<th class="py-2.5 px-3 text-right">Prix Unit.</th>
+<th class="py-2.5 px-3 text-right">Total HT</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface">
+<!-- Item 1 -->
+<tr>
+<td class="py-3 px-3">
+<div class="font-bold text-primary">Huile Pure de Chébé 100ml</div>
+<div class="text-[11px] text-outline italic">Flacon ambré luxe sérigraphié or • Rituel capillaire ancestral</div>
+</td>
+<td class="py-3 px-2 text-center font-mono text-[11px] text-outline">ST-CHB-100</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-3 text-right font-mono">18.500 XAF</td>
+<td class="py-3 px-3 text-right font-bold text-primary font-mono">18.500 XAF</td>
+</tr>
+<!-- Item 2 -->
+<tr>
+<td class="py-3 px-3">
+<div class="font-bold text-primary">Khomra Royale Prestige 50ml</div>
+<div class="text-[11px] text-outline italic">Édition N'Djamena • Parfum de séduction traditionnel mahamat</div>
+</td>
+<td class="py-3 px-2 text-center font-mono text-[11px] text-outline">ST-KHM-050</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-3 text-right font-mono">35.000 XAF</td>
+<td class="py-3 px-3 text-right font-bold text-primary font-mono">35.000 XAF</td>
+</tr>
+<!-- Item 3 -->
+<tr>
+<td class="py-3 px-3">
+<div class="font-bold text-primary">Rouge à Lèvres Velours Sahélien</div>
+<div class="text-[11px] text-outline italic">Teinte Rouge Ennedi • Fini velours mat longue tenue</div>
+</td>
+<td class="py-3 px-2 text-center font-mono text-[11px] text-outline">ST-LIP-ENN</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-3 text-right font-mono">12.000 XAF</td>
+<td class="py-3 px-3 text-right font-bold text-primary font-mono">12.000 XAF</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Financial Calculation Breakdown -->
+<div class="flex flex-col sm:flex-row justify-between items-start gap-4 pt-2">
+<!-- Payment Instruction / Status Banner -->
+<div class="bg-surface-container-high/40 p-3.5 rounded-xl text-xs space-y-1.5 flex-1 max-w-sm">
+<div class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">payments</span>
+<span>Modalités de Règlement</span>
+</div>
+<div class="text-on-surface-variant leading-relaxed">
+<strong class="text-primary">Mode :</strong> Paiement à la Livraison (Cash on Delivery - COD)<br/>
+<strong class="text-primary">Statut :</strong> <span class="text-secondary font-semibold">En attente d'encaissement coursier</span><br/>
+                Le règlement s'effectue en espèces lors de la remise en main propre.
+              </div>
+</div>
+<!-- Totals Box -->
+<div class="w-full sm:w-64 space-y-1.5 text-xs text-on-surface">
+<div class="flex justify-between py-1 border-b border-surface-container">
+<span class="text-outline">Sous-total HT :</span>
+<span class="font-mono font-medium">65.000 XAF</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-container">
+<span class="text-outline">Remise commerciale :</span>
+<span class="font-mono text-outline">0 XAF</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-container">
+<span class="text-outline">Frais de livraison (Sabangali) :</span>
+<span class="font-mono text-secondary font-semibold">0 XAF (Offert &gt; 50k)</span>
+</div>
+<div class="flex justify-between py-2 bg-surface-container-high/60 px-3 rounded-lg mt-2 items-center">
+<span class="font-label-md text-label-md font-bold text-primary uppercase">TOTAL NET TTC :</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">65.000 XAF</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Document Footer / Legal Seals -->
+<div class="pt-6 border-t border-surface-container text-[11px] text-outline text-center space-y-2 relative z-10">
+<div class="flex items-center justify-center gap-3">
+<span class="flex items-center gap-1 text-secondary font-label-sm uppercase font-semibold">
+<span class="material-symbols-outlined text-sm">lock</span>
+              Document Certifié Conforme
+            </span>
+<span>•</span>
+<span>Système Intégré Soussou TCHAD v2.4</span>
+<span>•</span>
+<span class="font-mono">HASH: 9A4F-C025-TD88</span>
+</div>
+<p class="leading-relaxed text-on-surface-variant">
+            Ce document comptable immuable est scellé automatiquement lors de la validation du panier. Il fait foi de justificatif d'achat officiel. Tout retour d'article nécessite la présentation du présent document sous 7 jours ouvrés.
+          </p>
+</div>
+</article>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="h-16 bg-surface-container-lowest px-space-lg flex items-center justify-between shrink-0 shadow-inner">
+<a class="text-secondary hover:text-primary font-label-md text-label-md flex items-center gap-1.5 underline underline-offset-4" href="#" onclick="showQuickToast('Redirection vers la commande liée #ST-ORD-2025-104 (AD-06)'); return false;">
+<span class="material-symbols-outlined text-base">receipt</span>
+<span>Ouvrir Commande AD-06</span>
+</a>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" onclick="closeInvoiceDrawer()" type="button">
+          Fermer
+        </button>
+<button class="px-5 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-primary-container transition-all flex items-center gap-1.5" onclick="downloadInvoicePDF('FAC-2025-104')" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Télécharger Facture</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-6 right-6 bg-surface-container-lowest text-on-surface p-4 rounded-xl shadow-xl z-50 flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0" id="toast-icon">
+<span class="material-symbols-outlined text-base">info</span>
+</div>
+<div class="text-xs font-label-md" id="toast-text">Notification système</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    // State management and simulator logic
+    function setViewState(state) {
+      // Update Simulator buttons style
+      const btnMap = {
+        'default': 'btn-state-default',
+        'preview': 'btn-state-preview',
+        'paid': 'btn-state-paid',
+        'empty': 'btn-state-empty',
+        'skeleton': 'btn-state-skeleton'
+      };
+
+      Object.values(btnMap).forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) {
+          btn.className = "px-3 py-1 rounded-full text-xs font-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all";
+        }
+      });
+
+      const activeBtn = document.getElementById(btnMap[state]);
+      if (activeBtn) {
+        activeBtn.className = "px-3 py-1 rounded-full text-xs font-label-md bg-primary text-on-primary transition-all shadow-sm";
+      }
+
+      // Hide all states
+      const tableContainer = document.getElementById('table-container');
+      const tablePagination = document.getElementById('table-pagination');
+      const emptyState = document.getElementById('state-empty');
+      const skeletonState = document.getElementById('state-skeleton');
+      const drawer = document.getElementById('invoice-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+
+      tableContainer.classList.remove('hidden');
+      tablePagination.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      skeletonState.classList.add('hidden');
+
+      if (state === 'default') {
+        closeInvoiceDrawer();
+        resetFilters();
+      } else if (state === 'preview') {
+        openInvoiceDrawer('FAC-2025-104');
+      } else if (state === 'paid') {
+        closeInvoiceDrawer();
+        document.getElementById('payment-filter').value = 'paid';
+        handlePaymentFilter('paid');
+      } else if (state === 'empty') {
+        closeInvoiceDrawer();
+        tableContainer.classList.add('hidden');
+        tablePagination.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+        document.getElementById('visible-count').textContent = '0';
+      } else if (state === 'skeleton') {
+        closeInvoiceDrawer();
+        tableContainer.classList.add('hidden');
+        tablePagination.classList.add('hidden');
+        skeletonState.classList.remove('hidden');
+      }
+    }
+
+    // Slide-over Drawer Controls
+    function openInvoiceDrawer(invoiceId) {
+      const drawer = document.getElementById('invoice-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop.classList.add('opacity-100');
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeInvoiceDrawer() {
+      const drawer = document.getElementById('invoice-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      if (backdrop && drawer) {
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100');
+        drawer.classList.add('translate-x-full');
+        drawer.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Search and Filtering
+    function handleSearch(term) {
+      const query = term.toLowerCase().trim();
+      const rows = document.querySelectorAll('#invoice-tbody tr');
+      let visible = 0;
+
+      rows.forEach(row => {
+        const inv = (row.dataset.invoice || '').toLowerCase();
+        const cust = (row.dataset.customer || '').toLowerCase();
+        const ord = (row.dataset.order || '').toLowerCase();
+
+        if (inv.includes(query) || cust.includes(query) || ord.includes(query)) {
+          row.style.display = '';
+          visible++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      document.getElementById('visible-count').textContent = visible;
+
+      const emptyState = document.getElementById('state-empty');
+      const tableContainer = document.getElementById('table-container');
+      const tablePagination = document.getElementById('table-pagination');
+
+      if (visible === 0) {
+        tableContainer.classList.add('hidden');
+        tablePagination.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        tableContainer.classList.remove('hidden');
+        tablePagination.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    function handlePaymentFilter(status) {
+      const rows = document.querySelectorAll('#invoice-tbody tr');
+      const tag = document.getElementById('active-status-tag');
+      const tagText = document.getElementById('active-status-text');
+      let visible = 0;
+
+      if (status === 'all') {
+        tag.classList.add('hidden');
+        tag.classList.remove('flex');
+      } else {
+        tag.classList.remove('hidden');
+        tag.classList.add('flex');
+        tagText.textContent = status === 'paid' ? 'Payé / Encaissé' : 'En attente COD';
+      }
+
+      rows.forEach(row => {
+        if (status === 'all' || row.dataset.status === status) {
+          row.style.display = '';
+          visible++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      document.getElementById('visible-count').textContent = visible;
+    }
+
+    function resetPaymentFilter() {
+      document.getElementById('payment-filter').value = 'all';
+      handlePaymentFilter('all');
+    }
+
+    function resetFilters() {
+      document.getElementById('invoice-search').value = '';
+      document.getElementById('payment-filter').value = 'all';
+      document.getElementById('date-filter').value = 'current-month';
+      handleSearch('');
+      handlePaymentFilter('all');
+      showQuickToast('Filtres réinitialisés au registre complet.');
+    }
+
+    // Feedback notifications and simulated actions
+    function triggerExportNotice() {
+      showQuickToast("Génération du registre légal (CSV/Excel) en cours... Téléchargement prêt.");
+    }
+
+    function downloadInvoicePDF(invoiceId) {
+      showQuickToast("Téléchargement du duplicata certifié A4 (#" + invoiceId + ".pdf) initié.");
+    }
+
+    function printSingleInvoice(invoiceId) {
+      showQuickToast("Envoi de la facture #" + invoiceId + " vers l'imprimante thermique / A4.");
+    }
+
+    function showQuickToast(msg) {
+      const toast = document.getElementById('toast-notification');
+      const text = document.getElementById('toast-text');
+      if (toast && text) {
+        text.textContent = msg;
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-20', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+    }
+
+    // Close drawer on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeInvoiceDrawer();
+      }
+    });
+  </script>
+</div></main></div></body></html>

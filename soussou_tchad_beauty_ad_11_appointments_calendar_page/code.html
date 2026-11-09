@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#f3ded8", "surface": "#fff8f6", "on-primary-container": "#d9808e", "on-secondary": "#ffffff", "on-tertiary-container": "#a99691", "secondary-fixed-dim": "#edbe85", "surface-bright": "#fff8f6", "surface-variant": "#f3ded8", "tertiary": "#261a17", "surface-container-high": "#f9e4de", "primary-fixed-dim": "#ffb2bc", "secondary-fixed": "#ffddb5", "tertiary-container": "#3c2f2b", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1800", "secondary": "#7b5827", "surface-tint": "#934754", "primary-fixed": "#ffd9dd", "primary": "#3f0515", "on-tertiary-fixed": "#241916", "outline-variant": "#d8c1c3", "primary-container": "#5b1b29", "surface-container-low": "#fff1ed", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#52443f", "inverse-primary": "#ffb2bc", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-fixed": "#f4ded8", "inverse-surface": "#3a2e2a", "on-surface-variant": "#534344", "on-surface": "#241916", "on-secondary-fixed-variant": "#604012", "on-primary": "#ffffff", "on-primary-fixed": "#3d0414", "on-primary-fixed-variant": "#76303d", "background": "#fff8f6", "secondary-container": "#ffcf94", "surface-container-lowest": "#ffffff", "outline": "#867274", "surface-container": "#ffe9e4", "inverse-on-surface": "#ffede8", "on-background": "#241916", "on-secondary-container": "#795726", "surface-dim": "#ebd6d0", "tertiary-fixed-dim": "#d7c2bc" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.75rem", "space-xl": "3rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Playfair Display" ], "body-md": [ "Manrope" ], "display-hero-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "body-sm": [ "Manrope" ], "title-md": [ "Playfair Display" ], "label-sm": [ "Manrope" ], "label-lg": [ "Manrope" ], "headline-lg": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "body-lg": [ "Manrope" ], "headline-md": [ "Playfair Display" ], "label-md": [ "Manrope" ] }, "fontSize": { "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "50px", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="p-space-md"><div class="flex items-center gap-space-sm pb-space-lg pt-space-xs px-space-xs"><img alt="Logo Soussou TCHAD" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(91,27,41,0.15)] ring-1 ring-secondary/30" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-tight">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Imperial Beauty</span></div></div><nav class="flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Vue Globale</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-lg text-label-lg">Tableau de Bord</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Catalogue &amp; Stock</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="produits" href="#"><span class="material-symbols-outlined text-xl">inventory_2</span><span class="font-label-lg text-label-lg">Produits</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-xl">category</span><span class="font-label-lg text-label-lg">Catégories</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gestion-de-stock" href="#"><span class="material-symbols-outlined text-xl">warehouse</span><span class="font-label-lg text-label-lg">Gestion de Stock</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mouvements-stock" href="#"><span class="material-symbols-outlined text-xl">sync_alt</span><span class="font-label-lg text-label-lg">Mouvements Stock</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Ventes &amp; Relation Client</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="commandes" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span class="font-label-lg text-label-lg">Commandes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clients" href="#"><span class="material-symbols-outlined text-xl">group</span><span class="font-label-lg text-label-lg">Clients</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="factures" href="#"><span class="material-symbols-outlined text-xl">receipt_long</span><span class="font-label-lg text-label-lg">Factures</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Institut &amp; Beauté</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="soins-et-rituels" href="#"><span class="material-symbols-outlined text-xl">spa</span><span class="font-label-lg text-label-lg">Soins &amp; Rituels</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portfolio" href="#"><span class="material-symbols-outlined text-xl">auto_awesome</span><span class="font-label-lg text-label-lg">Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rendez-vous" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="font-label-lg text-label-lg">Rendez-vous (Agenda)</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Administration</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rapports-et-audit" href="#"><span class="material-symbols-outlined text-xl">assessment</span><span class="font-label-lg text-label-lg">Rapports &amp; Audit</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="utilisateurs-et-droits" href="#"><span class="material-symbols-outlined text-xl">admin_panel_settings</span><span class="font-label-lg text-label-lg">Utilisateurs &amp; Droits</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuration-boutique" href="#"><span class="material-symbols-outlined text-xl">tune</span><span class="font-label-lg text-label-lg">Configuration Boutique</span></a></div></nav></div><div class="p-space-md border-t border-surface-container"><div class="bg-surface-container px-space-sm py-space-sm rounded-lg flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant">Soussou Suite v2.4 • Tchad</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="relative flex-1 max-w-lg"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)]" placeholder="Rechercher une réalisation, rituel, client..." type="search"/></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><select aria-label="Sélectionner la langue" class="appearance-none bg-surface-container-lowest py-2 pl-3 pr-8 rounded-lg font-label-md text-label-md text-on-surface font-medium outline-none cursor-pointer focus:ring-1 focus:ring-secondary shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><option value="fr">Français</option><option value="ar">العربية</option><option value="en">English</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 text-on-surface-variant text-base">expand_more</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-[0_1px_4px_rgba(0,0,0,0.02)]" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary-container rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Mme Soussou</span><span class="font-label-sm text-label-sm text-secondary font-medium">Lead Artist &amp; DG</span></div></div></div></header><main class="relative pt-20 w-full px-gutter bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- MVP Interactive State Simulator Bar -->
+<div class="w-full bg-surface-container-high/90 backdrop-blur-md rounded-xl p-space-sm shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-base">tune</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Simulateur d'États MVP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">AD-11 • Tests des flux d'agenda &amp; gardes-fous</span>
+</div>
+</div>
+<!-- Simulator Triggers -->
+<div class="flex flex-wrap items-center gap-1.5" id="simulator-pills">
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1" id="btn-state-week" onclick="switchSimulatorState('week')">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+        1. Vue Semaine
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-drawer" onclick="switchSimulatorState('drawer')">
+        2. Tiroir #BK-2025-089
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-conflict" onclick="switchSimulatorState('conflict')">
+        3. Modal Conflit
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-deposit" onclick="switchSimulatorState('deposit')">
+        4. Saisie Acompte
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-availability" onclick="switchSimulatorState('availability')">
+        5. Disponibilités
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-month" onclick="switchSimulatorState('month')">
+        6. Vue Mois
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-list" onclick="switchSimulatorState('list')">
+        7. Vue Liste
+      </button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1" id="btn-state-skeleton" onclick="switchSimulatorState('skeleton')">
+        8. Chargement
+      </button>
+</div>
+</div>
+<!-- Page Header & Action Controls -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Institut &amp; Salon Nuptial VIP</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Module AD-11</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">Vérification Conflits Active</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Calendrier des Rendez-vous</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Gestion de l'agenda, disponibilités du salon, suivi rigoureux des acomptes et validation des prestations Maquillage Mariée &amp; Soins Sahéliens.
+      </p>
+</div>
+<!-- Right Controls: View Toggle + CTA -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg flex items-center gap-2" onclick="openAvailabilityModal()">
+<span class="material-symbols-outlined text-lg text-secondary">tune</span>
+<span>Gérer Disponibilités</span>
+</button>
+<button class="px-5 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary hover:shadow-md transition-all font-label-lg text-label-lg flex items-center gap-2 shadow-sm" onclick="openNewBookingModal()">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Nouveau Rendez-vous</span>
+</button>
+</div>
+</div>
+<!-- KPI Cards Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Card 1: Total -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Total Mensuel</span>
+<span class="material-symbols-outlined text-secondary text-xl">event_available</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-primary font-semibold">34</span>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-secondary">trending_up</span>
+<span class="font-body-sm text-body-sm">+18% vs Septembre</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Pending (Action Req) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-secondary-fixed/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+          En Attente
+        </span>
+<span class="material-symbols-outlined text-secondary text-xl">pending_actions</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-secondary font-semibold">04</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Action Requise</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">À confirmer sous 24h</p>
+</div>
+</div>
+<!-- Card 3: Confirmed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-bold">Confirmés</span>
+<span class="material-symbols-outlined text-primary-container text-xl">verified</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-semibold">22</span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold">Verrouillés</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Acomptes validés (0 doublon)</p>
+</div>
+</div>
+<!-- Card 4: Completed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Complétés</span>
+<span class="material-symbols-outlined text-outline text-xl">task_alt</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">06</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Honorés sans retard</p>
+</div>
+</div>
+<!-- Card 5: Upcoming 48h -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col justify-between col-span-2 md:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Prochaines 48h</span>
+<span class="material-symbols-outlined text-primary text-xl">bolt</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-headline-md text-headline-md text-primary font-semibold">07</span>
+<p class="font-body-sm text-body-sm text-primary/80 mt-1">4 Mariées VIP en préparation</p>
+</div>
+</div>
+</div>
+<!-- Calendar Bar: Date Navigation & View Mode Selectors -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left: Navigation and Date range -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors" onclick="alert('Navigation: Semaine précédente')" title="Semaine précédente">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="px-3 py-1 font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-highest rounded transition-colors" onclick="alert('Retour à aujourd\'hui : Vendredi 24 Octobre 2025')">
+          Aujourd'hui
+        </button>
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors" onclick="alert('Navigation: Semaine suivante')" title="Semaine suivante">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary">Octobre 2025</span>
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/50 font-label-sm text-label-sm font-bold text-on-secondary-fixed uppercase tracking-wider">
+          Semaine 43 • 20 au 26 Octobre
+        </span>
+</div>
+</div>
+<!-- Center/Right: View Toggle (Month, Week, Day, List) -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="px-3.5 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-view-month" onclick="switchView('month')">
+        Mois
+      </button>
+<button class="px-3.5 py-1.5 rounded font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all" id="tab-view-week" onclick="switchView('week')">
+        Semaine
+      </button>
+<button class="px-3.5 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-view-day" onclick="switchView('day')">
+        Jour
+      </button>
+<button class="px-3.5 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-view-list" onclick="switchView('list')">
+        Vue Liste
+      </button>
+</div>
+<!-- Quick Filter tags -->
+<div class="hidden 2xl:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-primary-container"></span> Confirmé
+      </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-secondary-fixed-dim"></span> En Attente
+      </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-surface-container-highest"></span> Pause/Fermé
+      </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-surface-dim"></span> Terminé
+      </span>
+</div>
+</div>
+<!-- VIEW 1: WEEK VIEW (DEFAULT & CENTRAL DISPLAY) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="view-week-container">
+<!-- Week Header (Days) -->
+<div class="grid grid-cols-8 bg-surface-container-low border-b border-surface-container text-center sticky top-0 z-20">
+<!-- Empty Slot for Time Axis -->
+<div class="py-3 px-2 flex flex-col justify-center items-center font-label-sm text-label-sm uppercase text-outline">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Heure</span>
+</div>
+<!-- Mon 20 -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Lun</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">20</span>
+</div>
+<!-- Tue 21 -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Mar</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">21</span>
+</div>
+<!-- Wed 22 -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Mer</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">22</span>
+</div>
+<!-- Thu 23 -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Jeu</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">23</span>
+</div>
+<!-- Fri 24 (TODAY - HIGHLIGHTED) -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5 bg-primary-container text-on-primary rounded-t-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-widest text-secondary-fixed">Aujourd'hui</span>
+<span class="font-title-md text-title-md font-bold">Ven 24</span>
+</div>
+<!-- Sat 25 (Peak Day) -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5 bg-surface-container-high/60">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Sam</span>
+<span class="font-title-md text-title-md text-primary font-semibold">25</span>
+</div>
+<!-- Sun 26 -->
+<div class="py-3 px-1 flex flex-col items-center gap-0.5 opacity-80">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Dim</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-medium">26</span>
+</div>
+</div>
+<!-- Calendar Grid Body (08:00 - 20:00) -->
+<div class="relative overflow-x-auto min-w-[960px] max-h-[720px] overflow-y-auto">
+<!-- Time Slot Rows -->
+<div class="grid grid-cols-8 relative divide-x divide-surface-container/60">
+<!-- Column 1: Time Labels -->
+<div class="flex flex-col bg-surface-container-lowest/50 text-right pr-3 font-label-sm text-label-sm text-on-surface-variant select-none">
+<div class="h-16 flex items-start justify-end pt-1">08:00</div>
+<div class="h-16 flex items-start justify-end pt-1 font-semibold text-primary">09:00</div>
+<div class="h-16 flex items-start justify-end pt-1">10:00</div>
+<div class="h-16 flex items-start justify-end pt-1">11:00</div>
+<div class="h-16 flex items-start justify-end pt-1">12:00</div>
+<div class="h-16 flex items-start justify-end pt-1 text-secondary">13:00</div>
+<div class="h-16 flex items-start justify-end pt-1">14:00</div>
+<div class="h-16 flex items-start justify-end pt-1">15:00</div>
+<div class="h-16 flex items-start justify-end pt-1">16:00</div>
+<div class="h-16 flex items-start justify-end pt-1">17:00</div>
+<div class="h-16 flex items-start justify-end pt-1">18:00</div>
+<div class="h-16 flex items-start justify-end pt-1 font-semibold text-primary">19:00</div>
+<div class="h-16 flex items-start justify-end pt-1">20:00</div>
+</div>
+<!-- Column 2: Lundi 20 -->
+<div class="relative h-[832px] bg-gradient-to-b from-surface-container-high/40 via-transparent to-surface-container-high/30">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 3: Mardi 21 -->
+<div class="relative h-[832px]">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event: Consultation Teint -->
+<div class="absolute top-[160px] left-1 right-1 h-[64px] bg-surface-container-low rounded-lg p-2 shadow-sm border-l-4 border-l-secondary flex flex-col justify-between cursor-pointer hover:shadow-md transition-shadow" onclick="openDetailsDrawer()">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary truncate">Essai Maquillage Noces</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">10:30</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Néhémie G. • 45 min</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 4: Mercredi 22 -->
+<div class="relative h-[832px]">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event: Soin Chebé VIP -->
+<div class="absolute top-[480px] left-1 right-1 h-[96px] bg-surface-container-high rounded-lg p-2.5 shadow-sm border-l-4 border-l-primary-container flex flex-col justify-between cursor-pointer hover:shadow-md transition-shadow" onclick="openDetailsDrawer()">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary truncate">Rituel Capillaire Chébé</span>
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm">Terminé</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface truncate mt-1">Zara Moussa</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>15:30 - 17:00</span>
+<span>Cabine 2</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 5: Jeudi 23 -->
+<div class="relative h-[832px]">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event Completed: Atelier Privé -->
+<div class="absolute top-[128px] left-1 right-1 h-[128px] bg-surface-dim/70 rounded-lg p-2.5 shadow-sm border-l-4 border-l-outline flex flex-col justify-between cursor-pointer" onclick="openDetailsDrawer()">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface truncate">Atelier Auto-Maquillage</span>
+<span class="px-1.5 py-0.5 rounded bg-outline text-surface-container-lowest font-label-sm text-label-sm">Complété</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Groupe VIP (3 pers)</div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>10:00 - 12:00 (2h)</span>
+<span>Mme Soussou</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 6: Vendredi 24 (TODAY - RICH ACTIVE SLOTS) -->
+<div class="relative h-[832px] bg-primary/5">
+<!-- Time line guide current hour indicator (11:15) -->
+<div class="absolute top-[208px] left-0 right-0 z-10 flex items-center pointer-events-none">
+<span class="w-2.5 h-2.5 rounded-full bg-error -ml-1"></span>
+<div class="w-full h-0.5 bg-error/70"></div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event 1: Sublimation Mariée Impériale (#BK-2025-089) - 09:30 to 12:30 (3 hours = 192px) -->
+<div class="absolute top-[96px] left-1 right-1 h-[192px] bg-surface-container-lowest rounded-xl p-3 shadow-md border-l-4 border-l-primary-container flex flex-col justify-between cursor-pointer hover:ring-2 hover:ring-secondary/50 transition-all z-10" onclick="openDetailsDrawer()">
+<div>
+<div class="flex items-start justify-between gap-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">
+                  CONFIRMÉ
+                </span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">#BK-2025-089</span>
+</div>
+<div class="font-title-md text-title-md text-primary mt-1.5 leading-snug">Sublimation Mariée Impériale</div>
+<div class="flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-sm text-secondary">person</span>
+<span class="font-medium">Amina Mahamat Hassan</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-2 border-t border-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">schedule</span>
+                  09:30 - 12:30 (3h00)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">meeting_room</span>
+                  Salon VIP
+                </span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Acompte Reçu</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">50.000 XAF</span>
+</div>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Unavailable Block (13:00 - 14:00) -->
+<div class="absolute top-[320px] left-1 right-1 h-[64px] bg-surface-container-highest/60 rounded-lg p-2 shadow-inner border-l-4 border-l-outline flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base">restaurant</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Pause &amp; Réassort Trousses</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">13:00 - 14:00 (Verrouillé)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-sm">lock</span>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event 2: Gala Prestige & Teint Sculpté - En Attente (14:00 - 15:15 = 80px) -->
+<div class="absolute top-[384px] left-1 right-1 h-[80px] bg-secondary-fixed/30 rounded-xl p-2.5 shadow-sm border-l-4 border-l-secondary-fixed-dim flex flex-col justify-between cursor-pointer hover:bg-secondary-fixed/40 transition-all" onclick="openConflictModal()">
+<div class="flex items-start justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-fixed-dim text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                EN ATTENTE
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">14:00 - 15:15</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div>
+<span class="font-label-md text-label-md font-bold text-primary block truncate">Gala Prestige &amp; Teint</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Khadidja Brahim (#092)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-xs">À Domicile</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event 3: Rituel Henné & Khomra (16:30 - 18:30 = 128px) -->
+<div class="absolute top-[544px] left-1 right-1 h-[128px] bg-surface-container-lowest rounded-xl p-3 shadow-sm border-l-4 border-l-primary-container flex flex-col justify-between cursor-pointer hover:shadow-md transition-shadow" onclick="openDetailsDrawer()">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">CONFIRMÉ</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">16:30 - 18:30</span>
+</div>
+<div class="font-title-md text-title-md text-primary mt-1 truncate">Rituel Henné &amp; Khomra</div>
+<div class="font-body-sm text-body-sm text-on-surface truncate">Fatimé Abdelkerim (#094)</div>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">local_florist</span>
+                Parfumerie Tchadienne
+              </span>
+<span class="font-semibold text-secondary">Salon VIP</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 7: Samedi 25 (Peak Wedding Day) -->
+<div class="relative h-[832px] bg-secondary-fixed/5">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event 4: Mariée Royale Kanem VIP (10:00 - 13:00 = 192px) -->
+<div class="absolute top-[128px] left-1 right-1 h-[192px] bg-surface-container-lowest rounded-xl p-3 shadow-md border-l-4 border-l-primary-container flex flex-col justify-between cursor-pointer hover:shadow-lg transition-all" onclick="openDetailsDrawer()">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">CONFIRMÉ VIP</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">10:00 - 13:00</span>
+</div>
+<div class="font-title-md text-title-md text-primary mt-1.5 font-bold">Mariée Royale Kanem</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-0.5">Hadjé Halimé (#095)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Prestation maquillage grand apparat, parure or &amp; voile traditionnel.</p>
+</div>
+<div class="pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Hilton N'Djamena</span>
+<span class="text-primary font-bold">180.000 XAF</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Event 5: Soin Capillaire Chébé Profond (15:00 - 16:30 = 96px) -->
+<div class="absolute top-[448px] left-1 right-1 h-[96px] bg-secondary-fixed/25 rounded-xl p-2.5 shadow-sm border-l-4 border-l-secondary flex flex-col justify-between cursor-pointer hover:bg-secondary-fixed/35 transition-all" onclick="openConflictModal()">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">EN ATTENTE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">15:00 - 16:30</span>
+</div>
+<div class="font-title-md text-title-md text-primary truncate">Soin Capillaire Chébé</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Maryam D.</span>
+<span class="text-secondary font-semibold">Acompte en attente</span>
+</div>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+<!-- Column 8: Dimanche 26 (Fermeture Après-midi) -->
+<div class="relative h-[832px] bg-surface-container-high/30">
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<!-- Block: Fermé à partir de 13:00 -->
+<div class="absolute top-[320px] left-1 right-1 bottom-0 bg-surface-container-highest/80 rounded-t-lg p-3 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-outline text-2xl">event_busy</span>
+<span class="font-label-md text-label-md font-bold text-on-surface mt-1">Fermeture Hebdomadaire</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant max-w-[100px]">Repos de l'équipe Soussou</span>
+</div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+<div class="h-16 border-b border-dashed border-surface-container/70"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: MONTH VIEW CONTAINER (Hidden by default, triggered by toggle/state simulator) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm" id="view-month-container">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<h2 class="font-title-md text-title-md text-primary">Vue Mensuelle • Octobre 2025 (34 Rendez-vous)</h2>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Taux d'occupation salon : 82%</span>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center font-label-sm text-label-sm uppercase font-bold text-on-surface-variant py-2">
+<div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
+</div>
+<!-- 5 Weeks Month Grid -->
+<div class="grid grid-cols-7 gap-2">
+<!-- Days 1-5 (Previous or beginning) -->
+<div class="h-24 bg-surface-container-low/40 rounded-lg p-2 text-left opacity-40">
+<span class="font-body-sm text-body-sm">29</span>
+</div>
+<div class="h-24 bg-surface-container-low/40 rounded-lg p-2 text-left opacity-40">
+<span class="font-body-sm text-body-sm">30</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-semibold">1</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm truncate">2 RDV Conf.</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-semibold">2</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm truncate">1 Soin Chébé</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-semibold">3</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm truncate">Mariée VIP</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-secondary">4</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm truncate">3 Mariées</span>
+</div>
+<div class="h-24 bg-surface-container-high/30 rounded-lg p-2 text-left">
+<span class="font-body-sm text-body-sm text-outline">5</span>
+</div>
+<!-- Mid month rows representation -->
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">6</span><span class="font-label-sm text-label-sm text-on-surface-variant">1 RDV</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">7</span><span class="font-label-sm text-label-sm text-on-surface-variant">2 RDV</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">8</span><span class="font-label-sm text-label-sm text-on-surface-variant">Libre</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">9</span><span class="font-label-sm text-label-sm text-on-surface-variant">1 RDV</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">10</span><span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm truncate">Mariée</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold text-secondary">11</span><span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm truncate">4 Mariées VIP</span></div>
+<div class="h-24 bg-surface-container-high/30 rounded-lg p-2 text-left"><span class="font-body-sm text-body-sm text-outline">12</span></div>
+<!-- Current Week (Days 20 - 26) -->
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">20</span><span class="font-label-sm text-label-sm text-on-surface-variant">1 RDV</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">21</span><span class="font-label-sm text-label-sm text-on-surface-variant">1 Essai</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">22</span><span class="font-label-sm text-label-sm text-on-surface-variant">2 Soins</span></div>
+<div class="h-24 bg-surface-container-lowest rounded-lg p-2 text-left shadow-xs flex flex-col justify-between"><span class="font-body-sm text-body-sm font-semibold">23</span><span class="font-label-sm text-label-sm text-on-surface-variant">1 Atelier</span></div>
+<div class="h-24 bg-primary-container/10 ring-2 ring-primary-container rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-bold text-primary">24 (Auj)</span>
+<div class="flex flex-col gap-0.5">
+<span class="px-1 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm truncate">Impériale VIP</span>
+<span class="px-1 py-0.5 rounded bg-secondary-fixed-dim font-label-sm text-label-sm truncate">Gala (Attente)</span>
+</div>
+</div>
+<div class="h-24 bg-secondary-fixed/20 rounded-lg p-2 text-left shadow-xs flex flex-col justify-between">
+<span class="font-body-sm text-body-sm font-bold text-secondary">25</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm truncate">Mariée Kanem</span>
+</div>
+<div class="h-24 bg-surface-container-high/30 rounded-lg p-2 text-left"><span class="font-body-sm text-body-sm text-outline">26</span><span class="font-label-sm text-label-sm text-outline">Fermé</span></div>
+</div>
+</div>
+<!-- VIEW 3: LIST / TABLE VIEW CONTAINER (Hidden by default) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="view-list-container">
+<div class="p-space-md border-b border-surface-container flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-primary">Toutes les Réservations Récentes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registre complet incluant statut de la séance et validation comptable de l'acompte.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-base">filter_list</span>
+          Filtrer
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-base">download</span>
+          Exporter
+        </button>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<tr>
+<th class="py-3 px-4">Code &amp; Prestation</th>
+<th class="py-3 px-4">Cliente &amp; Contact</th>
+<th class="py-3 px-4">Date &amp; Horaire</th>
+<th class="py-3 px-4">Lieu</th>
+<th class="py-3 px-4">Statut Prestation</th>
+<th class="py-3 px-4">Acompte (Statut Bancaire)</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<span class="font-label-sm text-label-sm text-secondary font-bold">#BK-2025-089</span>
+<div class="font-semibold text-primary">Sublimation Mariée Impériale</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium text-on-surface">Amina Mahamat Hassan</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">+235 66 12 34 56</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium">Ven 24 Oct 2025</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">09:30 - 12:30 (3h)</div>
+</td>
+<td class="py-3 px-4">Salon VIP Sabangali</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">Confirmé</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+                50.000 XAF (Réglé)
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Solde: 70.000 XAF</span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-primary hover:bg-surface-container-highest font-label-md text-label-md" onclick="openDetailsDrawer()">Détails</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<span class="font-label-sm text-label-sm text-secondary font-bold">#BK-2025-092</span>
+<div class="font-semibold text-primary">Gala Prestige &amp; Teint Sculpté</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium text-on-surface">Khadidja Brahim</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">+235 99 44 22 11</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium">Ven 24 Oct 2025</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">14:00 - 15:15 (75 min)</div>
+</td>
+<td class="py-3 px-4">À Domicile (Sabangali)</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">En Attente</span>
+</td>
+<td class="py-3 px-4">
+<div class="text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">hourglass_top</span>
+                Non Encaissé
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acompte requis: 25.000 XAF</span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-primary hover:bg-surface-container-highest font-label-md text-label-md" onclick="openConflictModal()">Vérifier</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<span class="font-label-sm text-label-sm text-secondary font-bold">#BK-2025-095</span>
+<div class="font-semibold text-primary">Mariée Royale Kanem VIP</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium text-on-surface">Hadjé Halimé</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">+235 66 00 99 88</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-medium">Sam 25 Oct 2025</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">10:00 - 13:00 (3h)</div>
+</td>
+<td class="py-3 px-4">Suite Nuptiale Hilton</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">Confirmé</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+                80.000 XAF (Réglé)
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Solde: 100.000 XAF</span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-primary hover:bg-surface-container-highest font-label-md text-label-md" onclick="openDetailsDrawer()">Détails</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- VIEW 4: SKELETON LOADING VIEW (Triggered via state simulator) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm animate-pulse flex flex-col gap-space-md" id="view-skeleton-container">
+<div class="flex items-center justify-between">
+<div class="w-1/3 h-7 bg-surface-container-highest rounded"></div>
+<div class="w-1/4 h-7 bg-surface-container-highest rounded"></div>
+</div>
+<div class="grid grid-cols-7 gap-3">
+<div class="h-10 bg-surface-container-high rounded"></div>
+<div class="h-10 bg-surface-container-high rounded"></div>
+<div class="h-10 bg-surface-container-high rounded"></div>
+<div class="h-10 bg-surface-container-high rounded"></div>
+<div class="h-10 bg-surface-container-highest rounded"></div>
+<div class="h-10 bg-surface-container-high rounded"></div>
+<div class="h-10 bg-surface-container-high rounded"></div>
+</div>
+<div class="grid grid-cols-7 gap-3 h-96">
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+<div class="bg-surface-container rounded-lg p-2"></div>
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+<div class="bg-surface-container-low rounded-lg p-2"></div>
+</div>
+</div>
+<!-- SLIDE-OVER APPOINTMENT DETAILS DRAWER (#BK-2025-089) -->
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 transition-opacity hidden opacity-0" id="appointment-drawer-backdrop" onclick="closeDetailsDrawer()"></div>
+<!-- Drawer Panel -->
+<aside class="fixed top-0 right-0 h-screen w-full max-w-lg bg-surface-container-lowest z-50 shadow-2xl flex flex-col justify-between transition-transform duration-300 translate-x-full overflow-hidden" id="appointment-drawer-panel">
+<!-- Drawer Header -->
+<div class="p-space-md bg-surface-container-low border-b border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold tracking-wider">
+          CONFIRMÉ
+        </span>
+<span class="font-title-md text-title-md text-primary font-bold">#BK-2025-089</span>
+</div>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" onclick="closeDetailsDrawer()" title="Fermer">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Content Body (Scrollable) -->
+<div class="p-space-md flex-1 overflow-y-auto flex flex-col gap-space-md">
+<!-- Anti-Conflict Rule Callout Banner -->
+<div class="bg-secondary-fixed/30 rounded-xl p-3 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">verified_user</span>
+<div class="flex flex-col text-on-secondary-fixed">
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Protection Anti-Conflit Active</span>
+<span class="font-body-sm text-body-sm mt-0.5 leading-snug">Créneau horaire 09:30 - 12:30 verrouillé pour Mme Soussou au Salon VIP. Aucune double réservation possible sur cette plage.</span>
+</div>
+</div>
+<!-- Customer Profile Card -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Fiche Cliente VIP</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Membre Gold</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-title-md text-title-md font-bold shadow-sm">
+            AM
+          </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">Amina Mahamat Hassan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mariage VIP • Sabangali, N'Djamena</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2 mt-2 border-t border-surface-container text-on-surface">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Téléphone</span>
+<span class="font-body-sm text-body-sm font-semibold">+235 66 12 34 56</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contact Rapide</span>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline flex items-center gap-1" href="https://wa.me/23566123456" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span> WhatsApp Chat
+            </a>
+</div>
+</div>
+</div>
+<!-- Service & Artist Scheduling Details -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">Détails de la Prestation</span>
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-xs flex flex-col gap-2.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">Sublimation Mariée Impériale Tchadienne</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maquillage Haute Définition, Pose Teint Lumineux &amp; Fixation 24h</span>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+              180 min (3h)
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2 border-t border-surface-container text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Date &amp; Heure</span>
+<span class="font-body-sm text-body-sm font-semibold">Ven 24 Oct 2025 • 09:30</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Artiste Assignée</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Mme Soussou (Lead Artist)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Emplacement</span>
+<span class="font-body-sm text-body-sm font-semibold">Salon VIP Sabangali</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Poste de Travail</span>
+<span class="font-body-sm text-body-sm font-semibold">Fauteuil Nuptial 01</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial & Deposit Tracking Section (MVP Manual Rule) -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">Suivi Financier &amp; Acompte</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary font-label-sm text-label-sm font-bold">Règle MVP</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Montant Total Prestation</span>
+<span class="font-title-md text-title-md text-primary font-bold">120.000 XAF</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Acompte Exigé à la réservation (40%)</span>
+<span class="font-semibold text-on-surface">48.000 XAF</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Acompte Encaissé (Comptoir)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reçu en espèces le 20 Octobre 2025</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">50.000 XAF</span>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<div>
+<span class="font-label-sm text-label-sm text-error uppercase font-bold block">Solde Restant Dû</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">À régler le jour de la séance</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">70.000 XAF</span>
+</div>
+<button class="w-full mt-1 py-2 px-3 rounded-lg bg-surface-container-highest text-primary hover:bg-secondary-fixed/50 font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" onclick="openDepositModal()">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+            Enregistrer un Complément d'Acompte
+          </button>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Management Actions -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex flex-col gap-2">
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-1 shadow-sm" onclick="markCompleted()">
+<span class="material-symbols-outlined text-base">check</span>
+          Prestation Terminée
+        </button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-highest text-primary hover:bg-surface-container font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-1" onclick="openConflictModal()">
+<span class="material-symbols-outlined text-base">edit_calendar</span>
+          Replanifier
+        </button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" onclick="window.print()">
+<span class="material-symbols-outlined text-sm">print</span>
+          Fiche Technique
+        </button>
+<button class="text-error hover:underline font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="cancelBookingPrompt()">
+<span class="material-symbols-outlined text-sm">event_busy</span>
+          Annuler le RDV
+        </button>
+</div>
+</div>
+</aside>
+<!-- MODAL: SCHEDULE CONFLICT WARNING (Anti-Double Booking Safeguard) -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-xs z-50 flex items-center justify-center hidden p-4" id="conflict-modal-backdrop">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-scale-up">
+<div class="bg-error-container p-space-md text-on-error-container flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-error">warning</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold">Conflit d'Horaire Détecté</h3>
+<span class="font-label-sm text-label-sm uppercase font-semibold">Garde-fou MVP Soussou Tchad</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm text-on-surface">
+<p class="font-body-md text-body-md">
+          Impossible de valider ou déplacer ce rendez-vous sur le créneau <strong class="text-primary font-semibold">Vendredi 24 Octobre à 10:30</strong>.
+        </p>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col gap-1.5 border-l-4 border-l-error">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error">Chevauchement avec :</span>
+<div class="font-title-md text-title-md text-primary font-bold">#BK-2025-089 • Mariée Impériale</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cliente : Amina Mahamat Hassan (09:30 - 12:30)</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">Artiste : Mme Soussou • Fauteuil Nuptial VIP</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Veuillez sélectionner un créneau disponible ultérieur ou attribuer une autre maquilleuse de l'équipe.
+        </p>
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2.5 px-4 rounded-lg bg-surface-container-highest text-primary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" onclick="closeConflictModal()">
+            Modifier l'Horaire
+          </button>
+<button class="flex-1 py-2.5 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors" onclick="closeConflictModal(); openAvailabilityModal()">
+            Voir Disponibilités
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: MANUAL DEPOSIT RECORDING (Saisie d'Acompte) -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-xs z-50 flex items-center justify-center hidden p-4" id="deposit-modal-backdrop">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+<div class="bg-surface-container-low p-space-md border-b border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-2xl">payments</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Enregistrement d'Acompte</h3>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high" onclick="closeDepositModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Rendez-vous associé</span>
+<span class="font-title-md text-title-md text-primary font-bold">#BK-2025-089 • Amina Mahamat</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">Reste: 70.000 XAF</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Montant Encaissé (XAF)</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-semibold rounded-lg border border-outline-variant focus:ring-1 focus:ring-secondary outline-none" type="number" value="50000"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Mode de Règlement</label>
+<select class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant focus:ring-1 focus:ring-secondary outline-none font-body-sm text-body-sm">
+<option selected="">Espèces au Salon</option>
+<option>Airtel Money Tchad</option>
+<option>Moov Africa Money</option>
+<option>Virement Bancaire (EcoBank)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Date d'Encaissement</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant focus:ring-1 focus:ring-secondary outline-none font-body-sm text-body-sm" type="date" value="2025-10-24"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Référence reçu ou Quittance</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant focus:ring-1 focus:ring-secondary outline-none font-body-sm text-body-sm" placeholder="Ex: RECU-NDJ-2025-412" type="text" value="RECU-NDJ-2025-412"/>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" onclick="closeDepositModal()">
+            Annuler
+          </button>
+<button class="flex-1 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm" onclick="confirmDeposit()">
+<span class="material-symbols-outlined text-base">save</span>
+            Valider l'Encaissement
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: MANAGE WORKING HOURS & AVAILABILITY -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-xs z-50 flex items-center justify-center hidden p-4" id="availability-modal-backdrop">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+<div class="bg-surface-container-low p-space-md border-b border-surface-container flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Disponibilités &amp; Horaires du Salon</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Configuration de la grille horaire et des congés du personnel</span>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high" onclick="closeAvailabilityModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Schedule Days Settings -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Horaires Standards d'Ouverture</span>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-primary w-32">Lundi au Vendredi</span>
+<span class="text-on-surface-variant">09:00 - 19:00 (Buffer repas 13h - 14h)</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary font-label-sm text-label-sm font-bold">Ouvert</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-primary w-32">Samedi (Jour Noces)</span>
+<span class="text-on-surface-variant">08:00 - 20:00 (Créneaux 3h Mariées)</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Haute Activité</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-primary w-32">Dimanche</span>
+<span class="text-on-surface-variant">09:00 - 13:00 (Fermé après-midi)</span>
+<span class="px-2 py-0.5 rounded bg-surface-dim text-outline font-label-sm text-label-sm font-bold">Partiel</span>
+</div>
+</div>
+</div>
+<!-- Add Temporary Time-off / Blackout Block -->
+<div class="flex flex-col gap-2 pt-2 border-t border-surface-container">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">+ Ajouter une Indisponibilité / Blocage de Créneau</span>
+<div class="grid grid-cols-2 gap-2">
+<input class="px-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant font-body-sm text-body-sm outline-none" placeholder="Motif (ex: Mariage Famille Royale)" type="text"/>
+<input class="px-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant font-body-sm text-body-sm outline-none" type="datetime-local"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="py-2 px-4 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeAvailabilityModal()">
+            Fermer
+          </button>
+<button class="py-2 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors" onclick="saveAvailability()">
+            Enregistrer les Horaires
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for AD-11 Experience -->
+<script>
+  // State Navigator for testing AD-11
+  function switchSimulatorState(state) {
+    // Reset buttons
+    const pillButtons = document.querySelectorAll('#simulator-pills button');
+    pillButtons.forEach(btn => {
+      btn.className = "px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all flex items-center gap-1";
+    });
+
+    // Reset modals and containers
+    closeDetailsDrawer();
+    closeConflictModal();
+    closeDepositModal();
+    closeAvailabilityModal();
+
+    const weekBox = document.getElementById('view-week-container');
+    const monthBox = document.getElementById('view-month-container');
+    const listBox = document.getElementById('view-list-container');
+    const skeletonBox = document.getElementById('view-skeleton-container');
+
+    weekBox.classList.add('hidden');
+    monthBox.classList.add('hidden');
+    listBox.classList.add('hidden');
+    skeletonBox.classList.add('hidden');
+
+    const activeBtn = document.getElementById('btn-state-' + state);
+    if(activeBtn) {
+      activeBtn.className = "px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1";
+    }
+
+    if (state === 'week') {
+      weekBox.classList.remove('hidden');
+    } else if (state === 'drawer') {
+      weekBox.classList.remove('hidden');
+      openDetailsDrawer();
+    } else if (state === 'conflict') {
+      weekBox.classList.remove('hidden');
+      openConflictModal();
+    } else if (state === 'deposit') {
+      weekBox.classList.remove('hidden');
+      openDepositModal();
+    } else if (state === 'availability') {
+      weekBox.classList.remove('hidden');
+      openAvailabilityModal();
+    } else if (state === 'month') {
+      monthBox.classList.remove('hidden');
+    } else if (state === 'list') {
+      listBox.classList.remove('hidden');
+    } else if (state === 'skeleton') {
+      skeletonBox.classList.remove('hidden');
+    }
+  }
+
+  function switchView(viewName) {
+    const week = document.getElementById('view-week-container');
+    const month = document.getElementById('view-month-container');
+    const list = document.getElementById('view-list-container');
+    const skeleton = document.getElementById('view-skeleton-container');
+
+    const tabs = ['month', 'week', 'day', 'list'];
+    tabs.forEach(t => {
+      const el = document.getElementById('tab-view-' + t);
+      if (el) {
+        el.className = "px-3.5 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all";
+      }
+    });
+
+    const activeEl = document.getElementById('tab-view-' + viewName);
+    if (activeEl) {
+      activeEl.className = "px-3.5 py-1.5 rounded font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all";
+    }
+
+    week.classList.add('hidden');
+    month.classList.add('hidden');
+    list.classList.add('hidden');
+    skeleton.classList.add('hidden');
+
+    if (viewName === 'week' || viewName === 'day') {
+      week.classList.remove('hidden');
+    } else if (viewName === 'month') {
+      month.classList.remove('hidden');
+    } else if (viewName === 'list') {
+      list.classList.remove('hidden');
+    }
+  }
+
+  // Drawer Controls
+  function openDetailsDrawer() {
+    const backdrop = document.getElementById('appointment-drawer-backdrop');
+    const panel = document.getElementById('appointment-drawer-panel');
+    backdrop.classList.remove('hidden');
+    setTimeout(() => {
+      backdrop.classList.remove('opacity-0');
+      backdrop.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+    }, 10);
+  }
+
+  function closeDetailsDrawer() {
+    const backdrop = document.getElementById('appointment-drawer-backdrop');
+    const panel = document.getElementById('appointment-drawer-panel');
+    backdrop.classList.remove('opacity-100');
+    backdrop.classList.add('opacity-0');
+    panel.classList.add('translate-x-full');
+    setTimeout(() => {
+      backdrop.classList.add('hidden');
+    }, 300);
+  }
+
+  // Modal Conflict
+  function openConflictModal() {
+    document.getElementById('conflict-modal-backdrop').classList.remove('hidden');
+  }
+  function closeConflictModal() {
+    document.getElementById('conflict-modal-backdrop').classList.add('hidden');
+  }
+
+  // Modal Deposit
+  function openDepositModal() {
+    document.getElementById('deposit-modal-backdrop').classList.remove('hidden');
+  }
+  function closeDepositModal() {
+    document.getElementById('deposit-modal-backdrop').classList.add('hidden');
+  }
+  function confirmDeposit() {
+    alert('Acompte de 50.000 XAF validé avec succès. Quittance générée.');
+    closeDepositModal();
+  }
+
+  // Modal Availability
+  function openAvailabilityModal() {
+    document.getElementById('availability-modal-backdrop').classList.remove('hidden');
+  }
+  function closeAvailabilityModal() {
+    document.getElementById('availability-modal-backdrop').classList.add('hidden');
+  }
+  function saveAvailability() {
+    alert('Horaires et règles d\'indisponibilités mis à jour.');
+    closeAvailabilityModal();
+  }
+
+  function openNewBookingModal() {
+    openDetailsDrawer();
+  }
+
+  function markCompleted() {
+    alert('Prestation #BK-2025-089 marquée comme complétée.');
+    closeDetailsDrawer();
+  }
+
+  function cancelBookingPrompt() {
+    if(confirm('Êtes-vous sûre de vouloir annuler ce rendez-vous mariée ? L\'acompte devra être traité conformément à la politique de salon.')) {
+      alert('Rendez-vous annulé.');
+      closeDetailsDrawer();
+    }
+  }
+</script></main></div></body></html>

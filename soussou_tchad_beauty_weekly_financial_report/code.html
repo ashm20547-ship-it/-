@@ -1,0 +1,590 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#ffcf94","on-tertiary-fixed-variant":"#52443f","surface-container-high":"#f9e4de","on-secondary-container":"#795726","outline":"#867274","surface-container-highest":"#f3ded8","background":"#fff8f6","on-secondary":"#ffffff","surface-container":"#ffe9e4","tertiary-fixed":"#f4ded8","on-primary":"#ffffff","on-primary-fixed":"#3d0414","on-tertiary":"#ffffff","tertiary":"#261a17","on-secondary-fixed":"#2a1800","on-error":"#ffffff","primary":"#3f0515","tertiary-fixed-dim":"#d7c2bc","surface-tint":"#934754","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#edbe85","on-surface":"#241916","error-container":"#ffdad6","on-secondary-fixed-variant":"#604012","surface-bright":"#fff8f6","on-error-container":"#93000a","error":"#ba1a1a","surface-dim":"#ebd6d0","on-primary-container":"#d9808e","secondary":"#7b5827","primary-fixed":"#ffd9dd","surface-variant":"#f3ded8","inverse-primary":"#ffb2bc","inverse-on-surface":"#ffede8","on-primary-fixed-variant":"#76303d","primary-fixed-dim":"#ffb2bc","on-tertiary-fixed":"#241916","surface-container-low":"#fff1ed","tertiary-container":"#3c2f2b","primary-container":"#5b1b29","surface":"#fff8f6","on-surface-variant":"#534344","secondary-fixed":"#ffddb5","inverse-surface":"#3a2e2a","on-tertiary-container":"#a99691","on-background":"#241916","outline-variant":"#d8c1c3"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-lg":"1.75rem","space-md":"1rem","space-xs":"0.25rem","space-xl":"3rem","gutter":"1.5rem","margin":"3rem","margin-mobile":"1.25rem","gutter-mobile":"1rem"},fontFamily:{"display-hero":["Playfair Display"],"label-md":["Manrope"],"label-sm":["Manrope"],"display-hero-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"label-lg":["Manrope"],"body-md":["Manrope"],"body-sm":["Manrope"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"title-md":["Playfair Display"],"body-lg":["Manrope"]},fontSize:{"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"700"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.08em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"50px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}};</script><style>@media print { body > *:not(#modalReceiptInvoice) { display: none !important; } #modalReceiptInvoice { position: static !important; background: transparent !important; padding: 0 !important; } #receiptPrintCard { box-shadow: none !important; border: 1px solid #d8c1c3 !important; max-width: 100% !important; margin: 0 auto !important; } .no-print { display: none !important; } }</style></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_16px_rgba(91,27,41,0.06)]"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center justify-between border-b border-surface-container-high/40"><div class="flex items-center gap-space-sm"><div class="w-11 h-11 rounded-full overflow-hidden shadow-sm border border-outline-variant/40 shrink-0 bg-surface-container-lowest flex items-center justify-center"><img alt="Soussou TCHAD Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVvXvqGIBlxrMh2i7pftutJIpsjwq_Uc6BP8Tg8z1gD491CaP1dirHC2ULqW3SBEFxvAzCJaixCyaCfqZKkXDO-4MrAd2XjxlQ73NPl4SPFjoj2zK7uqWaqe4rD8scIyipUyy-nBH2fYlVNqnHY1Z2bfor3zQPkWmYwM6OMEoQHMLqUFZrslQeu0-Adrz_k1VMO4A_-Ou_Mjk-qoQJmZYVb3cXVutCG5WOp2HE9b78EtlsUEnWS832Sg"></div><div><span class="font-display-hero text-[19px] text-primary tracking-wide block leading-tight font-bold drop-shadow-[0_1px_1px_rgba(63,5,21,0.1)]">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Admin Suite</span></div></div></div><div class="px-space-md py-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70">القائمة الرئيسية</span></div><nav class="flex flex-col gap-1 px-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">لوحة التحكم</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="products" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">إدارة المنتجات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="font-label-lg text-label-lg">إدارة الطلبات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="bookings" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-label-lg text-label-lg">حجوزات التجميل</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="customers" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">العملاء</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-lg text-label-lg">التقارير والتحليلات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">الإعدادات</span></a></nav></div><div class="p-space-md border-t border-surface-container-high/40"><div class="bg-surface-container-low/70 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface">أمينة الحسن</span><span class="font-label-sm text-label-sm text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>مشرف عام</span></div></div><button aria-label="تسجيل الخروج" class="text-on-surface-variant hover:text-error transition-colors p-1" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pr-72 min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-72 h-20 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between border-b border-surface-container-high/40 shadow-[0_1px_8px_rgba(91,27,41,0.03)]"><div class="flex items-center gap-space-md w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline/70 pr-10 pl-4 py-2 rounded-xl text-body-sm font-body-sm outline-none border border-outline-variant/50 focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" placeholder="بحث عن المنتجات، الطلبات، العملاء..." type="search"></div></div><div class="flex items-center gap-space-md"><a class="bg-primary text-on-primary hover:bg-primary-container px-space-md py-2 rounded-xl font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" data-path="product-create" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span class="">إضافة منتج جديد</span></a><div class="flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-0.5"><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg bg-surface-container-high text-on-surface font-semibold" type="button">العربية</button><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><div class="relative"><button class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-sm pr-space-xs"><div class="text-left hidden sm:block"><span class="font-label-md text-label-md font-semibold text-on-surface block leading-tight">Amina Al-Hassan</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 block">Super Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 flex-1 px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP EXECUTIVE BANNER & ACTIONS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md relative overflow-hidden">
+<!-- Decorative Ambient Glow -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-60 h-60 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-1 max-w-2xl">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-widest flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+          الأسبوع 46 (Semaine 46: 11 - 17 نوفمبر 2024)
+        </span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full">
+          Réf: RFH-2024-W46
+        </span>
+<span class="bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          اعتماد مشفر SHA-256
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">
+        التقرير المالي الأسبوعي المجمع للإدارة العامة
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80">
+        Rapport Financier Hebdomadaire Consolidé • Direction Générale • N'Djamena, République du Tchad
+      </p>
+</div>
+<!-- Quick Action Toolbars -->
+<div class="relative z-10 flex flex-wrap items-center gap-2 xl:self-center">
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          الأسبوع 46
+        </button>
+<button class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          الأسبوع 45
+        </button>
+<button class="px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          الأسبوع 44
+        </button>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-3.5 py-2 rounded-xl font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" id="btnWhatsappDg" onclick="notifyDG()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">إرسال فوري للـ DG</span>
+</button>
+<button class="bg-primary text-on-primary hover:bg-primary-container px-3.5 py-2 rounded-xl font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="">تصدير PDF موقع (2.4MB)</span>
+</button>
+<button class="bg-surface-container-high text-on-surface hover:bg-surface-variant px-3.5 py-2 rounded-xl font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm border border-outline-variant/40 relative group" id="btnOpenExcelExportModal" onclick="openExcelExportModal()" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">table_view</span><span class="font-bold text-primary">تصدير Excel / CSV</span><span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5 mr-0.5"><span class="material-symbols-outlined text-[11px]">sync_alt</span><span class="">XLSX / CSV</span></span></button>
+</div>
+</div>
+<!-- HIGHLIGHT SUMMARY BANNER -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] text-secondary-fixed">trending_up</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">موجز التنفيذ القياسي الأسبوعي</div>
+<div class="font-title-md text-title-md font-semibold">تجاوز الهدف التقديري بنسبة +116.0% مدفوعاً بذروة موسم الأعراس في أنجمينا</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-on-primary/10 px-space-md py-2 rounded-xl">
+<span class="font-label-md text-label-md text-secondary-fixed">مقارنة بالأسبوع 45 السابق:</span>
+<span class="font-label-lg text-label-lg font-bold text-on-primary dir-ltr">+18.4% (+225,500 XAF)</span>
+</div>
+</div>
+<!-- SECTION 1: KEY FINANCIAL KPI CARDS (Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Gross Weekly Revenue -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">إجمالي الإيرادات الأسبوعية</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">1,450,000 <span class="font-label-md text-label-md font-normal text-on-surface-variant">XAF</span></div>
+<div class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+          +18.4% نمو أسبوعي مقارنة بـ W45
+        </div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">الهدف المستهدف: 1,250,000 XAF</span>
+<span class="text-secondary font-bold">116% محقق</span>
+</div>
+</div>
+<!-- KPI 2: Bridal VIP Bookings -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">حجوزات العرائس VIP والصالون</span>
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">diamond</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">890,000 <span class="font-label-md text-label-md font-normal text-on-surface-variant">XAF</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          تمثل 61.4% من الإيرادات الكلية
+        </div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">14 عروس وحجز ملكي</span>
+<span class="text-primary font-semibold">متوسط 63,570 XAF/حجز</span>
+</div>
+</div>
+<!-- KPI 3: Boutique & E-Commerce -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">مبيعات المنتجات والزيوت التراثية</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">560,000 <span class="font-label-md text-label-md font-normal text-on-surface-variant">XAF</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+          تمثل 38.6% من إجمالي المبيعات
+        </div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">الأعلى مبيعاً: زيت الشيبيه النقي</span>
+<span class="text-secondary font-semibold">88 قطعة مبيعة</span>
+</div>
+</div>
+<!-- KPI 4: Operating Net Margin -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">صافي الربح التشغيلي التقديري</span>
+<span class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">1,087,500 <span class="font-label-md text-label-md font-normal text-on-surface-variant">XAF</span></div>
+<div class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">pie_chart</span>
+          هامش ربح تشغيلي 75.0%
+        </div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">التكاليف المباشرة: 362,500 XAF</span>
+<span class="text-on-surface font-semibold">ممتاز وفق المعايير</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: CHADIAN PAYMENT CHANNELS & REVENUE STREAMS BREAKDOWN -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Payment Channels Distribution (Chad Context: Airtel, Moov, Cash) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-title-md text-title-md text-primary font-bold">توزيع متحصلات وسائل الدفع الإلكتروني والنقدي</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Répartition des Canaux de Paiement au Tchad</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">contactless</span>
+</div>
+<!-- SVG Donut Chart + Visual Breakdown -->
+<div class="my-space-md flex flex-col sm:flex-row items-center gap-space-lg justify-center">
+<div class="relative w-40 h-40 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<!-- Background Ring -->
+<circle class="stroke-surface-container-high" cx="18" cy="18" fill="none" r="15.915" stroke-width="4.2"></circle>
+<!-- Airtel Money (53.8%) - Red / Wine Primary -->
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="15.915" stroke-dasharray="53.8 46.2" stroke-dashoffset="0" stroke-width="4.2"></circle>
+<!-- Moov Money (33.8%) - Gold / Secondary -->
+<circle class="stroke-secondary" cx="18" cy="18" fill="none" r="15.915" stroke-dasharray="33.8 66.2" stroke-dashoffset="-53.8" stroke-width="4.2"></circle>
+<!-- Cash (12.4%) - Light Gold / Surface Container Highest -->
+<circle class="stroke-outline" cx="18" cy="18" fill="none" r="15.915" stroke-dasharray="12.4 87.6" stroke-dashoffset="-87.6" stroke-width="4.2"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الإجمالي</span>
+<span class="font-title-md text-title-md text-primary font-bold">1.45M</span>
+<span class="font-label-sm text-label-sm text-secondary">XAF</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm w-full">
+<!-- Airtel Money -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Airtel Money Tchad</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">رقم التاجر: SOU-AIR-084</div>
+</div>
+</div>
+<div class="text-left">
+<div class="font-label-md text-label-md font-bold text-primary">780,000 XAF</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">53.8%</div>
+</div>
+</div>
+<!-- Moov Money -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Moov Money Flooz</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">حساب الشركة الموثق</div>
+</div>
+</div>
+<div class="text-left">
+<div class="font-label-md text-label-md font-bold text-primary">490,000 XAF</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">33.8%</div>
+</div>
+</div>
+<!-- Cash On Delivery / Salon -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">الدفع النقدي المودع (Caisse)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">خزينة الصالون أنجمينا</div>
+</div>
+</div>
+<div class="text-left">
+<div class="font-label-md text-label-md font-bold text-primary">180,000 XAF</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">12.4%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">security</span>
+          نسبة المدفوعات الرقمية غير النقدية بلغت:
+        </span>
+<span class="font-bold text-primary text-label-md font-label-md">87.6% (1,270,000 XAF)</span>
+</div>
+</div>
+<!-- Revenue by Department & Service Packages -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-title-md text-title-md text-primary font-bold">تفصيل المبيعات حسب باقات التجميل والأقسام</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Performance par Ligne de Prestation &amp; Produits</p>
+</div>
+<span class="bg-surface-container-high px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+            الأسبوع 46
+          </span>
+</div>
+<div class="flex flex-col gap-space-md my-space-md">
+<!-- Row 1: Bridal Pack Mariée Impériale -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">stars</span>
+                باقة العروس الملكية VIP (Pack Mariée Impériale Sahel)
+              </span>
+<span class="font-semibold text-primary">540,000 XAF (6 عرائس)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 37.2%"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">يشمل المكياج الملكي، حمام الأعشاب والمسك</span>
+<span class="">37.2% من الإجمالي</span>
+</div>
+</div>
+<!-- Row 2: Chadian Henna & Royal Bridesmaids -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">brush</span>
+                باقة وصيفات الشرف ونقش الحنة التشادية الفاخرة
+              </span>
+<span class="font-semibold text-primary">350,000 XAF (8 مجموعات)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 24.1%"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">حنة سوداء ملكية مع الزيوت العطرية التشادية</span>
+<span class="">24.1% من الإجمالي</span>
+</div>
+</div>
+<!-- Row 3: Chebe Oil & Heritage Cosmetics -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_florist</span>
+                مبيعات زيت الشيبيه الأصلي ومستحضرات العناية (E-Commerce &amp; Boutique)
+              </span>
+<span class="font-semibold text-primary">390,000 XAF (62 طلب)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 26.9%"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">مسحوق الشيبيه التراثي، سيروم إكسير الذهب، زبدة الكاريتي</span>
+<span class="">26.9% من الإجمالي</span>
+</div>
+</div>
+<!-- Row 4: Luxury Salon Sessions in N'Djamena -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">chair</span>
+                خدمات العناية الفردية بالصالون (N'Djamena VIP Lounge)
+              </span>
+<span class="font-semibold text-primary">170,000 XAF (23 جلسة)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-outline h-full rounded-full transition-all duration-500" style="width: 11.8%"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">تسريحات ملكية، عناية بالأظافر والسبا التراثي</span>
+<span class="">11.8% من الإجمالي</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">معدل التحصيل النقدي الفوري:</span>
+<span class="text-primary font-bold">100% (صفر ديون أو فواتير مؤجلة غير محصلة)</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: BANK RECONCILIATION & CASH CLEARANCE (ÉCOBANK & BCC TCHAD) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">تقرير المطابقة البنكية وحركات التسوية الأسبوعية</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rapprochement Bancaire Hebdomadaire • BCC &amp; Ecobank Tchad</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="bg-surface-container-low text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          تمت المطابقة مع كشوفات الحساب الإلكترونية
+        </span>
+</div>
+</div>
+<!-- Reconciliation Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-r-lg">الحساب البنكي / المحفظة</th>
+<th class="py-3 px-4">رقم الحساب المرجعي</th>
+<th class="py-3 px-4">المبلغ المودع الإجمالي</th>
+<th class="py-3 px-4">العمولات المستقطعة</th>
+<th class="py-3 px-4">صافي الرصيد المستلم</th>
+<th class="py-3 px-4">المبالغ قيد المقاصة</th>
+<th class="py-3 px-4 rounded-l-lg text-center">حالة التسوية</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y-0">
+<!-- Row 1: Ecobank Tchad -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</span>
+              Ecobank Tchad (Compte Principal)
+            </td>
+<td class="py-3.5 px-4 font-mono text-on-surface-variant text-label-md">TD02-0010-098273-01</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">650,000 XAF</td>
+<td class="py-3.5 px-4 text-on-surface-variant">0 XAF</td>
+<td class="py-3.5 px-4 font-bold text-primary">650,000 XAF</td>
+<td class="py-3.5 px-4 text-on-surface-variant">0 XAF</td>
+<td class="py-3.5 px-4 text-center">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+                مطابق ومؤكد
+              </span>
+</td>
+</tr>
+<!-- Row 2: BCC (Banque Commerciale du Chari) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</span>
+              بنك التجاري التشادي BCC N'Djamena
+            </td>
+<td class="py-3.5 px-4 font-mono text-on-surface-variant text-label-md">TD05-0012-445891-22</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">180,000 XAF</td>
+<td class="py-3.5 px-4 text-on-surface-variant">1,500 XAF</td>
+<td class="py-3.5 px-4 font-bold text-primary">178,500 XAF</td>
+<td class="py-3.5 px-4 text-on-surface-variant">0 XAF</td>
+<td class="py-3.5 px-4 text-center">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+                إيداع نقدي مكتمل
+              </span>
+</td>
+</tr>
+<!-- Row 3: Airtel Money Settlement -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">smartphone</span>
+</span>
+              Airtel Money Merchant Pool
+            </td>
+<td class="py-3.5 px-4 font-mono text-on-surface-variant text-label-md">AIR-TCD-MARCH-084</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">780,000 XAF</td>
+<td class="py-3.5 px-4 text-error font-medium">-11,700 XAF (1.5%)</td>
+<td class="py-3.5 px-4 font-bold text-primary">768,300 XAF</td>
+<td class="py-3.5 px-4 text-secondary font-semibold">25,000 XAF</td>
+<td class="py-3.5 px-4 text-center">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full font-medium">
+                تحويل دوري الأحد
+              </span>
+</td>
+</tr>
+<!-- Row 4: Moov Money Settlement -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">phone_android</span>
+</span>
+              Moov Money Flooz Settlement
+            </td>
+<td class="py-3.5 px-4 font-mono text-on-surface-variant text-label-md">MOOV-TCD-FLZ-910</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface">490,000 XAF</td>
+<td class="py-3.5 px-4 text-error font-medium">-7,350 XAF (1.5%)</td>
+<td class="py-3.5 px-4 font-bold text-primary">482,650 XAF</td>
+<td class="py-3.5 px-4 text-secondary font-semibold">10,000 XAF</td>
+<td class="py-3.5 px-4 text-center">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+                مطابق ومحوّل
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Settlement Footer Note -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">info</span>
+<span class="">إجمالي العمولات المقتطعة لحلول الدفع الرقمي: <b class="text-primary">19,050 XAF</b> (تمثل 1.31% فقط من مجمل السيولة). الأرصدة المعلقة قيد المقاصة لصباح الإثنين: <b class="text-secondary">35,000 XAF</b>.</span>
+</div>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md font-bold underline underline-offset-4 shrink-0" type="button">
+        تحميل كشف التسوية البنكية الممسوح ضوئياً
+      </button>
+</div>
+</div>
+<!-- SECTION 4: FORMAL EXECUTIVE SIGN-OFF & DG DIRECTIVE SECTION -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Sign-off Card 1: CFO (Directeur Financier) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">المصادقة المحاسبية والتدقيق المالي</span>
+<span class="bg-surface-container-high text-primary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            تم التحقق من الأرصدة
+          </span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">اعتماد وتوقيع المدير المالي (Visa du CFO)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          أقرّ بصفتي المسؤول المالي بشركة Soussou TCHAD بصحة كافة الإيرادات المسجلة، ومطابقة قيود Airtel و Moov وحسابات بنك Ecobank دون أي فروقات محاسبية للأسبوع 46.
+        </p>
+<div class="my-space-md p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold shadow-sm">
+              إ.ك
+            </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">أ. إبراهيم كورتو (M. Ibrahim Kourtou)</div>
+<div class="font-label-sm text-label-sm text-secondary">المدير المالي التنفيذي • Directeur Financier &amp; Comptable</div>
+</div>
+</div>
+<div class="text-left font-label-sm text-label-sm text-on-surface-variant">
+<div class="">17 نوفمبر 2024</div>
+<div class="font-mono text-primary font-semibold">18:45 N'Djamena</div>
+</div>
+</div>
+</div>
+<!-- Stamp and Cryptographic Hash -->
+<div class="pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">fingerprint</span>
+          البصمة الرقمية: 4a9f...88c2
+        </span>
+<span class="text-primary font-bold">نسخة معتمدة ومقفلة</span>
+</div>
+</div>
+<!-- Sign-off Card 2: Managing Director (Directrice Générale) Approval -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">الاعتماد التنفيذي النهائي للإدارة العليا</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+            موافقة الإدارة العامة
+          </span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold">ملاحظات وقرار المديرة العامة (Directrice Générale)</h3>
+<!-- Executive Directive Quote -->
+<div class="my-space-sm p-space-md bg-surface-container-high/40 rounded-xl relative">
+<span class="material-symbols-outlined absolute top-2 right-2 text-secondary-fixed-dim/40 text-[28px] pointer-events-none">format_quote</span>
+<p class="font-headline-sm text-title-md text-primary italic leading-relaxed">
+            "أداء استثنائي لحجوزات العرائس ومبيعات إكسير الذهب وزيت الشيبيه هذا الأسبوع. يُعتمد التقرير، وتُصرف مكافآت التميز لخبيرات التجميل وفريق الصالون بنسبة +10% من فائض الهدف التشغيلي المحقق."
+          </p>
+</div>
+<div class="my-space-sm p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold shadow-sm">
+              ف.ع
+            </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">د. فاطمة عبد الرحمن (Dr. Fatima Abdelrahmane)</div>
+<div class="font-label-sm text-label-sm text-secondary">المؤسسة والمديرة العامة • Fondatrice &amp; Directrice Générale</div>
+</div>
+</div>
+<div class="text-left font-label-sm text-label-sm text-on-surface-variant">
+<div class="">17 نوفمبر 2024</div>
+<div class="font-mono text-secondary font-semibold">20:10 N'Djamena</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">mark_email_read</span>
+          أرسلت النسخة الأصلية للأرشيف المحاسبي
+        </span>
+<span class="text-secondary font-bold">حالة التقرير: نافذ ومكتمل</span>
+</div>
+</div>
+</div>
+<!-- SECTION 5: AUDIT LOG & COMPLIANCE FOOTER -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md flex-wrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+        نظام التدقيق الداخلي Soussou Imperial Enterprise Cloud
+      </span>
+<span class="">•</span>
+<span class="">العملة الرسمية: فرنك سيفا وسط إفريقيا (XAF / FCFA)</span>
+<span class="">•</span>
+<span class="">معايير إعداد التقارير: OHADA Finance &amp; CEMAC Compliance</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="hover:text-primary transition-colors flex items-center gap-1" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" type="button">
+<span class="">العودة لأعلى التقرير</span>
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE SCRIPTS FOR EXECUTIVE NOTIFICATION & TOAST -->
+<script>
+  function notifyDG() {
+    const btn = document.getElementById('btnWhatsappDg');
+    if (!btn) return;
+    
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>جارٍ إرسال التقرير...</span>';
+    btn.classList.add('opacity-75');
+
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>تم إرسال التقرير للـ DG بنجاح ✓</span>';
+      btn.classList.remove('opacity-75', 'bg-secondary');
+      btn.classList.add('bg-primary');
+
+      // Create floating luxury toast notification
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-8 left-8 z-50 bg-primary text-on-primary px-space-md py- space-sm rounded-xl shadow-xl flex items-center gap-3 transition-all duration-300';
+      toast.innerHTML = `
+        <span class="material-symbols-outlined text-secondary-fixed text-[24px]">send</span>
+        <div>
+          <div class="font-label-md text-label-md font-bold">تم إرسال التقرير الأسبوعي W46</div>
+          <div class="font-body-sm text-body-sm text-surface-variant">تم تسليم النسخة التنفيذية إلى واتساب وهاتف المديرة العامة (N'Djamena)</div>
+        </div>
+      `;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.remove();
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-primary');
+        btn.classList.add('bg-secondary');
+      }, 3500);
+    }, 1200);
+  }
+</script><div class="fixed inset-0 z-50 flex items-center justify-center bg-primary/40 backdrop-blur-sm hidden" id="modalExcelExportVip"><div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl shadow-2xl w-full max-w-2xl max-h-[92vh] overflow-y-auto flex flex-col p-space-lg relative text-right"><div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high/40"><div class="flex items-center gap-2"><span class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-xs border border-secondary/30"><span class="material-symbols-outlined text-[22px] text-primary">grid_on</span></span><div><div class="flex items-center gap-2"><h3 class="font-title-md text-title-md text-primary font-bold leading-tight">تصدير البيانات المحاسبية المجمعة (Grand-Livre Excel &amp; CSV)</h3><span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px] text-secondary">verified</span><span class="">متوافق مع Sage &amp; QuickBooks</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Exportation Comptable Hebdomadaire • Compatible Systèmes ERP &amp; CEMAC</p></div></div><button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center transition-colors" onclick="closeExcelExportModal()" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div><div class="mt-space-md p-space-sm bg-surface-container-low rounded-xl border border-secondary/30 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold shadow-xs"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">dataset</span></div><div><div class="font-label-sm text-label-sm text-secondary font-semibold">نطاق البيانات: الأسبوع 46 (11 - 17 نوفمبر 2024)</div><div class="font-headline-sm text-title-md font-bold text-primary font-mono">1,450,000 XAF • 107 قيود وعمليات</div><div class="font-label-sm text-label-sm text-on-surface-variant">المطابقة مع معايير OHADA المحاسبية المعتمدة في تشاد</div></div></div><div class="flex flex-col items-end gap-1"><span class="bg-surface-container-lowest border border-outline-variant/40 px-2.5 py-1 rounded-lg text-label-sm font-label-sm text-primary flex items-center gap-1 font-mono"><span class="material-symbols-outlined text-[14px] text-secondary">lock</span><span class="">SHA-256 Verified Data</span></span><span class="text-[11px] text-on-surface-variant/80 font-mono">Ref: EXP-XLS-W46-DG</span></div></div><div class="mt-space-md flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">settings_suggest</span><span class="">اختر صيغة الملف المحاسبي المستهدف:</span></span><span class="text-label-sm text-secondary font-mono font-bold">صيغة الجداول الجاهزة</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm"><label class="p-space-sm rounded-xl border-2 border-primary bg-primary/5 cursor-pointer flex flex-col justify-between transition-all"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary">table_chart</span><span class="font-bold text-primary font-label-md text-label-md">Excel Workbook (.xlsx)</span></div><input checked="" class="accent-primary w-4 h-4" name="export_format" type="radio" value="xlsx"></div><p class="text-[12px] text-on-surface-variant leading-relaxed">مبوب متعدد الأوراق (Classeur Multi-Feuilles)، يتضمن الصيغ الحسابية وتنسيقات الجداول وشعار Soussou Imperial.</p></label><label class="p-space-sm rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high/40 cursor-pointer flex flex-col justify-between transition-all"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-secondary">text_snippet</span><span class="font-bold text-on-surface font-label-md text-label-md">CSV المعياري (.csv)</span></div><input class="accent-primary w-4 h-4" name="export_format" type="radio" value="csv"></div><p class="text-[12px] text-on-surface-variant leading-relaxed">ملف خام مفصول بفواصل منقوطة بترميز UTF-8 BOM جاهز للاستيراد المباشر في Sage Comptabilité و QuickBooks.</p></label></div></div><div class="mt-space-md flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">checklist</span><span class="">جداول ودفاتر البيانات المضمنة في التصدير:</span></span><div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[12px]"><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low border border-outline-variant/30 cursor-pointer"><input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"><span class="text-on-surface font-semibold">دفتر اليومية العامة والقيود (Journal Général)</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low border border-outline-variant/30 cursor-pointer"><input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"><span class="text-on-surface font-semibold">حركات Airtel Money و Moov (Avec Réf)</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low border border-outline-variant/30 cursor-pointer"><input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"><span class="text-on-surface font-semibold">سندات حجوزات العرائس VIP (14 حجز ملكي)</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low border border-outline-variant/30 cursor-pointer"><input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"><span class="text-on-surface font-semibold">جدول المطابقة البنكية (Ecobank &amp; BCC Tchad)</span></label></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-md pt-space-xs border-t border-outline-variant/20"><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 font-semibold">ترميز النصوص واللغات (Encodage):</label><select class="w-full bg-surface-container-lowest text-on-surface border border-outline-variant/50 rounded-lg p-2 font-body-sm text-body-sm outline-none focus:border-secondary"><option selected="" value="utf8">UTF-8 with BOM (دعم كامل للعربية والفرنسية)</option><option value="iso">Windows-1256 / ISO-8859-1</option></select></div><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 font-semibold">فاصل الأعمدة في CSV (Séparateur):</label><select class="w-full bg-surface-container-lowest text-on-surface border border-outline-variant/50 rounded-lg p-2 font-body-sm text-body-sm outline-none focus:border-secondary"><option selected="" value="semicolon">فاصلة منقوطة ( ; ) - متوافق مع فرنسا وإفريقيا</option><option value="comma">فاصلة عادية ( , ) - الأنظمة الأنجلوساكسونية</option></select></div></div><div class="mt-space-md pt-space-sm border-t border-surface-container-high/40 flex flex-wrap items-center justify-between gap-space-sm"><button class="px-3.5 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-colors" onclick="closeExcelExportModal()" type="button">إلغاء</button><div class="flex items-center gap-2"><button class="bg-surface-container-high text-primary hover:bg-surface-variant px-3.5 py-2 rounded-xl font-label-md text-label-md flex items-center gap-1.5 transition-all border border-outline-variant/40" onclick="executeDownloadCsv()" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">description</span><span class="">تحميل ملف CSV (.csv)</span></button><button class="bg-primary text-on-primary hover:bg-primary-container px-4 py-2.5 rounded-xl font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm font-bold" id="btnExecuteExcelExport" onclick="executeDownloadExcel()" type="button"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">download</span><span class="">تحميل مصنف Excel الشامل (.xlsx)</span></button></div></div></div></div><script>function openExcelExportModal(){const modal=document.getElementById('modalExcelExportVip');if(modal)modal.classList.remove('hidden');}function closeExcelExportModal(){const modal=document.getElementById('modalExcelExportVip');if(modal)modal.classList.add('hidden');}function executeDownloadExcel(){const btn=document.getElementById('btnExecuteExcelExport');if(!btn)return;const orig=btn.innerHTML;btn.innerHTML='<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>جارٍ تجهيز مصنف Excel (.xlsx)...</span>';btn.classList.add('opacity-75');setTimeout(()=>{btn.innerHTML='<span class="material-symbols-outlined text-[18px]">done_all</span><span>تم التوليد والتنزيل بنجاح ✓</span>';btn.classList.remove('opacity-75');const toast=document.createElement('div');toast.className='fixed bottom-8 left-8 z-50 bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-3 transition-all duration-300 border border-secondary-fixed/40';toast.innerHTML='<span class="material-symbols-outlined text-secondary-fixed text-[26px]">file_download_done</span><div><div class="font-label-md text-label-md font-bold text-secondary-fixed">تم تصدير ملف Soussou_W46_GrandLivre.xlsx بنجاح</div><div class="font-body-sm text-body-sm text-surface-variant">الملف جاهز للاستيراد والمطابقة مع برامج Sage و QuickBooks و Excel (معايير OHADA).</div></div>';document.body.appendChild(toast);setTimeout(()=>{toast.remove();btn.innerHTML=orig;closeExcelExportModal();},3500);},1200);}function executeDownloadCsv(){const toast=document.createElement('div');toast.className='fixed bottom-8 left-8 z-50 bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-3 transition-all duration-300 border border-secondary-fixed/40';toast.innerHTML='<span class="material-symbols-outlined text-secondary-fixed text-[26px]">text_snippet</span><div><div class="font-label-md text-label-md font-bold text-secondary-fixed">تم تصدير ملف Soussou_W46_Comptabilite.csv</div><div class="font-body-sm text-body-sm text-surface-variant">ملف CSV المعياري الفاصل بـ (;) بترميز UTF-8 BOM تم تنزيله بنجاح.</div></div>';document.body.appendChild(toast);setTimeout(()=>{toast.remove();closeExcelExportModal();},3500);}</script></main></div>
+
+
+</body></html>

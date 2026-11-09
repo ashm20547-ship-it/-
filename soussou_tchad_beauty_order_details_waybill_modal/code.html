@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#ffcf94","on-tertiary-fixed-variant":"#52443f","surface-container-high":"#f9e4de","on-secondary-container":"#795726","outline":"#867274","surface-container-highest":"#f3ded8","background":"#fff8f6","on-secondary":"#ffffff","surface-container":"#ffe9e4","tertiary-fixed":"#f4ded8","on-primary":"#ffffff","on-primary-fixed":"#3d0414","on-tertiary":"#ffffff","tertiary":"#261a17","on-secondary-fixed":"#2a1800","on-error":"#ffffff","primary":"#3f0515","tertiary-fixed-dim":"#d7c2bc","surface-tint":"#934754","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#edbe85","on-surface":"#241916","error-container":"#ffdad6","on-secondary-fixed-variant":"#604012","surface-bright":"#fff8f6","on-error-container":"#93000a","error":"#ba1a1a","surface-dim":"#ebd6d0","on-primary-container":"#d9808e","secondary":"#7b5827","primary-fixed":"#ffd9dd","surface-variant":"#f3ded8","inverse-primary":"#ffb2bc","inverse-on-surface":"#ffede8","on-primary-fixed-variant":"#76303d","primary-fixed-dim":"#ffb2bc","on-tertiary-fixed":"#241916","surface-container-low":"#fff1ed","tertiary-container":"#3c2f2b","primary-container":"#5b1b29","surface":"#fff8f6","on-surface-variant":"#534344","secondary-fixed":"#ffddb5","inverse-surface":"#3a2e2a","on-tertiary-container":"#a99691","on-background":"#241916","outline-variant":"#d8c1c3"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-lg":"1.75rem","space-md":"1rem","space-xs":"0.25rem","space-xl":"3rem","gutter":"1.5rem","margin":"3rem","margin-mobile":"1.25rem","gutter-mobile":"1rem"},fontFamily:{"display-hero":["Playfair Display"],"label-md":["Manrope"],"label-sm":["Manrope"],"display-hero-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"label-lg":["Manrope"],"body-md":["Manrope"],"body-sm":["Manrope"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"title-md":["Playfair Display"],"body-lg":["Manrope"]},fontSize:{"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"700"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.08em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"50px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_16px_rgba(91,27,41,0.06)]"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center justify-between border-b border-surface-container-high/40"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">spa</span></div><div><span class="font-title-md text-title-md text-primary tracking-wide block leading-tight font-semibold">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Admin Suite</span></div></div></div><div class="px-space-md py-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70">القائمة الرئيسية</span></div><nav class="flex flex-col gap-1 px-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">لوحة التحكم</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="products" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">إدارة المنتجات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="font-label-lg text-label-lg">إدارة الطلبات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="bookings" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-label-lg text-label-lg">حجوزات التجميل</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="customers" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">العملاء</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-lg text-label-lg">التقارير والتحليلات</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-200" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">الإعدادات</span></a></nav></div><div class="p-space-md border-t border-surface-container-high/40"><div class="bg-surface-container-low/70 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface">أمينة الحسن</span><span class="font-label-sm text-label-sm text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>مشرف عام</span></div></div><button aria-label="تسجيل الخروج" class="text-on-surface-variant hover:text-error transition-colors p-1" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pr-72 min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-72 h-20 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between border-b border-surface-container-high/40 shadow-[0_1px_8px_rgba(91,27,41,0.03)]"><div class="flex items-center gap-space-md w-full max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline/70 pr-10 pl-4 py-2 rounded-xl text-body-sm font-body-sm outline-none border border-outline-variant/50 focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" placeholder="بحث عن المنتجات، الطلبات، العملاء..." type="search"/></div></div><div class="flex items-center gap-space-md"><a class="bg-primary text-on-primary hover:bg-primary-container px-space-md py-2 rounded-xl font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" data-path="product-create" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span>إضافة منتج جديد</span></a><div class="flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-0.5"><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg bg-surface-container-high text-on-surface font-semibold" type="button">العربية</button><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button><button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button></div><div class="relative"><button class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-space-sm pr-space-xs"><div class="text-left hidden sm:block"><span class="font-label-md text-label-md font-semibold text-on-surface block leading-tight">Amina Al-Hassan</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 block">Super Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 flex-1 px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full relative">
+<!-- Background App Page Layer (Orders Management Surface Underneath) -->
+<div aria-hidden="true" class="w-full filter blur-[3px] opacity-40 pointer-events-none select-none">
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-primary">إدارة الطلبات والمبيعات</h1>
+<span class="bg-surface-container px-space-md py-1 rounded-full text-secondary font-label-md text-label-md">1,428 طلب نشط</span>
+</div>
+<div class="flex gap-space-sm">
+<div class="h-10 w-48 bg-surface-container-high rounded-xl"></div>
+<div class="h-10 w-28 bg-primary rounded-xl"></div>
+</div>
+</div>
+<!-- Dummy Stats Grid -->
+<div class="grid grid-cols-4 gap-gutter mb-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">إجمالي المبيعات اليوم</p>
+<p class="font-headline-md text-headline-md text-primary font-bold">2,450,000 FCFA</p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">الطلبات قيد التجهيز</p>
+<p class="font-headline-md text-headline-md text-secondary font-bold">42 طلب</p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">بوليصات الشحن الجاهزة</p>
+<p class="font-headline-md text-headline-md text-primary font-bold">118 بوليصة</p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">العميلات المتميزات VIP</p>
+<p class="font-headline-md text-headline-md text-secondary font-bold">89 عميلة</p>
+</div>
+</div>
+<!-- Dummy Table Silhouette -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg h-96 shadow-sm">
+<div class="h-8 bg-surface-container-high rounded-lg mb-space-md w-full"></div>
+<div class="h-12 bg-surface-container-low rounded-lg mb-space-sm w-full"></div>
+<div class="h-12 bg-surface-container-low rounded-lg mb-space-sm w-full"></div>
+<div class="h-12 bg-surface-container-low rounded-lg mb-space-sm w-full"></div>
+</div>
+</div>
+<!-- Modal Backdrop with Warm Ambient Blur -->
+<div class="fixed inset-0 z-50 bg-tertiary/60 backdrop-blur-md flex items-center justify-center p-space-md overflow-y-auto">
+<!-- Modal Outer Frame (980px Max Width, Editorial Royal Ivory & Deep Wine Palette) -->
+<div class="relative w-full max-w-5xl my-auto bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col text-on-surface transition-all duration-300">
+<!-- Top Royal Aesthetic Ambient Accents -->
+<div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-secondary-fixed/30 filter blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-primary-fixed/20 filter blur-3xl pointer-events-none"></div>
+<!-- Modal Header -->
+<div class="relative bg-gradient-to-r from-surface-container-low via-surface to-surface-container-low px-space-xl py-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-space-md">
+<!-- Title & Badges -->
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[26px]">local_shipping</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">تفاصيل الطلب وبوليصة الشحن</h2>
+<span class="font-title-md text-title-md text-secondary font-bold font-display-hero px-2 py-0.5 rounded-lg bg-surface-container-high/60">#ST-9021</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+                  عميلة VIP مميزة
+                </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                  قيد التجهيز الفاخر
+                </span>
+<span class="text-outline font-label-sm text-label-sm mx-1">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">تاريخ الطلب: 24 أكتوبر 2024 - 11:20 ص</span>
+</div>
+</div>
+</div>
+<!-- Header Actions (Print, Invoice, Close) -->
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all flex items-center gap-1.5 font-label-md text-label-md shadow-xs" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>طباعة البوليصة الرسمية (PDF)</span>
+</button>
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all flex items-center gap-1.5 font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>الفاتورة الضريبية</span>
+</button>
+<button aria-label="إغلاق النافذة" class="w-9 h-9 rounded-xl bg-surface-container hover:bg-error-container hover:text-on-error-container text-on-surface-variant transition-all flex items-center justify-center mr-1">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Navigation Tab Switcher -->
+<div class="flex items-center gap-space-xs pt-space-xs mt-space-xs">
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md font-semibold transition-all bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5" id="tab-overview-btn" onclick="switchModalTab('overview')">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span>نظرة عامة والمنتجات</span>
+</button>
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-waybill-btn" onclick="switchModalTab('waybill')">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span>بوليصة الشحن والباركود</span>
+</button>
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-audit-btn" onclick="switchModalTab('audit')">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>سجل التتبع والملاحظات</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Modal Body -->
+<div class="max-h-[calc(85vh-200px)] overflow-y-auto p-space-xl space-y-space-lg bg-surface">
+<!-- TAB CONTENT: OVERVIEW -->
+<div class="space-y-space-lg" id="tab-content-overview">
+<!-- Order Status Royal Stepper Timeline -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-lg text-label-lg text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">timeline</span>
+                مراحل معالجة الطلب والتوصيل
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-fixed/40 px-2 py-0.5 rounded-full">نسبة الإنجاز 65%</span>
+</div>
+<!-- Stepper Items -->
+<div class="grid grid-cols-4 gap-space-sm relative">
+<!-- Step 1: Done -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md mb-2">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">تم استلام الطلب</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">24 أكتوبر، 11:20 ص</span>
+</div>
+<!-- Step 2: Done -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md mb-2">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">تأكيد الدفع (COD)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">معتمد وموثق تلقائياً</span>
+</div>
+<!-- Step 3: Active In-Progress -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg ring-4 ring-secondary-container/40 mb-2">
+<span class="material-symbols-outlined text-[20px] animate-spin">autorenew</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-secondary">التجهيز والتغليف الملكي</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">جاري التحضير بصندوق الهدايا</span>
+</div>
+<!-- Step 4: Pending -->
+<div class="flex flex-col items-center text-center relative z-10 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<span class="font-label-md text-label-md font-medium text-on-surface-variant">الشحن والتسليم</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">الموعد: 4:00 - 6:00 عصراً</span>
+</div>
+<!-- Stepper Connecting Progress Line -->
+<div class="absolute top-5 left-1/8 right-1/8 h-1 bg-surface-container -z-0">
+<div class="h-full bg-primary w-2/3 transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<!-- Two Column Grid: Customer Information & Delivery Carrier Detail -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card A: Customer Dossier -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">person_pin</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">مريم حسن دابو</h3>
+<p class="font-label-sm text-label-sm text-secondary font-medium">سيدة أعمال ومقتنية لطقوس الجمال التشادي</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-fixed/50 text-on-secondary-fixed rounded font-label-sm text-label-sm font-semibold">عميلة وفية (Tier 1)</span>
+</div>
+<!-- Customer Details Badges -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md bg-surface-container-low/60 p-space-sm rounded-lg">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">الطلبات السابقة</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">4 طلبات</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">إجمالي المشتريات</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">320,000 <span class="text-label-sm font-body-sm">FCFA</span></span>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm font-body-sm">
+<div class="flex items-center justify-between py-1 bg-surface-container-low/30 px-space-sm rounded">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">phone_iphone</span>
+                      رقم الهاتف الرئيسي:
+                    </span>
+<span class="font-semibold text-primary font-label-md text-label-md" dir="ltr">+235 90 28 66 23</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low/30 px-space-sm rounded">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+                      هاتف ثانوي:
+                    </span>
+<span class="font-semibold text-primary font-label-md text-label-md" dir="ltr">+235 66 12 34 56</span>
+</div>
+</div>
+</div>
+<!-- Quick Communication Action Bar -->
+<div class="flex items-center gap-space-xs pt-space-md mt-space-md">
+<a class="flex-1 py-2 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-xs" href="https://wa.me/23590286623" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>محادثة واتساب سريعة</span>
+</a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md flex items-center gap-1 shadow-xs" href="tel:+23590286623">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span>اتصال</span>
+</a>
+</div>
+</div>
+<!-- Card B: Delivery Logistics & Courier Assigned -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-xs">
+<span class="material-symbols-outlined text-[20px]">distance</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">وجهة التوصيل والشحن</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">أنجمينا - التوصيل السريع الداخلي</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm rounded font-medium">تسليم اليوم</span>
+</div>
+<!-- Detailed Address Card -->
+<div class="bg-surface-container-low/70 p-space-md rounded-lg mb-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary mt-0.5">location_on</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-primary">أنجمينا - حي صابنغالي (Sabangali)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+                        فيلا 14 بالقرب من ساحة الأمة، المنزل ذو الباب الخشبي العريض والنخيل المحيط.
+                      </p>
+</div>
+</div>
+</div>
+<!-- Courier Dispatch Info -->
+<div class="space-y-space-xs bg-surface-container-low/30 p-space-sm rounded-lg text-body-sm font-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+                      المندوب المكلف:
+                    </span>
+<span class="font-semibold text-primary">إبراهيم موسى (أسطول أنجمينا)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">two_wheeler</span>
+                      مركبة التوصيل:
+                    </span>
+<span class="font-semibold text-primary font-label-md text-label-md" dir="ltr">NDJ-8422</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                      نافذة التسليم المتوقعة:
+                    </span>
+<span class="font-bold text-secondary">اليوم بين 4:00 - 6:00 عصراً</span>
+</div>
+</div>
+</div>
+<!-- Waybill Quick Tracking ID Indicator -->
+<div class="pt-space-md mt-space-md flex items-center justify-between text-label-sm font-label-sm bg-surface-container-lowest">
+<span class="text-on-surface-variant">رقم البوليصة المرجعي:</span>
+<span class="font-mono font-bold text-primary px-2 py-1 rounded bg-surface-container">TRK-TCD-9021-NDJ</span>
+</div>
+</div>
+</div>
+<!-- Section C: Purchased Luxury Items Table -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">shopping_bag</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">المنتجات المطلوبة (2 أصناف)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full font-medium">طقوس العناية بالشعر والبشرة</span>
+</div>
+<!-- Items List -->
+<div class="space-y-space-sm">
+<!-- Item 1 -->
+<div class="p-space-md bg-surface-container-low/40 rounded-xl flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden shadow-xs flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Exquisite luxury cosmetic jar of authentic Chadian Chebe powder and organic botanical hair elixir, studio product shot with gold foil accents, warm rose alabaster tones and regal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJGn7jxOa-o8POGT50Z8j_sj2-hHqZXpv-Rn7HpBcPNNsjQ6srf0BKKOjvfJEPMlZ_LugHHR0j0R9sxpPF4Jx4qfNh0oPYQ_Ehr77c_wFYmUM4Uuo3HWuxJQoH0xp0F3Gnk1vZvkcK9Kq05pj1Q5n0-PVgXOCZFdlXPf2-3_I8nFlbBAOPwHs4lbmE0Xp4mEOmMM6RzbW7SCOfvBxwH_K4sJyrMcWySji2MLvb4fb"/>
+<span class="absolute bottom-0 inset-x-0 bg-primary/80 text-[9px] text-center text-on-primary py-0.5 font-bold">CHÉBÉ</span>
+</div>
+<div>
+<span class="inline-block px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold mb-1">HERITAGE BOTANICAL</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold leading-tight">مجموعة إكسير الشيبيه المتكاملة الملكية</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                      مستخلص الشيبيه التقليدي مع زبدة الشيا العضوية + هدية مرطب الشفاه المخملي
+                    </p>
+</div>
+</div>
+<div class="text-left flex-shrink-0">
+<div class="font-label-md text-label-md text-on-surface-variant">الكمية: <span class="font-bold text-primary">2 عبوة</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">35,000 FCFA / للعبوة</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">70,000 <span class="text-label-sm font-body-sm">FCFA</span></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md bg-surface-container-low/40 rounded-xl flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden shadow-xs flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High-end artisanal gold tube of velvety honey lip balm, cosmetic macro product photography with warm amber sheen and soft burgundy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7jxqzgrLwpNWP8H6s3dzigtIc6eF9zmV2cEd-XrDxpy8uCMxkLoE9_uTGPMpFO56P-FrAah1ImYvmvUT0Stl1OZJ2IsJnSDIMGbl4QFrgBEu7_oBcpeow_QGXNw6AEkpuJ4IU8jAk1Tz4PRyqKaEf8KZUJf5Gkv2oXxJ9b-KZYUhbmSpFqVLnIzHJQKMz36yHFFJx2hVgmczdWPhxX3wPJVOkCRI9SA-16-Pv1b4"/>
+<span class="absolute bottom-0 inset-x-0 bg-secondary/80 text-[9px] text-center text-on-secondary py-0.5 font-bold">HONEY LIP</span>
+</div>
+<div>
+<span class="inline-block px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold mb-1">ROYAL CARE</span>
+<h4 class="font-title-md text-title-md text-primary font-semibold leading-tight">مرطب الشفاه المخملي العسلي</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                      شمع النحل الإفريقي الطبيعي مع فيتامين E وزيوت اللوز الصحراوية المركزة
+                    </p>
+</div>
+</div>
+<div class="text-left flex-shrink-0">
+<div class="font-label-md text-label-md text-on-surface-variant">الكمية: <span class="font-bold text-primary">1 قطعة</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">15,000 FCFA / للقطعة</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold mt-1">15,000 <span class="text-label-sm font-body-sm">FCFA</span></div>
+</div>
+</div>
+</div>
+<!-- Special Packaging Instructions Notice Box -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary mt-0.5">redeem</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">تعليمات التغليف والإهداء الفاخر:</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  «تغليف بصندوق الهدايا الملكي المخملي الممهور بشعار سوسو تشاد مع بطاقة إهداء مخصصة ومختومة بشمع العسل وعينة مجانية لعطر صندل كانو التراثي».
+                </p>
+</div>
+</div>
+</div>
+<!-- Section D: Financial Breakdown & Payment Reconciliation -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">payments</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">ملخص الدفع والتكاليف</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">الدفع عند الاستلام (COD)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Left Column: Payment Details Details -->
+<div class="space-y-space-xs text-body-sm font-body-sm justify-center flex flex-col">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">المجموع الفرعي للمنتجات:</span>
+<span class="font-semibold text-on-surface">85,000 FCFA</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">خدمة التوصيل السريع الملكي (أنجمينا):</span>
+<span class="font-semibold text-secondary flex items-center gap-1">
+<span class="line-through text-outline font-normal">3,500 FCFA</span>
+                    مجاناً (عرض الولاء)
+                  </span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">الضريبة المضافة وشهادة الجودة:</span>
+<span class="font-semibold text-on-surface">مشمولة (0.00 FCFA)</span>
+</div>
+<div class="pt-space-sm mt-space-sm flex justify-between items-baseline bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-title-md text-title-md text-primary font-bold">المبلغ الصافي المستحق:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">85,000 <span class="text-title-md font-body-md">FCFA</span></span>
+</div>
+</div>
+<!-- Right Column: Settlement Channels -->
+<div class="bg-surface-container-low/70 p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-primary font-bold block mb-1">خيارات السداد المعتمدة لدى المندوب:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                    العميلة متاح لها الدفع نقداً عند استلام الشحنة، أو التحويل الفوري المباشر عبر المحافظ الإلكترونية المعتمدة في تشاد:
+                  </p>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      نقد كاش (XAF / FCFA)
+                    </div>
+<div class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-2xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                      Airtel Money Tchad
+                    </div>
+<div class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-2xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                      Moov Africa Tchad
+                    </div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-secondary pt-space-xs mt-space-xs">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span>تم إصدار سند القبض الرقمي مسبقاً برقم #REC-9021</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT: WAYBILL & BARCODE VIEW -->
+<div class="hidden space-y-space-lg" id="tab-content-waybill">
+<!-- Printable Royal Waybill Document Card -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-md relative overflow-hidden">
+<!-- Luxury Watermark -->
+<div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[280px] text-primary">spa</span>
+</div>
+<!-- Waybill Header -->
+<div class="flex items-center justify-between pb-space-lg mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">بوليصة الشحن والتسليم السريع</h3>
+<p class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">SOUSSOU TCHAD PRESTIGE BEAUTY LOGISTICS</p>
+</div>
+</div>
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">رقم التتبع الدولي والمحلي:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold font-mono tracking-wider">TRK-TCD-9021-NDJ</span>
+<span class="font-label-sm text-label-sm text-secondary block mt-0.5 font-bold">تسليم أولوي (VIP EXPRESS)</span>
+</div>
+</div>
+<!-- Waybill Grid -->
+<div class="grid grid-cols-2 gap-space-lg mb-space-lg">
+<!-- Shipper / From -->
+<div class="bg-surface-container-low/60 p-space-md rounded-xl">
+<span class="font-label-sm text-label-sm text-secondary font-bold block mb-1">المرسل (Shipper / Boutique):</span>
+<h4 class="font-title-md text-title-md text-primary font-bold">دار سوسو تشاد للجمال الطبيعي</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  المقر الرئيسي: شارع شارل ديغول، حي كابالاي، أنجمينا - جمهورية تشاد.<br/>
+                  هاتف الدعم اللوجستي: +235 22 52 00 00
+                </p>
+</div>
+<!-- Consignee / To -->
+<div class="bg-surface-container-low/60 p-space-md rounded-xl">
+<span class="font-label-sm text-label-sm text-secondary font-bold block mb-1">المستلم (Consignee / Customer):</span>
+<h4 class="font-title-md text-title-md text-primary font-bold">مريم حسن دابو</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  أنجمينا - حي صابنغالي، فيلا 14 قرب ساحة الأمة.<br/>
+                  هاتف التواصل المباشر: +235 90 28 66 23
+                </p>
+</div>
+</div>
+<!-- Barcode & QR Code Section -->
+<div class="p-space-lg bg-surface-container rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<!-- Barcode SVG Simulation -->
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-2">مسح باركود جهاز المندوب والتسليم:</span>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-2xs flex flex-col items-center">
+<!-- Simulated High Fidelity Barcode -->
+<svg class="w-64 h-14" height="60" viewbox="0 0 260 60" width="260">
+<rect class="text-tertiary" fill="currentColor" height="50" width="4" x="0" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="2" x="6" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="12" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="3" x="22" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="8" x="28" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="2" x="40" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="5" x="46" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="9" x="54" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="3" x="68" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="7" x="74" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="2" x="85" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="92" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="4" x="102" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="8" x="110" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="3" x="122" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="130" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="2" x="140" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="8" x="148" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="4" x="160" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="168" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="3" x="178" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="9" x="185" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="4" x="198" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="2" x="206" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="214" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="8" x="224" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="3" x="236" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="6" x="244" y="0"></rect>
+<rect class="text-tertiary" fill="currentColor" height="50" width="4" x="254" y="0"></rect>
+</svg>
+<span class="font-mono font-bold text-xs tracking-widest text-on-surface mt-1">9 0 2 1 8 4 2 2 0 0 1</span>
+</div>
+</div>
+<!-- Quick QR Code for GPS & Verification -->
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 bg-surface-container-lowest p-1.5 rounded-lg shadow-2xs flex items-center justify-center">
+<svg class="w-full h-full text-primary" viewbox="0 0 100 100">
+<rect fill="currentColor" height="30" width="30"></rect>
+<rect fill="white" height="18" width="18" x="6" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="70"></rect>
+<rect fill="white" height="18" width="18" x="76" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" y="70"></rect>
+<rect fill="white" height="18" width="18" x="6" y="76"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect fill="currentColor" height="8" width="8" x="36" y="10"></rect>
+<rect fill="currentColor" height="8" width="8" x="48" y="24"></rect>
+<rect fill="currentColor" height="12" width="12" x="36" y="38"></rect>
+<rect fill="currentColor" height="10" width="10" x="52" y="42"></rect>
+<rect fill="currentColor" height="8" width="14" x="72" y="46"></rect>
+<rect fill="currentColor" height="14" width="14" x="42" y="72"></rect>
+<rect fill="currentColor" height="22" width="22" x="68" y="72"></rect>
+</svg>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-primary block">رمز التحقق الذكي (Smart QR)</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant max-w-xs mt-0.5">
+                    يتيح للمندوب تأكيد التسليم فوريًا ومزامنة تحديث الحالة مع نظام سوسو تشاد المركزي تلقائياً.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT: AUDIT LOG -->
+<div class="hidden space-y-space-md" id="tab-content-audit">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<h3 class="font-title-md text-title-md text-primary font-bold mb-space-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">history_edu</span>
+              سجل النشاطات والأحداث الموثقة للطلب
+            </h3>
+<div class="space-y-space-md relative pr-4">
+<!-- Audit Item 1 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md font-bold text-primary">تمت إضافة ملاحظة التغليف الملكي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">قبل 20 دقيقة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    بواسطة: أمينة الحسن (مشرف عام) - تم تأكيد إضافة عينة صندل كانو وبطاقة الإهداء المذهبة.
+                  </p>
+</div>
+</div>
+<!-- Audit Item 2 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">assignment_ind</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md font-bold text-primary">إسناد الطلب إلى المندوب إبراهيم موسى</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">قبل ساعة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    نظام التوزيع الذكي: تحديد خط سير صابنغالي - وسط أنجمينا.
+                  </p>
+</div>
+</div>
+<!-- Audit Item 3 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md font-bold text-primary">اعتماد الطلب المباشر من المتجر الإلكتروني</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 أكتوبر، 11:20 ص</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    العميلة مسجلة الدخول برقم الهاتف النقال +235 90 28 66 23.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action Bar -->
+<div class="bg-surface-container-low px-space-xl py-space-md shadow-inner flex items-center justify-between flex-wrap gap-space-md">
+<!-- Left Footer Action: Danger / Cancellation -->
+<div>
+<button class="px-space-md py-2 rounded-xl text-error hover:bg-error-container/40 transition-colors font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>إلغاء الطلب / إرجاع للمستودع</span>
+</button>
+</div>
+<!-- Right Footer Actions: Thermal Print & Status Update -->
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md flex items-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">label</span>
+<span>طباعة ملصق الشحن الحراري</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md font-bold flex items-center gap-2 shadow-md" id="dispatch-action-btn" onclick="triggerStatusUpdate()">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span id="dispatch-btn-text">تحديث الحالة: جاهز للتسليم للمندوب</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Controller for Modal Tabs & Status Mock Interaction -->
+<script>
+    function switchModalTab(tabId) {
+      // Elements
+      const overviewContent = document.getElementById('tab-content-overview');
+      const waybillContent = document.getElementById('tab-content-waybill');
+      const auditContent = document.getElementById('tab-content-audit');
+
+      const overviewBtn = document.getElementById('tab-overview-btn');
+      const waybillBtn = document.getElementById('tab-waybill-btn');
+      const auditBtn = document.getElementById('tab-audit-btn');
+
+      // Reset
+      overviewContent.classList.add('hidden');
+      waybillContent.classList.add('hidden');
+      auditContent.classList.add('hidden');
+
+      const inactiveClasses = ['text-on-surface-variant', 'hover:bg-surface-container'];
+      const activeClasses = ['bg-primary-container', 'text-on-primary', 'shadow-sm'];
+
+      [overviewBtn, waybillBtn, auditBtn].forEach(btn => {
+        btn.classList.remove(...activeClasses);
+        btn.classList.add(...inactiveClasses);
+      });
+
+      // Activate selected
+      if (tabId === 'overview') {
+        overviewContent.classList.remove('hidden');
+        overviewBtn.classList.remove(...inactiveClasses);
+        overviewBtn.classList.add(...activeClasses);
+      } else if (tabId === 'waybill') {
+        waybillContent.classList.remove('hidden');
+        waybillBtn.classList.remove(...inactiveClasses);
+        waybillBtn.classList.add(...activeClasses);
+      } else if (tabId === 'audit') {
+        auditContent.classList.remove('hidden');
+        auditBtn.classList.remove(...inactiveClasses);
+        auditBtn.classList.add(...activeClasses);
+      }
+    }
+
+    function triggerStatusUpdate() {
+      const btn = document.getElementById('dispatch-action-btn');
+      const btnText = document.getElementById('dispatch-btn-text');
+      
+      btn.classList.add('bg-secondary');
+      btnText.textContent = 'تم التسليم للمندوب بنجاح (خرج للشحن)';
+      
+      setTimeout(() => {
+        btn.classList.remove('bg-secondary');
+        btnText.textContent = 'تم التحديث ✓ (في الطريق للعميلة)';
+      }, 1500);
+    }
+  </script>
+</div></main></div></body></html>

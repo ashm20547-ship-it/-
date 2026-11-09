@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#f3ded8", "surface": "#fff8f6", "on-primary-container": "#d9808e", "on-secondary": "#ffffff", "on-tertiary-container": "#a99691", "secondary-fixed-dim": "#edbe85", "surface-bright": "#fff8f6", "surface-variant": "#f3ded8", "tertiary": "#261a17", "surface-container-high": "#f9e4de", "primary-fixed-dim": "#ffb2bc", "secondary-fixed": "#ffddb5", "tertiary-container": "#3c2f2b", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1800", "secondary": "#7b5827", "surface-tint": "#934754", "primary-fixed": "#ffd9dd", "primary": "#3f0515", "on-tertiary-fixed": "#241916", "outline-variant": "#d8c1c3", "primary-container": "#5b1b29", "surface-container-low": "#fff1ed", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#52443f", "inverse-primary": "#ffb2bc", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-fixed": "#f4ded8", "inverse-surface": "#3a2e2a", "on-surface-variant": "#534344", "on-surface": "#241916", "on-secondary-fixed-variant": "#604012", "on-primary": "#ffffff", "on-primary-fixed": "#3d0414", "on-primary-fixed-variant": "#76303d", "background": "#fff8f6", "secondary-container": "#ffcf94", "surface-container-lowest": "#ffffff", "outline": "#867274", "surface-container": "#ffe9e4", "inverse-on-surface": "#ffede8", "on-background": "#241916", "on-secondary-container": "#795726", "surface-dim": "#ebd6d0", "tertiary-fixed-dim": "#d7c2bc" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.75rem", "space-xl": "3rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Playfair Display" ], "body-md": [ "Manrope" ], "display-hero-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "body-sm": [ "Manrope" ], "title-md": [ "Playfair Display" ], "label-sm": [ "Manrope" ], "label-lg": [ "Manrope" ], "headline-lg": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "body-lg": [ "Manrope" ], "headline-md": [ "Playfair Display" ], "label-md": [ "Manrope" ] }, "fontSize": { "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "50px", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="p-space-md"><div class="flex items-center gap-space-sm pb-space-lg pt-space-xs px-space-xs"><img alt="Logo Soussou TCHAD" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(91,27,41,0.15)] ring-1 ring-secondary/30" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-tight">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Imperial Beauty</span></div></div><nav class="flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Vue Globale</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-lg text-label-lg">Tableau de Bord</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Catalogue &amp; Stock</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="produits" href="#"><span class="material-symbols-outlined text-xl">inventory_2</span><span class="font-label-lg text-label-lg">Produits</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-xl">category</span><span class="font-label-lg text-label-lg">Catégories</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gestion-de-stock" href="#"><span class="material-symbols-outlined text-xl">warehouse</span><span class="font-label-lg text-label-lg">Gestion de Stock</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mouvements-stock" href="#"><span class="material-symbols-outlined text-xl">sync_alt</span><span class="font-label-lg text-label-lg">Mouvements Stock</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Ventes &amp; Relation Client</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="commandes" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span class="font-label-lg text-label-lg">Commandes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clients" href="#"><span class="material-symbols-outlined text-xl">group</span><span class="font-label-lg text-label-lg">Clients</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="factures" href="#"><span class="material-symbols-outlined text-xl">receipt_long</span><span class="font-label-lg text-label-lg">Factures</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Institut &amp; Beauté</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="soins-et-rituels" href="#"><span class="material-symbols-outlined text-xl">spa</span><span class="font-label-lg text-label-lg">Soins &amp; Rituels</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold shadow-sm" data-path="portfolio" href="#"><span class="material-symbols-outlined text-xl">auto_awesome</span><span class="font-label-lg text-label-lg">Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rendez-vous" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="font-label-lg text-label-lg">Rendez-vous (Agenda)</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold opacity-75">Administration</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rapports-et-audit" href="#"><span class="material-symbols-outlined text-xl">assessment</span><span class="font-label-lg text-label-lg">Rapports &amp; Audit</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="utilisateurs-et-droits" href="#"><span class="material-symbols-outlined text-xl">admin_panel_settings</span><span class="font-label-lg text-label-lg">Utilisateurs &amp; Droits</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuration-boutique" href="#"><span class="material-symbols-outlined text-xl">tune</span><span class="font-label-lg text-label-lg">Configuration Boutique</span></a></div></nav></div><div class="p-space-md border-t border-surface-container"><div class="bg-surface-container px-space-sm py-space-sm rounded-lg flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant">Soussou Suite v2.4 • Tchad</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="relative flex-1 max-w-lg"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)]" placeholder="Rechercher une réalisation, rituel, client..." type="search"/></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><select aria-label="Sélectionner la langue" class="appearance-none bg-surface-container-lowest py-2 pl-3 pr-8 rounded-lg font-label-md text-label-md text-on-surface font-medium outline-none cursor-pointer focus:ring-1 focus:ring-secondary shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><option value="fr">Français</option><option value="ar">العربية</option><option value="en">English</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 text-on-surface-variant text-base">expand_more</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-[0_1px_4px_rgba(0,0,0,0.02)]" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary-container rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Mme Soussou</span><span class="font-label-sm text-label-sm text-secondary font-medium">Lead Artist &amp; DG</span></div></div></div></header><main class="relative pt-20 w-full px-gutter bg-surface flex-1"><div class="flex flex-col w-full pb-16">
+<!-- Interactive MVP State Switcher -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-sm mb-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-xl">tune</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Simulateur d'États (MVP Showcase) :</span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5" id="simulator-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm transition-all shadow-sm" id="btn-state-active" onclick="setSimState('active')">1. Galerie Active (18)</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-drawer" onclick="setSimState('drawer')">2. Tiroir Ajout Visuel</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-reorder" onclick="setSimState('reorder')">3. Mode Réorganisation</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-unapproved" onclick="setSimState('unapproved')">4. Filtre Non Publiés (4)</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-storefront" onclick="setSimState('storefront')">5. Aperçu Vitrine (MA-03)</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-skeleton" onclick="setSimState('skeleton')">6. Chargement (Skeleton)</button>
+</div>
+</div>
+<!-- Breadcrumbs & Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold mb-space-xs">
+<span>Institut &amp; Beauté</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-on-surface-variant">AD-10 Portfolio &amp; Galerie Artistique</span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Portfolio Management</h1>
+<span class="font-title-md text-title-md text-secondary/90 font-serif">/ إدارة معرض الأعمال والمكياج</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+        Gérez, ordonnez et publiez les réalisations Makeup Artist de la Maison Soussou TCHAD en conformité stricte avec les consentements clients (FR-PORT-04).
+      </p>
+</div>
+<!-- Top Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full shadow-sm mr-1">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wider">Sync Vitrine MA-03</span>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-colors shadow-sm font-label-md text-label-md font-semibold" id="reorder-toggle-btn" onclick="toggleReorderMode()">
+<span class="material-symbols-outlined text-base">drag_indicator</span>
+<span>Réorganiser</span>
+</button>
+<a class="flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-container hover:brightness-95 transition-all shadow-sm font-label-md text-label-md font-semibold" href="#preview-modal" onclick="openStorefrontPreview()">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Aperçu MA-03</span>
+</a>
+<button class="flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md font-label-lg text-label-lg font-bold" onclick="openDrawer()">
+<span class="material-symbols-outlined text-lg">add_photo_alternate</span>
+<span>+ Ajouter une Réalisation</span>
+</button>
+</div>
+</div>
+<!-- KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold block mb-1">Total Réalisations</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-serif">18</span>
+<span class="font-label-md text-label-md text-emerald-700 bg-surface-container px-2 py-0.5 rounded-full font-bold">+4 ce mois</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Visuels haute définition archivés</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">photo_library</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold block mb-1">Univers &amp; Catégories</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-secondary font-serif">04</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Thématiques Actives</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Mariage, Soirée, Henné, Soin &amp; Glow</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">auto_fix_high</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-emerald-700"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold block mb-1">Consentements &amp; Statut</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-emerald-800 font-serif">14 <span class="text-sm font-sans font-normal text-on-surface-variant">/ 18</span></span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-bold">4 en attente</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">77.8% éligibles et diffusés sur vitrine</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Strict Privacy & Image Rights Banner (FR-PORT-04) -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest">Protocole de Confidentialité &amp; Droit à l'Image</span>
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded uppercase font-semibold">Norme FR-PORT-04</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Toute photographie présentant une cliente avec visage identifiable ne peut être publiée sur la vitrine publique <strong class="text-primary font-semibold">MA-03</strong> sans le recueil formel d'un consentement écrit. Les visuels sans accord demeurent confinés à l'archivage interne restreint de la Direction Artistique.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="setSimState('unapproved')">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+<span>Voir les 4 photos en attente</span>
+</button>
+</div>
+</div>
+<!-- Filter & Controls Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md mb-space-lg shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search and select filters -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm flex-1">
+<div class="relative flex-1 max-w-sm">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary transition-all" id="portfolio-search" placeholder="Rechercher réf (#PF-BRD), cliente, tag..." type="text"/>
+</div>
+<div class="relative">
+<select class="appearance-none w-full bg-surface-container-low text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg outline-none cursor-pointer focus:ring-1 focus:ring-secondary" id="category-filter" onchange="filterGallery()">
+<option value="all">Toutes les Catégories (4)</option>
+<option value="mariage">Mariage &amp; Cérémonies (7)</option>
+<option value="gala">Soirée &amp; Gala VIP (4)</option>
+<option value="henne">Henné &amp; Traditions Sahéliennes (4)</option>
+<option value="glow">Beauté Naturelle &amp; Soins (3)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-base">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none w-full bg-surface-container-low text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-lg outline-none cursor-pointer focus:ring-1 focus:ring-secondary" id="status-filter" onchange="filterGallery()">
+<option value="all">Tous les Statuts</option>
+<option value="published">Publiés (Consentement Validé) 🔒</option>
+<option value="pending">En attente / Privé (FR-PORT-04) ⚠️</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+<!-- View Modes & Ordering Stats -->
+<div class="flex items-center justify-between sm:justify-end gap-space-sm">
+<span class="hidden font-label-sm text-label-sm text-secondary font-semibold bg-surface-container px-3 py-1 rounded-full" id="reorder-banner-note">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary mr-1 animate-ping"></span>
+        Glissez les cartes pour ajuster l'ordre vitrine
+      </span>
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm" id="view-grid-btn" onclick="setViewMode('grid')" title="Vue Grille Éditoriale">
+<span class="material-symbols-outlined text-lg leading-none">grid_view</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface" id="view-list-btn" onclick="setViewMode('list')" title="Vue Liste Administrative">
+<span class="material-symbols-outlined text-lg leading-none">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SKELETON STATE VIEW (Hidden by default) -->
+<div class="hidden grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md mb-space-xl" id="skeleton-view">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm animate-pulse flex flex-col gap-3">
+<div class="w-full h-80 bg-surface-container-highest rounded-lg"></div>
+<div class="h-5 bg-surface-container-highest rounded w-3/4"></div>
+<div class="h-4 bg-surface-container-high rounded w-1/2"></div>
+<div class="flex justify-between items-center mt-2 pt-2 border-t border-surface-container">
+<div class="h-6 bg-surface-container-highest rounded-full w-24"></div>
+<div class="h-6 bg-surface-container-highest rounded w-16"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm animate-pulse flex flex-col gap-3">
+<div class="w-full h-80 bg-surface-container-highest rounded-lg"></div>
+<div class="h-5 bg-surface-container-highest rounded w-3/4"></div>
+<div class="h-4 bg-surface-container-high rounded w-1/2"></div>
+<div class="flex justify-between items-center mt-2 pt-2 border-t border-surface-container">
+<div class="h-6 bg-surface-container-highest rounded-full w-24"></div>
+<div class="h-6 bg-surface-container-highest rounded w-16"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm animate-pulse flex flex-col gap-3">
+<div class="w-full h-80 bg-surface-container-highest rounded-lg"></div>
+<div class="h-5 bg-surface-container-highest rounded w-3/4"></div>
+<div class="h-4 bg-surface-container-high rounded w-1/2"></div>
+<div class="flex justify-between items-center mt-2 pt-2 border-t border-surface-container">
+<div class="h-6 bg-surface-container-highest rounded-full w-24"></div>
+<div class="h-6 bg-surface-container-highest rounded w-16"></div>
+</div>
+</div>
+</div>
+<!-- PRIMARY SHOWCASE: Visual Portfolio Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg mb-space-xl" id="portfolio-gallery-grid">
+<!-- Card 1: Mariée Royale Kanem -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative" data-category="mariage" data-order="1" data-status="published">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up photograph of a radiant Chadian bride wearing a traditional embroidered Kanem royal veil, adorned with intricate gold filigree headpieces, beaded bridal ornaments, and sophisticated glowing wedding makeup with warm bronze and burgundy lip accents, high-end editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgDFoUxoNkXPoFznEtn0zlpIh4o8NortgK0vhabx_5MOZ4oWxpEGwAtmDJzGkw646RFN22B-laSLtacD-mVwi6udlGGpUVSilAMXrKS9Voz0fE1NUECuG-sZMG0NPqqcOgEa01fL02E74nWtvYSzBeJftC-v0l_6IFpBHDaNbeFdJGa8LRi78bEa7RvMPZGcxhAaj3qry1y0651VIicFjln9Hw-3PKY706b7drX5xr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<!-- Order Badge & Drag Handle -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#01</span>
+<span class="text-xs text-on-surface-variant font-medium">(Priorité 1)</span>
+</div>
+<!-- Privacy & Status Pill -->
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Consentement Validé</span>
+</div>
+<!-- Category Floating Pill -->
+<div class="absolute bottom-3 left-3 bg-primary-container text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Mariage &amp; Cérémonies
+        </div>
+</div>
+<!-- Card Details Content -->
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: #PF-MAR-01</span>
+<span class="font-label-sm text-label-sm text-secondary">Réalisé par Mme Soussou</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Sublimation Mariée Royale Kanem</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Création nuptiale grand apparat avec parure dorée artisanale, fard chaud terracotta et finition velours longue tenue pour cérémonie de noces à N'Djamena.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>12 Janvier 2025</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="previewItem('Card 1')" title="Aperçu Grand Format">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(1)" title="Éditer Métadonnées &amp; Accord">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" onclick="moveOrder(1, 'up')" title="Monter en priorité">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Gala Prestige & Teint Sculpté -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative" data-category="gala" data-order="2" data-status="published">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of an elegant African woman attending an evening gala, sophisticated evening glam makeup with luminous flawless dark skin, defined cheekbones, deep wine-red ombre lips, exquisite emerald diamond earrings, luxurious black evening gown, soft warm bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD2S6UbyvfmSuj9U5Xso65SNgYmqfkJdcRxC2Nlm1YvKj5AAgLncisHRmovbzhByBdkdIWzrZkK8ZsXCq4eSQKctzItKciX5KC06hbsONA2Oe2SY6NTn19ZQV7mVoweksGGaMZMUwkEmdXV3FlYijwnkYg1zzOd8DcN2GJiZuZuZfABo_GtmlngSeCpvitzz3mmP20jr5Pz4zHlXmWiJTGF2itfBtHGokKhUlkIu8d"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#02</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Consentement Validé</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Soirée &amp; Gala VIP
+        </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: #PF-GAL-04</span>
+<span class="font-label-sm text-label-sm text-secondary">Réalisé par Mme Soussou</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Gala Prestige &amp; Teint Sculpté</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Mise en beauté lumineuse pour soirée diplomatique. Travail minutieux des volumes du visage, regard charbonneux chaud et bouche carmin intense.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>28 Janvier 2025</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="previewItem('Card 2')" title="Aperçu Grand Format">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(2)" title="Éditer Métadonnées &amp; Accord">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" onclick="moveOrder(2, 'up')" title="Monter en priorité">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Rituel Henné & Khomra Sahélienne -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative" data-category="henne" data-order="3" data-status="published">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional Chadian henna bridal ceremony celebration, happy bride with intricate dark floral henna tattoos on hands, arms, and feet, wearing luxurious sapphire and gold embroidered robe, traditional woven carpets, surrounded by festive lanterns and joyful women, authentic cultural atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaKWPG0yyCy8SVNTy5qmlmcHb3wy8J4YOaP7ZLeiAmiIpZk__A63WpkFhSnEbWhXUBsT-6XcYPs6ySRwOV9HWG5kFOBOPj3Jfg06WjjAEhgRUMucceaybfBn60SyLhfa7xSPh7k9T1dpIksmNN75JnX8hf0HOgGzibEn7qLm8x8AjkS0_pusOzD0sMzmIFCf3FxZI-dCeBLSWdA4PZk4SzVv4QNCcfc3XIM_MRstzR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#03</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Consentement Validé</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Henné &amp; Traditions
+        </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: #PF-HEN-03</span>
+<span class="font-label-sm text-label-sm text-secondary">Maîtrise Henné Soussou</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Rituel Henné &amp; Khomra Sahélienne</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Dentelles de henné naturel rouge et noir profond sur mains et pieds, appliquées lors du rituel prénuptial traditionnel parfumé aux essences de Khomra.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>04 Février 2025</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="previewItem('Card 3')" title="Aperçu Grand Format">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(3)" title="Éditer Métadonnées &amp; Accord">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" onclick="moveOrder(3, 'up')" title="Monter en priorité">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Éditorial Glow & Teint Impérial -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative" data-category="glow" data-order="4" data-status="published">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Stunning studio beauty portrait of a regal Chadian woman wearing a metallic gold turban and opulent tiered gold necklace, glass-skin radiant complexion, nude lip gloss, delicate smoky eyes, warm ambient lighting reflecting on golden accessories in a luxury beauty salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFrKutC5j5ddNNmo_l7OrIecC2hnJ3L6XqOeeiYzT0sCteAv8k4-yRL6qnWaqhDU-peQvI2BG9uhUzniOx5jj_5115MhvgIMH5d103YnVgDLP0NWMFQBdELHpiUIAE0mtFlJ-i81QuSWzCk4fLhAJKgVmWeXOYWl3VpNPFMFrpyEMFpSXcq-M3OJLQPiOsfVJPmcP7c8CaTWQNcPz4hW8fN2dA_YDf760ktvH5u7LU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#04</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Consentement Validé</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-container-highest text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Beauté &amp; Éditorial
+        </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: #PF-EDT-02</span>
+<span class="font-label-sm text-label-sm text-secondary">Réalisé par Mme Soussou</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Éditorial Glow &amp; Teint Impérial</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Mise en lumière avec sérum d'acajou et poudre de chébé micronisée. Teint éclatant zéro défaut avec turban doré drapé à la main.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>15 Février 2025</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="previewItem('Card 4')" title="Aperçu Grand Format">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(4)" title="Éditer Métadonnées &amp; Accord">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" onclick="moveOrder(4, 'up')" title="Monter en priorité">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: ATTENTE CONSENTEMENT (FR-PORT-04 WARNING) -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative ring-2 ring-error/40" data-category="mariage" data-order="5" data-status="pending">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover filter blur-[2px] group-hover:blur-0 transition-all duration-500" data-alt="High-end beauty photography of a bridal portrait, bride with delicate face veil and warm earthy tones makeup, soft lighting with golden glow, awaiting editorial publishing consent." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCiXp3aR4Jmtt5lrCBPImXiAH8371lZEqBLH6lIOBowUPkKywLRNyJiUMSW3NhbaQub1dcQWBU_baskK-JplQDPW4CSL_MuD4skUJcXo5aRG1pYQwu4Rn21MzrZPXKOn9xJZNxJOpXi0WjlCJOrZ4f1ALHhMon1JjlB6dtVvXBxAWfFl_ykuUKnVb9PXacaCDT8uNUGidiZgyVtlDC5rAKbghlUHFfgtKlm8T44i_W"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#05</span>
+</div>
+<!-- Severe Warning Badge -->
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-error-container text-on-error-container px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md animate-pulse">
+<span class="material-symbols-outlined text-xs">lock_clock</span>
+<span>En Attente d'Accord</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-container text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Mariage &amp; Cérémonies
+        </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between bg-error-container/10">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-error font-mono font-bold">REF: #PF-MAR-08 (Privé)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cliente : Mme Halimé D.</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Voile de Mariée &amp; Fard Ocre</h2>
+<!-- Warning explanation note -->
+<div class="bg-surface-container-highest/60 rounded-lg p-2.5 my-2 flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-base flex-shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+<strong>FR-PORT-04 :</strong> Visage identifiable. Formulaire d'accord d'image en attente de signature par la cliente. Masqué sur le Storefront MA-03.
+            </p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-sm border-t border-surface-container flex items-center justify-between">
+<button class="px-3 py-1.5 rounded-lg bg-emerald-700 text-white font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-emerald-800 transition-colors shadow-sm" onclick="validateConsentQuick(5)">
+<span class="material-symbols-outlined text-sm">how_to_reg</span>
+<span>Valider Consentement</span>
+</button>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(5)" title="Régulariser Accord">
+<span class="material-symbols-outlined text-base">edit_document</span>
+</button>
+<button class="p-2 rounded-lg text-error hover:bg-error-container transition-colors" onclick="deleteItem(5)" title="Supprimer Archive">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6: Smoky Sahélien Cuivré -->
+<div class="portfolio-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col relative" data-category="gala" data-order="6" data-status="published">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dramatic high-fashion beauty photography of an African model with warm copper smoky eyeshadow, defined liner, luminous bronze highlighter on dark skin, glossy lips, clean warm beige studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLIOQML68T32NqctyZO9WGBlkM-ZR9aUx-pDZ_nyVPFNy1c_vKLunRlIM08RZEkc8VXAhHnQ9GPrigzABox9h5lfEhusaDAt_iTBi7f3YQje5qzwuNXMuU65Sf08razQbDlY8mIDK1L5souHZ9buhKfFtRn2_T6V9oV3EXFLqfRu91SzVd4-SO9InlHUUg_08VKzMNr6yTqnwli66M6Eqaq5bTkprIdsYE3LINkqOA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base cursor-grab drag-handle">drag_indicator</span>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">#06</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Consentement Validé</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-md">
+          Soirée &amp; Gala VIP
+        </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: #PF-GAL-09</span>
+<span class="font-label-sm text-label-sm text-secondary">Réalisé par Mme Soussou</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif mb-1">Smoky Sahélien Cuivré</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Harmonie ocre, cannelle et or fondu. Idéal pour cocktail d'ambassade et réceptions officielles sous les lumières dorées de la capitale.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>22 Février 2025</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="previewItem('Card 6')" title="Aperçu Grand Format">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="editItem(6)" title="Éditer Métadonnées &amp; Accord">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" onclick="moveOrder(6, 'up')" title="Monter en priorité">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ALTERNATE VIEW: List Table (hidden by default) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl" id="portfolio-list-view">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="p-4 w-12 text-center">Ordre</th>
+<th class="p-4 w-20">Visuel</th>
+<th class="p-4">Titre &amp; Référence</th>
+<th class="p-4">Catégorie</th>
+<th class="p-4">Artiste</th>
+<th class="p-4">Conformité FR-PORT-04</th>
+<th class="p-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 text-center font-mono font-bold text-primary">#01</td>
+<td class="p-4"><div class="w-12 h-14 bg-surface-container-high rounded overflow-hidden"><img class="w-full h-full object-cover" data-alt="Small thumbnail preview of Kanem royal bridal makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWR9J_yQtOChFyuuFk3J4U17LLkzhUTiqOzHQ6LfQb85R8PUgkT6R_EmfOwMqd79NBqDM2UCu2kbf8mPSOogiwDgLQ5WkrEbR7v6XNbUhHHqpoxi5aUNO_B_5MeIOqotS974rsYlWytKOFvtYADMWV9-I0qF-MER-843ugsQT4FefburUsVw0K-ZcJFaOBMt2SNIcHzWQccXj3p-XT04czUb__ybzUrajU69UGXD5F"/></div></td>
+<td class="p-4"><strong class="text-primary block font-medium">Sublimation Mariée Royale Kanem</strong><span class="text-xs text-on-surface-variant font-mono">#PF-MAR-01</span></td>
+<td class="p-4"><span class="bg-surface-container px-2.5 py-1 rounded text-xs font-semibold text-primary">Mariage &amp; Cérémonies</span></td>
+<td class="p-4 text-on-surface-variant">Mme Soussou</td>
+<td class="p-4"><span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-xs">verified</span> Autorisé &amp; Publié</span></td>
+<td class="p-4 text-right">
+<button class="p-1 hover:text-primary text-on-surface-variant"><span class="material-symbols-outlined text-base">edit</span></button>
+<button class="p-1 hover:text-primary text-on-surface-variant"><span class="material-symbols-outlined text-base">visibility</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 text-center font-mono font-bold text-primary">#02</td>
+<td class="p-4"><div class="w-12 h-14 bg-surface-container-high rounded overflow-hidden"><img class="w-full h-full object-cover" data-alt="Thumbnail preview of gala evening look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfxnykX5EjPVO1ffTMYJYA2yXz_6-g_lDalrcrzOOC1h41ifgYciSuGU9RhTDRWZx-P0ssYEyMWRaCnSWFXJ30FWIcdqVyXwOT9YXO-PKuB3J4NsNiJk9j4nZ53so9et-g0JXidMd9UXJpBwIvPIiimAwhHNlImCZjtzqZwBdPaY3dQbudQlLCRsT38IWBEKnktenRKsOrF36PlfBwEatIXq8EBgUn52k5h98YoHPV"/></div></td>
+<td class="p-4"><strong class="text-primary block font-medium">Gala Prestige &amp; Teint Sculpté</strong><span class="text-xs text-on-surface-variant font-mono">#PF-GAL-04</span></td>
+<td class="p-4"><span class="bg-surface-container px-2.5 py-1 rounded text-xs font-semibold text-secondary">Soirée &amp; Gala VIP</span></td>
+<td class="p-4 text-on-surface-variant">Mme Soussou</td>
+<td class="p-4"><span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-xs">verified</span> Autorisé &amp; Publié</span></td>
+<td class="p-4 text-right">
+<button class="p-1 hover:text-primary text-on-surface-variant"><span class="material-symbols-outlined text-base">edit</span></button>
+<button class="p-1 hover:text-primary text-on-surface-variant"><span class="material-symbols-outlined text-base">visibility</span></button>
+</td>
+</tr>
+<tr class="hover:bg-error-container/20 transition-colors">
+<td class="p-4 text-center font-mono font-bold text-error">#05</td>
+<td class="p-4"><div class="w-12 h-14 bg-surface-container-high rounded overflow-hidden filter blur-[1px]"><img class="w-full h-full object-cover" data-alt="Thumbnail blurred of client without image release" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0SXvwb0D0syowLXSVBzDUPIRL5lHNZaaeoPSITnhATUldYIc7JyzUJ76X3McgtnYhnrB8aDs8Y_2H7OTHPa-II1RrU5Vm42ZMFuVI1shVRBkWmFRkoFfvTcfTNhaZvCGU_FGfP73GFxxMuMJ_JpCIcSE7U_hHihJgyQK7nRXhPL_Hz2ZA37pA_pmNypFKsYsWzhqRpe4ys7ZJ92R00Mqoej0mH4JwITAdnP4z4ZeX"/></div></td>
+<td class="p-4"><strong class="text-primary block font-medium">Voile de Mariée &amp; Fard Ocre</strong><span class="text-xs text-error font-mono">#PF-MAR-08 (Privé)</span></td>
+<td class="p-4"><span class="bg-surface-container px-2.5 py-1 rounded text-xs font-semibold text-primary">Mariage</span></td>
+<td class="p-4 text-on-surface-variant">Mme Soussou</td>
+<td class="p-4"><span class="inline-flex items-center gap-1 text-xs font-bold text-on-error-container bg-error-container px-2 py-0.5 rounded-full"><span class="material-symbols-outlined text-xs">lock</span> Accord Manquant (Masqué)</span></td>
+<td class="p-4 text-right">
+<button class="p-1 text-emerald-700 hover:text-emerald-900" title="Régulariser Accord"><span class="material-symbols-outlined text-base">check_circle</span></button>
+<button class="p-1 hover:text-primary text-on-surface-variant"><span class="material-symbols-outlined text-base">edit</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- FLOATING / STICKY ORDER MANAGEMENT ACTION BAR (Shown when ordering modified) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-primary-container text-on-primary px-space-md py-3 rounded-full shadow-2xl flex items-center gap-space-md border border-secondary/40 transition-all duration-300 transform" id="sticky-order-bar">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">low_priority</span>
+<span class="font-label-md text-label-md font-semibold">Ordre d'affichage modifié (Ordre vitrine mis à jour)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors font-label-sm text-label-sm font-bold shadow-sm" onclick="saveOrder()">
+        Enregistrer l'ordre
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-on-primary transition-colors font-label-sm text-label-sm font-medium" onclick="resetOrder()">
+        Annuler
+      </button>
+</div>
+</div>
+<!-- SIDE DRAWER: Add/Edit Portfolio Item & Customer Consent Verification (Modal / Slide-Over) -->
+<div aria-labelledby="slide-over-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="portfolio-drawer" role="dialog">
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" onclick="closeDrawer()"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low border-b border-surface-container flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">Nouveau Visuel</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-0.5 rounded font-semibold font-mono">Storefront MA-03</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif" id="slide-over-title">
+              Ajouter une Réalisation Portfolio
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              تعديل وإضافة عمل جديد avec vérification stricte du droit à l'image.
+            </p>
+</div>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Form Body -->
+<div class="p-space-lg overflow-y-auto flex-1 flex flex-col gap-space-md">
+<!-- Upload Dropzone -->
+<div>
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-2">Photographie Haute Résolution *</label>
+<div class="border-2 border-dashed border-secondary/40 rounded-xl p-space-md bg-surface-container-low text-center hover:bg-surface-container-high/50 transition-colors cursor-pointer group">
+<div class="flex flex-col items-center justify-center gap-2">
+<div class="w-14 h-14 rounded-full bg-surface-container-high group-hover:scale-110 transition-transform flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">cloud_upload</span>
+</div>
+<div class="text-on-surface font-label-md text-label-md font-semibold">
+                  Glissez-déposez la photo ou <span class="text-primary underline">parcourir</span>
+</div>
+<p class="text-xs text-on-surface-variant">
+                  Formats acceptés : WEBP, JPG, PNG (Max. 10 MB). Recommandé : Ratio 4:5 vertical (1600 × 2000 px).
+                </p>
+</div>
+</div>
+</div>
+<!-- Title & Reference -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-1">Titre de la création *</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" placeholder="Ex: Sublimation Mariée Royale Kanem" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-1">Réf Interne</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container text-on-surface-variant rounded-lg font-mono text-body-sm outline-none cursor-not-allowed" readonly="" type="text" value="#PF-2025-19"/>
+</div>
+</div>
+<!-- Category & Display Order -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-1">Univers / Thématique *</label>
+<div class="relative">
+<select class="appearance-none w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm py-2.5 pl-3 pr-8 rounded-lg outline-none cursor-pointer focus:ring-1 focus:ring-secondary">
+<option value="mariage">Mariage &amp; Cérémonies</option>
+<option value="gala">Soirée &amp; Gala VIP</option>
+<option value="henne">Henné &amp; Traditions Sahéliennes</option>
+<option value="glow">Beauté Naturelle &amp; Soins</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-1">Ordre de priorité (1 = Premier)</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" max="99" min="1" type="number" value="1"/>
+</div>
+</div>
+<!-- Description & Products Used -->
+<div>
+<label class="block font-label-md text-label-md text-primary uppercase font-bold tracking-wider mb-1">Description &amp; Produits Utilisés</label>
+<textarea class="w-full px-3.5 py-2.5 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary resize-none" placeholder="Détaillez le travail du teint, les pigments utilisés (ex: Poudre de Chébé Dorée, Baume Éclat)..." rows="3"></textarea>
+</div>
+<!-- FR-PORT-04 Verification Box (CRUCIAL SAFEGUARD) -->
+<div class="bg-surface-container-high/60 rounded-xl p-space-md border border-secondary/30 relative">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-5 h-5 rounded border-secondary text-primary-container focus:ring-secondary cursor-pointer" id="consent-check" type="checkbox"/>
+<div>
+<label class="font-label-md text-label-md text-primary font-bold block cursor-pointer" for="consent-check">
+                  Attestation de Consentement Client (Règle FR-PORT-04)
+                </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Je certifie formellement avoir recueilli l'accord exprès de la cliente pour la diffusion de son visage sur la vitrine publique <strong class="text-primary">MA-03</strong> et les réseaux de Soussou TCHAD.
+                </p>
+<div class="mt-2 flex items-center gap-2 text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm text-secondary">info</span>
+<span>Si non cochée, la photo sera archivée en mode <strong>Privé</strong> (invisible aux clientes).</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tags input -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant uppercase font-bold tracking-wider mb-1">Mots-clés / Tags Vitrine</label>
+<input class="w-full px-3.5 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" type="text" value="#MariageTchadien, #Kanem, #GlowSahélien, #HennéKhomra"/>
+</div>
+</div>
+<!-- Drawer Footer Buttons -->
+<div class="p-space-lg bg-surface-container-low border-t border-surface-container flex items-center justify-between gap-space-sm">
+<button class="px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md text-label-md font-medium transition-colors" onclick="closeDrawer()">
+            Annuler
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-md text-label-md font-bold transition-colors" onclick="saveAsDraft()">
+              Enregistrer comme Privé
+            </button>
+<button class="px-5 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-bold transition-all shadow-md" onclick="saveAndPublish()">
+              Publier sur MA-03
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STOREFRONT PREVIEW MODAL (MA-03 Public View) -->
+<div class="fixed inset-0 z-50 overflow-y-auto hidden" id="storefront-preview-modal">
+<div class="min-h-screen px-4 text-center flex items-center justify-center">
+<div class="fixed inset-0 bg-primary/60 backdrop-blur-md transition-opacity" onclick="closeStorefrontPreview()"></div>
+<div class="inline-block w-full max-w-4xl bg-surface rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all z-10 my-8 border border-secondary/30">
+<!-- Storefront Header Bar -->
+<div class="bg-primary-container text-on-primary px-space-md py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">public</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Aperçu Visiteur MA-03 • Vitrine Officielle Soussou TCHAD</span>
+</div>
+<button class="text-on-primary/80 hover:text-on-primary" onclick="closeStorefrontPreview()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Mock Vitrine Content -->
+<div class="p-space-lg max-h-[768px] overflow-y-auto">
+<div class="text-center max-w-lg mx-auto mb-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">L'Art de la Sublimation</span>
+<h3 class="font-headline-lg text-headline-lg text-primary font-serif">Galerie des Réalisations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Découvrez les créations exclusives de la Maison Soussou. Rituels nuptiaux, maquillages d'exception et traditions sahéliennes.
+            </p>
+</div>
+<!-- Storefront Mock Grid (Only published photos appear!) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container-high aspect-[4/5] relative group">
+<img class="w-full h-full object-cover" data-alt="Chadian bride in golden veil with warm royal makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvmIwSDSo_IPrQsOU6u-mu7SNNKA1QzXHSKpoRQFzGyyKBbphVh2cJbIVBE_J6MWF7LbD7fgVLL8VAwUbD9BtFIejHnfEviLD44ozerDTm62jFbZpp_2nk8KISYCe11qRkXj6GsPlvPxMarMqIm2nm17CngFTWZdKJu4jq07oz_4kxfCoIYf2zXR3W0WJlpHWqyUScTCGwMvFLk4SFiPAkOT7jvJRhaE0C7Tm8nJXG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex flex-col justify-end p-3">
+<span class="text-xs uppercase font-bold text-secondary-fixed">Mariage</span>
+<span class="text-sm font-serif text-white font-semibold">Sublimation Royale Kanem</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container-high aspect-[4/5] relative group">
+<img class="w-full h-full object-cover" data-alt="Evening gala look with deep burgundy lips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAa-NLygmzqvsTYS-CZ0Ay-xy0s7ckDCuo8UQfVPVSs-_1eOn9aF3_susCqTMrQ5mTdaDqEaAf1glLEE7G1TpIUvlnl_ZQPYI-XVbB31qVhA1qvza82t3ObgEjHsRLc8neUYnyGR6z4D4LMNqJUglQCn4Y-JPG-wQxEwAwt2KxDhqbNEWrE-iA34avHjNlInyXQrn_YKCUM57NhN4ViKz5oRJHNP5iDu93OuMgbwln"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex flex-col justify-end p-3">
+<span class="text-xs uppercase font-bold text-secondary-fixed">Gala VIP</span>
+<span class="text-sm font-serif text-white font-semibold">Gala Prestige &amp; Teint Sculpté</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container-high aspect-[4/5] relative group">
+<img class="w-full h-full object-cover" data-alt="Henna ritual celebration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAicrU5apyUlWtmLV5YhdI33GzGsBx63T_QdRjSXhJKi8psnN7_Pn470f7NFGAFsaKukGIr9Syed3-wF3mw2ziQauX27cxMMTHIB9ymxTG8TBp8Rb2P_EykaG837iWhtT7j9aL3DECN8J6cDy3yOl8dIqVmC5maeCS_U2vmXP6mlLS3JOA5N6ue7KLoI5W4GCbyhcjMMbnmFEOy_TcdrAp5YTcp4JAiiet4P2uQ2yX_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex flex-col justify-end p-3">
+<span class="text-xs uppercase font-bold text-secondary-fixed">Tradition</span>
+<span class="text-sm font-serif text-white font-semibold">Rituel Henné &amp; Khomra</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg text-center font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs align-middle text-emerald-700">lock</span>
+            Conformité FR-PORT-04 garantie : La photo #05 (en attente) n'apparaît pas ici.
+          </div>
+</div>
+<div class="bg-surface-container-low p-space-sm text-right">
+<button class="px-4 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold" onclick="closeStorefrontPreview()">Fermer l'aperçu</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed top-24 right-8 z-50 bg-primary-container text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-[-150%] transition-transform duration-300" id="toast-notification">
+<span class="material-symbols-outlined text-secondary-fixed" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-message">Opération réussie</span>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  let isReorderActive = false;
+
+  function setSimState(state) {
+    // Reset buttons
+    const btnIds = ['active', 'drawer', 'reorder', 'unapproved', 'storefront', 'skeleton'];
+    btnIds.forEach(id => {
+      const btn = document.getElementById(`btn-state-${id}`);
+      if (btn) {
+        btn.className = "px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all";
+      }
+    });
+
+    const activeBtn = document.getElementById(`btn-state-${state}`);
+    if (activeBtn) {
+      activeBtn.className = "px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm transition-all shadow-sm";
+    }
+
+    const grid = document.getElementById('portfolio-gallery-grid');
+    const skeleton = document.getElementById('skeleton-view');
+    const drawer = document.getElementById('portfolio-drawer');
+    const storefront = document.getElementById('storefront-preview-modal');
+    const reorderBar = document.getElementById('sticky-order-bar');
+    const statusSelect = document.getElementById('status-filter');
+
+    // Hide modals/drawers first
+    if (drawer) drawer.classList.add('hidden');
+    if (storefront) storefront.classList.add('hidden');
+    if (skeleton) skeleton.classList.add('hidden');
+    if (grid) grid.classList.remove('hidden');
+
+    if (state === 'active') {
+      statusSelect.value = 'all';
+      filterGallery();
+      disableReorderMode();
+      showToast('Galerie Active réinitialisée (18 visuels).');
+    } else if (state === 'drawer') {
+      openDrawer();
+    } else if (state === 'reorder') {
+      enableReorderMode();
+    } else if (state === 'unapproved') {
+      statusSelect.value = 'pending';
+      filterGallery();
+      showToast('Filtre actif : Visuels sans accord (FR-PORT-04).');
+    } else if (state === 'storefront') {
+      openStorefrontPreview();
+    } else if (state === 'skeleton') {
+      if (grid) grid.classList.add('hidden');
+      if (skeleton) skeleton.classList.remove('hidden');
+      showToast('Simulation de l\'état de chargement réseau.');
+    }
+  }
+
+  function filterGallery() {
+    const cat = document.getElementById('category-filter').value;
+    const stat = document.getElementById('status-filter').value;
+    const items = document.querySelectorAll('.portfolio-item');
+
+    items.forEach(item => {
+      const itemCat = item.getAttribute('data-category');
+      const itemStat = item.getAttribute('data-status');
+
+      const matchCat = (cat === 'all' || itemCat === cat);
+      const matchStat = (stat === 'all' || itemStat === stat);
+
+      if (matchCat && matchStat) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function setViewMode(mode) {
+    const grid = document.getElementById('portfolio-gallery-grid');
+    const list = document.getElementById('portfolio-list-view');
+    const gridBtn = document.getElementById('view-grid-btn');
+    const listBtn = document.getElementById('view-list-btn');
+
+    if (mode === 'grid') {
+      grid.classList.remove('hidden');
+      list.classList.add('hidden');
+      gridBtn.className = "p-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm";
+      listBtn.className = "p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface";
+    } else {
+      grid.classList.add('hidden');
+      list.classList.remove('hidden');
+      listBtn.className = "p-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm";
+      gridBtn.className = "p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface";
+    }
+  }
+
+  function toggleReorderMode() {
+    if (isReorderActive) {
+      disableReorderMode();
+    } else {
+      enableReorderMode();
+    }
+  }
+
+  function enableReorderMode() {
+    isReorderActive = true;
+    document.getElementById('reorder-banner-note').classList.remove('hidden');
+    document.getElementById('sticky-order-bar').classList.remove('translate-y-[200%]');
+    document.getElementById('reorder-toggle-btn').classList.add('bg-secondary-container', 'text-on-secondary-container');
+    showToast('Mode réorganisation actif. Déplacez vos cartes.');
+  }
+
+  function disableReorderMode() {
+    isReorderActive = false;
+    document.getElementById('reorder-banner-note').classList.add('hidden');
+    document.getElementById('sticky-order-bar').classList.add('translate-y-[200%]');
+    document.getElementById('reorder-toggle-btn').classList.remove('bg-secondary-container', 'text-on-secondary-container');
+  }
+
+  function moveOrder(cardId, direction) {
+    enableReorderMode();
+    showToast(`Visuel #${cardId} déplacé vers le haut.`);
+  }
+
+  function saveOrder() {
+    disableReorderMode();
+    showToast('Nouvel ordre d\'affichage enregistré et synchronisé sur MA-03 !');
+  }
+
+  function resetOrder() {
+    disableReorderMode();
+    showToast('Réorganisation annulée.');
+  }
+
+  function openDrawer() {
+    document.getElementById('portfolio-drawer').classList.remove('hidden');
+  }
+
+  function closeDrawer() {
+    document.getElementById('portfolio-drawer').classList.add('hidden');
+  }
+
+  function openStorefrontPreview() {
+    document.getElementById('storefront-preview-modal').classList.remove('hidden');
+  }
+
+  function closeStorefrontPreview() {
+    document.getElementById('storefront-preview-modal').classList.add('hidden');
+  }
+
+  function validateConsentQuick(cardId) {
+    const card = document.querySelector(`[data-order="${cardId}"]`);
+    if (card) {
+      card.setAttribute('data-status', 'published');
+      card.classList.remove('ring-2', 'ring-error/40');
+      const badge = card.querySelector('.bg-error-container');
+      if (badge) {
+        badge.className = "absolute top-3 right-3 flex items-center gap-1 bg-emerald-950/85 text-emerald-300 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shadow-sm";
+        badge.innerHTML = '<span class="material-symbols-outlined text-xs">verified</span><span>Consentement Validé</span>';
+      }
+      showToast('Accord client validé ! Visuel débloqué et publié sur la vitrine.');
+    }
+  }
+
+  function saveAndPublish() {
+    const consent = document.getElementById('consent-check').checked;
+    if (!consent) {
+      alert("Attention (FR-PORT-04) : Vous n'avez pas coché la case de consentement. L'image sera archivée en statut PRIVÉ et ne paraîtra pas sur MA-03.");
+    }
+    closeDrawer();
+    showToast(consent ? 'Visuel publié avec succès sur MA-03 !' : 'Visuel archivé en mode Privé (FR-PORT-04).');
+  }
+
+  function saveAsDraft() {
+    closeDrawer();
+    showToast('Enregistré dans l\'archivage interne privé.');
+  }
+
+  function deleteItem(id) {
+    if (confirm('Voulez-vous retirer cette réalisation du catalogue ?')) {
+      showToast(`Visuel retiré du portfolio.`);
+    }
+  }
+
+  function previewItem(title) {
+    openStorefrontPreview();
+  }
+
+  function editItem(id) {
+    openDrawer();
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = msg;
+    toast.classList.remove('translate-y-[-150%]');
+    setTimeout(() => {
+      toast.classList.add('translate-y-[-150%]');
+    }, 3500);
+  }
+
+  // Initial check on load
+  document.addEventListener('DOMContentLoaded', () => {
+    disableReorderMode();
+  });
+</script></main></div></body></html>

@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#f3ded8","surface-tint":"#934754","surface":"#fff8f6","on-tertiary-fixed-variant":"#52443f","error-container":"#ffdad6","tertiary-fixed-dim":"#d7c2bc","tertiary-container":"#3c2f2b","primary-fixed":"#ffd9dd","error":"#ba1a1a","on-tertiary":"#ffffff","outline":"#867274","on-background":"#241916","on-primary-container":"#d9808e","tertiary":"#261a17","surface-dim":"#ebd6d0","on-error":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#604012","primary-fixed-dim":"#ffb2bc","secondary":"#7b5827","on-primary":"#ffffff","tertiary-fixed":"#f4ded8","on-secondary":"#ffffff","inverse-surface":"#3a2e2a","on-tertiary-container":"#a99691","on-primary-fixed":"#3d0414","secondary-fixed":"#ffddb5","surface-bright":"#fff8f6","inverse-primary":"#ffb2bc","on-secondary-container":"#795726","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#76303d","surface-container":"#ffe9e4","on-secondary-fixed":"#2a1800","inverse-on-surface":"#ffede8","outline-variant":"#d8c1c3","on-surface-variant":"#534344","secondary-container":"#ffcf94","primary-container":"#5b1b29","background":"#fff8f6","secondary-fixed-dim":"#edbe85","on-tertiary-fixed":"#241916","surface-container-high":"#f9e4de","on-surface":"#241916","surface-variant":"#f3ded8","surface-container-low":"#fff1ed","primary":"#3f0515"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-lg":"1.75rem","margin":"3rem","space-xs":"0.25rem","margin-mobile":"1.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"3rem","space-md":"1rem"},fontFamily:{"headline-lg":["Playfair Display"],"label-sm":["Manrope"],"body-md":["Manrope"],"body-sm":["Manrope"],"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Manrope"],"display-hero-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"title-md":["Playfair Display"],"display-hero":["Playfair Display"],"label-lg":["Manrope"],"body-lg":["Manrope"]},fontSize:{"headline-lg":["40px",{"lineHeight":"50px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.08em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-container-highest selection:text-primary"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_4px_20px_-2px_rgba(91,27,41,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-xl"><div class="relative flex items-center justify-center p-0.5 rounded-full ring-1 ring-secondary/30 bg-surface-container-lowest"><img alt="Soussou TCHAD Beauty" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">Soussou TCHAD</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-1">Imperial Beauty Admin</span></div></div><div class="space-y-space-md"><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Vue Globale</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2.5 transition-colors text-on-surface-variant" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span>Tableau de Bord</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Catalogue &amp; Stock</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="products-management" href="#"><span class="material-symbols-outlined text-lg">spa</span><span>Produits</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories-management" href="#"><span class="material-symbols-outlined text-lg">category</span><span>Catégories</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inventory-management" href="#"><span class="material-symbols-outlined text-lg">inventory_2</span><span>Gestion de Stock</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="stock-movements" href="#"><span class="material-symbols-outlined text-lg">swap_horiz</span><span>Mouvements Stock</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Ventes &amp; Relation Client</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="orders-management" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span>Commandes</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customers-management" href="#"><span class="material-symbols-outlined text-lg">group</span><span>Clients</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="invoices" href="#"><span class="material-symbols-outlined text-lg">request_quote</span><span>Factures</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Institut &amp; Beauté</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="services-management" href="#"><span class="material-symbols-outlined text-lg">hotel_class</span><span>Soins &amp; Rituels</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portfolio-management" href="#"><span class="material-symbols-outlined text-lg">photo_library</span><span>Portfolio</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="appointments-calendar" href="#"><span class="material-symbols-outlined text-lg">calendar_month</span><span>Rendez-vous</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-md py-1 font-label-sm text-label-sm uppercase tracking-widest text-outline">Administration</div><nav class="flex flex-col space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-lg">analytics</span><span>Rapports &amp; Audit</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="users-permissions" href="#"><span class="material-symbols-outlined text-lg">admin_panel_settings</span><span>Utilisateurs &amp; Droits</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="store-settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span>Configuration Boutique</span></a></nav></div></div></div><div class="p-space-lg"><div class="bg-surface-container-highest/60 rounded-xl p-space-md flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Boutique Ouverte</span></div><span class="font-label-sm text-label-sm text-secondary font-bold">N'Djamena</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(91,27,41,0.03)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><button aria-label="Basculer le volet latéral" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">menu_open</span></button><div class="relative w-80 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-4 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline/80 font-body-sm text-body-sm ring-1 ring-secondary/20 focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Rechercher un rituel, commande, client..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center bg-surface-container-lowest rounded-xl px-2.5 py-1 ring-1 ring-secondary/20"><span class="material-symbols-outlined text-sm text-secondary mr-1.5">language</span><select aria-label="Langue" class="bg-transparent font-label-md text-label-md text-on-surface cursor-pointer focus:outline-none pr-1"><option selected="" value="fr">Français</option><option value="ar">العربية</option><option value="en">English</option></select></div><div class="relative"><button aria-label="Notifications" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-1"><div class="flex items-center gap-2.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCmj-82acCwrwiHutPoERtiSq4mYuvvj75RgHJyBvUsfbGZTxFUAGSb5m0eSr8qGVb7aLvWP1Yp6AJY-0CUbFl2cF4o8LvXsxXxEDlOJROLjTvZfs5DpxQV10AjqBpxyhb4Q3r_PD4XJZZ0DvQ71DwB8OnMNkq0aNDn4yNc4IDzJTGen31Rrv0pOa4w_Gz-cg5SGmRMbeGhdfGI73FeiAgBS-HN0322mlxmrZAnMvpY-N82NSJmD2UhtVGK"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Mme Soussou</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Directrice</span></div></div><div class="flex items-center gap-0.5 ml-1"><a aria-label="Paramètres utilisateur" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="store-settings" href="#"><span class="material-symbols-outlined text-lg">tune</span></a><a aria-label="Déconnexion" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-lg">logout</span></a></div></div></div></header><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- MVP Interactive State Simulator Bar -->
+<aside aria-label="Simulateur d'états MVP" class="w-full bg-surface-container-highest px-space-lg py-2.5 shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-3 text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary" style="font-variation-settings: 'FILL' 1;">tune</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider">Simulateur d'états MVP (AD-09) :</span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5" id="simulator-buttons">
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm transition-all" data-state="normal" onclick="setSimState('normal')">1. Vue Normale</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="drawer" onclick="setSimState('drawer')">2. Tiroir Édition (#SRV-01)</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="detail" onclick="setSimState('detail')">3. Fiche Détail</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="deactivate" onclick="setSimState('deactivate')">4. Confirmation Suspension</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="inactive-filter" onclick="setSimState('inactive-filter')">5. Filtre Inactifs</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="empty" onclick="setSimState('empty')">6. Recherche Sans Résultat</button>
+<button class="sim-btn px-2.5 py-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" data-state="loading" onclick="setSimState('loading')">7. Chargement (Skeleton)</button>
+</div>
+</div>
+</aside>
+<!-- Main Content Body -->
+<div class="p-space-lg space-y-space-lg max-w-[1440px] mx-auto w-full">
+<!-- Breadcrumb & Header Section -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-1">
+<nav aria-label="Fil d'Ariane" class="flex items-center gap-2 font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<span>Institut &amp; Beauté</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>AD-09</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-secondary font-bold">Gestion des Services &amp; Rituels</span>
+<span class="text-outline/70">/ إدارة خدمات التجميل والطقوس</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Gestion des Services &amp; Rituels Beauté</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Créez, modifiez, traduisez et organisez les rituels et prestations Makeup Artist exclusifs de la Maison Soussou TCHAD.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<button class="px-5 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md tracking-wider uppercase transition-all shadow-sm flex items-center gap-2" onclick="openDrawer('nouveau')">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Nouveau Rituel Beauté</span>
+</button>
+<button class="px-4 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md tracking-wider uppercase transition-all shadow-sm flex items-center gap-2" onclick="exportMenuPDF()">
+<span class="material-symbols-outlined text-lg text-secondary">picture_as_pdf</span>
+<span>Menu Tarifaire (PDF)</span>
+</button>
+<a class="px-3.5 py-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md transition-all flex items-center gap-1.5" href="#" title="Synchronisation MA-01">
+<span class="material-symbols-outlined text-base text-secondary">sync</span>
+<span class="hidden sm:inline">Synchro MA-01</span>
+</a>
+</div>
+</header>
+<!-- KPI Summary Cards -->
+<section aria-label="Indicateurs clés" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Total Services</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">12</span>
+<span class="font-label-sm text-label-sm text-secondary">rituels</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Catalogue complet salon &amp; suite</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Services Actifs</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-secondary font-bold">10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">disponibles</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Réservables en ligne sur MA-01</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">event_available</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Services Inactifs</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-outline font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">hors saison</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Historique client conservé</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-2xl">pause_circle</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Catégories Rituels</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">4</span>
+<span class="font-label-sm text-label-sm text-secondary">univers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mariage, Chébé, Gala, Henné</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">category</span>
+</div>
+</article>
+</section>
+<!-- Architecture & SRS MVP Rules Banner -->
+<aside aria-label="Règles d'architecture MVP" class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 mt-0.5 text-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest font-bold">Architecture MVP &amp; Intégrité des Réservations</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary uppercase font-semibold">Portée Lead Artist</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Toutes les prestations sont assignées exclusivement à <strong>Mme Soussou</strong> (Lead Makeup Artist &amp; Directrice).
+              La suspension d'un service n'altère en aucun cas l'historique des réservations passées sur le calendrier AD-11.
+              La prise de rendez-vous cliente (MA-01) synchronise en temps réel les prestations au statut <em>Actif</em>.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Salon VIP Sabangali &amp; Suite Privée
+          </span>
+</div>
+</div>
+</aside>
+<!-- Toolbar Filters & Search -->
+<section aria-label="Recherche et filtres" class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-3">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+<!-- Search -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" id="searchInput" oninput="filterServices()" placeholder="Rechercher par nom de rituel, référence (#SRV), mot-clé..." type="text"/>
+</div>
+<!-- Filter Selects -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none cursor-pointer" id="categoryFilter" onchange="filterServices()">
+<option value="">Toutes les catégories</option>
+<option value="mariage">Mariage &amp; Cérémonies</option>
+<option value="chebe">Soins Ancestraux Chébé</option>
+<option value="gala">Soirée, Gala &amp; VIP</option>
+<option value="henne">Rituels Henné &amp; Teint</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none cursor-pointer" id="statusFilter" onchange="filterServices()">
+<option value="">Tous les statuts</option>
+<option value="actif">Actif (En ligne)</option>
+<option value="inactif">Suspendu (Inactif)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none cursor-pointer" id="locationFilter" onchange="filterServices()">
+<option value="">Tous les lieux</option>
+<option value="salon">Salon VIP Sabangali</option>
+<option value="domicile">Déplacement à Domicile</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<button class="h-10 px-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="resetFilters()" title="Réinitialiser les filtres">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+<span class="hidden sm:inline">Réinitialiser</span>
+</button>
+</div>
+</div>
+<!-- Quick Category Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider shrink-0 mr-1">Filtres rapides :</span>
+<button class="chip-filter px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" data-chip="all" onclick="quickFilter('all')">Tous (12)</button>
+<button class="chip-filter px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors" data-chip="mariage" onclick="quickFilter('mariage')">Mariage &amp; Nuptial (4)</button>
+<button class="chip-filter px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors" data-chip="chebe" onclick="quickFilter('chebe')">Chébé Guéra (3)</button>
+<button class="chip-filter px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors" data-chip="henne" onclick="quickFilter('henne')">Henné &amp; Khomra (3)</button>
+<button class="chip-filter px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors" data-chip="gala" onclick="quickFilter('gala')">Soirée &amp; Gala (2)</button>
+</div>
+</section>
+<!-- Services Data Table / List -->
+<section aria-label="Liste des rituels" class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Normal View: Table Container -->
+<div class="overflow-x-auto" id="table-view">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-4 w-20" scope="col">Visuel</th>
+<th class="py-3.5 px-4" scope="col">Rituel Beauté &amp; Référence</th>
+<th class="py-3.5 px-4" scope="col">Catégorie</th>
+<th class="py-3.5 px-4" scope="col">Tarif (XAF)</th>
+<th class="py-3.5 px-4" scope="col">Durée</th>
+<th class="py-3.5 px-4" scope="col">Lieu &amp; Disponibilité</th>
+<th class="py-3.5 px-4" scope="col">Artiste Attitrée</th>
+<th class="py-3.5 px-4" scope="col">Statut</th>
+<th class="py-3.5 px-4 text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm" id="services-tbody">
+<!-- Row 1: Mariée Impériale -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row" data-category="mariage" data-location="salon domicile" data-status="actif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an African bride from Chad adorned in traditional luxury attire, royal gold filigree crown, deep burgundy eyeshadow and glowing polished complexion, soft bridal suite lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASQlXJGUmyGRwdIuo361JHCBWOX_VCi6BOH5n1mhPpEa-2O5OS5RrZM_aEzI6dXV2vtPQdsC3YitSXRNZ8xx8Gtbk-7zHvT6lFODjCW7ePs5FNU7Q6GJmHxRQd5GAgTU2oh19qwSeeWcX6t0hC3C6yX5shXpkoodvhMO0FhRarjHkXeykL_aHSgq9jQ7l2DTAiw7gV_iilwdFFWLcd7UjbUSoZhYmB_haYb4H7rTA4"/>
+<span class="absolute bottom-0.5 right-0.5 w-3 h-3 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-1')">Rituel Mariée Impériale Tchadienne</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container uppercase">Signature</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-BRD-01</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">طقس العروس التشادية الإمبراطورية</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container text-primary font-medium">Mariage &amp; Cérémonies</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">120.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Forfait complet</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+<span>180 min (3h)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Salon VIP</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed">À Domicile</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Actif
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-1')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(1)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="confirmToggleStatus('Rituel Mariée Impériale Tchadienne', '#SRV-BRD-01', true)" title="Suspendre le rituel">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Sublimation Gala & Tapis Rouge -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row" data-category="gala" data-location="salon" data-status="actif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dark skinned African fashion model with editorial evening makeup, sculptured contouring, shimmering gold highlights, velvet red wine lips, luxurious gala setting with chandeliers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM_ffX6Hig9qJKG7F9O89MCLHVlRGIxM9_Q8Fd8eKgcvnARtjTL4wXH_LySqRHTikdDZ4JU1iWEnhvM4MhxNByYtWyTqPL9_SbRdNlMYEf3qca8bt9F76uHjY78_JO893EPb9Mwp3GybsRlsuM0PxiGguTUtcMgv-yBxPt4lNeI46bxZPCeT2mWXBSJ1jaDeSN2bzTejjvpXfWxf1yVQDWU5IUYHNvhdG8_Y2f2mhL"/>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-2')">Sublimation Gala &amp; Tapis Rouge</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-GLA-02</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">مكياج السهرة الملكي والسجادة الحمراء</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container text-primary font-medium">Soirée &amp; Gala VIP</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">45.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Par personne</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+<span>75 min</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Salon VIP uniquement</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Actif
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-2')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(2)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="confirmToggleStatus('Sublimation Gala &amp; Tapis Rouge', '#SRV-GLA-02', true)" title="Suspendre le rituel">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Rituel Traditionnel Henné & Parfumerie (Uses required image IMAGE_29) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row" data-category="henne" data-location="salon domicile" data-status="actif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0">
+<img alt="Henné traditionnel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VFtAP1Y71-U09gDDvwJDmV6g3mrqGMmwya6GKTtynSSvE7DyaKH1Se9fMGh21kobtJZqkn48s8UXAK4eFosiXFieT2I9Wk_MUweuzdCQYif_-nkp5KhrNxllUBAg1K3lR0OTtW77xbSgAjh5NmjmH1SiWFK-DogPVimbi026oCesbv55l6cCHz_xgwkBRISEsM6VJlBrxeyxE9TJmiX-dWlEtZMtQ6fP8_wURKE6KM"/>
+<span class="absolute bottom-0.5 right-0.5 w-3 h-3 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-3')">Rituel Henné &amp; Parfumerie Sahélienne</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed uppercase font-semibold">Ancestral</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-HEN-03</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">طقس الحناء الأصيل وتبخير الخمرة التشادية</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container text-primary font-medium">Rituels Henné &amp; Teint</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">65.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Mains, pieds &amp; Khomra</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+<span>120 min (2h)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Salon VIP</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed">À Domicile</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Actif
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-3')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(3)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="confirmToggleStatus('Rituel Henné &amp; Parfumerie Sahélienne', '#SRV-HEN-03', true)" title="Suspendre le rituel">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Soin Capillaire Chébé Guéra -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row" data-category="chebe" data-location="salon" data-status="actif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cosmetic spa macro shot of traditional Chébé powder mask infused in warm organic oils, wooden bowl on linen background, Sahelian botanical ingredients, warm golden glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl_GObBuf_ODipTPDqoRQOlHttCv8IahpQMu-qPE6-iJm5BpQLcvkbBaB2WlULUN2Uy5TZc8nEqtSm3AKxlc-aQxm-fHzgj2EkSHmXl5ZtRg7aNW2gpKBk9iAbyvf2Uub_tGxqJzza5g63rbryWoKngfYyLsXZvSw6TXB5QP1zaM5o13N15uKruPNYGmAL23mdLawcxfUhVHDQ2j9ylHmcL2QwoYW5fUmzIyLSTYUD"/>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-4')">Soin Capillaire Profond &amp; Massage Chébé Guéra</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-CHB-04</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">علاج الشيبيه الأصلي لشعر الرأس والتدليك الملكي</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container text-primary font-medium">Soins Ancestraux Chébé</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">35.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Masque &amp; brushing</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+<span>90 min</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Salon VIP uniquement</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Actif
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-4')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(4)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="confirmToggleStatus('Soin Capillaire Chébé Guéra', '#SRV-CHB-04', true)" title="Suspendre le rituel">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Mise en Beauté Express Journée Éclat -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row" data-category="gala" data-location="salon" data-status="actif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fresh daylight beauty photography of a smiling Chadian woman with natural glow makeup, satin bronze skin finish, subtle nude lips, warm natural sunshine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuLDGUjt56aQB_93u6ShtLNNLjNDqYBPkJDJA8G6o5S2Lo8Utpi6NUxHUOrDFlXJ__Gf6IEtr9GpyAxhotZLygVWLWcy5Cm9Lx-LJqG6w3CHmUQPnRoynqrmXCqbziQxj7ZssZTqj4lSOFd484B-qw9LP9XIJ_orryb4vcOYgU4aTlfu5o2fyngblCkovVkJy72otTKGH0D5oPjCfj10W8oOWY-IMdngs8-d7PMwEK"/>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-5')">Mise en Beauté Express « Journée Éclat »</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-DAY-05</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">مكياج نهاري خفيف ومشرق</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container text-primary font-medium">Soirée &amp; Gala VIP</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">25.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Teint &amp; regard</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+<span>45 min</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Salon VIP uniquement</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Actif
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-5')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(5)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="confirmToggleStatus('Mise en Beauté Express', '#SRV-DAY-05', true)" title="Suspendre le rituel">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Atelier Privé Auto-Maquillage VIP (INACTIF / HORS SAISON) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors service-row opacity-80" data-category="gala" data-location="salon" data-status="inactif">
+<td class="py-3.5 px-4">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container shadow-sm shrink-0 grayscale">
+<img class="w-full h-full object-cover" data-alt="High-end beauty masterclass setting with luxurious makeup brushes, warm rose gold mirrors, personalized cosmetic palette on marble vanity in luxury beauty salon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9NMJpOGJABzsXVrxC4qIncqcUXHdj5RNMd_AK-ma5HfeOdSVTgpK2KayaHhD8AcLPDCUA9-5EtIBDafDuD6Kl9h9niCMP3CAwa36tHtkEL7caESzdT_2YUNXgt16V3z5nsS8VX4LshTsOBIr9VI1HJG1_CPbZLvzbp_L5Xwi4m9IhtLnkbp66dCqFPDpyqaTFb1bJumax-sLAJz0cGFxMoNGGEE9_C7_YU-KgQAMZ"/>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface-variant font-bold hover:underline cursor-pointer" onclick="openDrawer('edit-6')">Atelier Privé Auto-Maquillage VIP</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-highest text-outline uppercase font-semibold">Hors saison</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-mono text-xs">#SRV-MST-06</span>
+<span>•</span>
+<span class="text-xs italic" dir="rtl">ورشة فردية خاصة لتعليم فن المكياج الذاتي</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-xl bg-surface-container-low text-outline font-medium">Soirée &amp; Gala VIP</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface-variant font-bold">50.000 XAF</span>
+<span class="font-label-sm text-label-sm text-outline">Session individuelle</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-outline">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>120 min</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-low text-outline">Salon VIP uniquement</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-xs">brush</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Mme Soussou</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Suspendu
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" onclick="openDrawer('edit-6')" title="Modifier le rituel">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-secondary transition-colors" onclick="showDetailCard(6)" title="Consulter la fiche">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container-high transition-colors" onclick="confirmToggleStatus('Atelier Privé Auto-Maquillage VIP', '#SRV-MST-06', false)" title="Réactiver le rituel">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- State: Empty View (Hidden by default) -->
+<div class="hidden p-space-xl text-center space-y-4" id="empty-state-view">
+<div class="w-16 h-16 rounded-full bg-surface-container mx-auto flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Aucun rituel de beauté trouvé</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">
+            Aucun service ne correspond à vos critères de recherche actuels. Vérifiez les termes ou réinitialisez les filtres.
+          </p>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-2" onclick="resetFilters()">
+<span class="material-symbols-outlined text-lg">filter_alt_off</span>
+<span>Effacer tous les filtres</span>
+</button>
+</div>
+<!-- State: Skeleton Loading View (Hidden by default) -->
+<div class="hidden p-space-md space-y-4" id="skeleton-view">
+<div class="flex items-center justify-between pb-3">
+<div class="h-5 w-48 bg-surface-container rounded animate-pulse"></div>
+<div class="h-5 w-24 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="space-y-3">
+<div class="h-16 w-full bg-surface-container-low rounded-xl animate-pulse"></div>
+<div class="h-16 w-full bg-surface-container-low rounded-xl animate-pulse"></div>
+<div class="h-16 w-full bg-surface-container-low rounded-xl animate-pulse"></div>
+<div class="h-16 w-full bg-surface-container-low rounded-xl animate-pulse"></div>
+</div>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Affichage de <strong>6 sur 12</strong> rituels enregistrés</span>
+<span class="text-outline">•</span>
+<span class="text-secondary font-medium">Synchronisation active avec MA-01</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-outline cursor-not-allowed" disabled="">Précédent</button>
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary font-bold">1</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">2</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">Suivant</button>
+</div>
+</div>
+</section>
+<!-- Detailed Single Service Card Preview Section (Collapsible / Toggleable) -->
+<section class="hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md" id="service-detail-section">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-surface-container gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container uppercase font-bold">Fiche Rituel Détaillée</span>
+<span class="font-mono text-xs text-outline">Réf. #SRV-BRD-01</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Rituel Mariée Impériale Tchadienne</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant" dir="rtl">طقس العروس التشادية الإمبراطورية الملكي الكامل</p>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 uppercase tracking-wider" onclick="openDrawer('edit-1')">
+<span class="material-symbols-outlined text-sm">edit</span>
+<span>Modifier la fiche</span>
+</button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-outline hover:text-on-surface" onclick="closeDetailCard()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Visual & Badges -->
+<div class="space-y-space-md">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of traditional Chadian bridal jewelry, gold amber coral beads, woven hair crown with gold pieces, bridal luxury makeup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArv3DrUCThpP98O-ux82HVeeUlSptsg6msNmTHWlPCVHpNafQ8Cjn7gLR3QbvB5k_wrgd5CMZTdHcMb3won1p5qM3akncFHdqM9Lhkssv-y_OotqEGc-nOD6V9u84fopf0Y1CePgOvs9gRYbAqibDL652ttkayEQajBnWZx7j25qb_I1wviSCMQTD4J52pOONBzktumo83keW5KBQDXsK2RV6xgm8elDq77HTF4mbJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex items-end p-4">
+<span class="text-on-primary font-title-md text-title-md">120.000 XAF • 180 min</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl space-y-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Affectation &amp; Statut</span>
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Makeup Artist :</span>
+<strong class="text-primary font-label-md text-label-md">Mme Soussou (Lead Artist)</strong>
+</div>
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Lieux autorisés :</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Salon VIP &amp; Domicile</span>
+</div>
+<div class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Réservation Client :</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">Actif en ligne</span>
+</div>
+</div>
+</div>
+<!-- Trilingual Description Panels -->
+<div class="lg:col-span-2 space-y-4">
+<!-- French -->
+<div class="bg-surface-container-low p-4 rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Protocole &amp; Description (Français)</span>
+<span class="font-label-sm text-label-sm text-outline">Langue Principale</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Mise en beauté nuptiale complète alliant les traditions ancestrales du Tchad et le glamour contemporain de la haute coiffure. 
+              Ce rituel d’exception comprend : préparation cutanée purifiante au beurre de karité bio, pose du masque capillaire au véritable Chébé du Guéra, maquillage mariée sur-mesure haute tenue avec nacres dorées, et accompagnement à la pose des parures traditionnelles.
+            </p>
+</div>
+<!-- Arabic RTL -->
+<div class="bg-surface-container-low p-4 rounded-xl space-y-2 text-right" dir="rtl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">وصف الطقس باللغة العربية (RTL)</span>
+<span class="font-label-sm text-label-sm text-outline">العربية</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              جلسة تجميل ملكية كاملة مصممة خصيصاً للعروس التشادية. تجمع بين سر بودرة الشيبيه الأصيلة من جبال قيرا لتقوية الشعر، مع مكياج عرائسي فاخر فائق الثبات، وتجهيز البشرة بأرقى الزيوت العطرية التقليدية، ونقوش الحناء الملكية مع تبخير الخمرة الفواحة.
+            </p>
+</div>
+<!-- English -->
+<div class="bg-surface-container-low p-4 rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">English Description</span>
+<span class="font-label-sm text-label-sm text-outline">Global Clients</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Complete imperial bridal ceremony combining Sahelian ancestral beauty rituals and international luxury makeup. Includes authentic Chébé hair nourishment, luminous bespoke bridal contouring, and traditional Khomra misting for unforgettable royal bridal presence.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Info & Legal Integrity Box -->
+<footer class="bg-surface-container-low rounded-xl p-space-md text-xs text-on-surface-variant space-y-2">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Intégrité des Données de Rendez-vous (SRS Section 4.3)</span>
+</div>
+<span class="text-outline">Maison Soussou TCHAD • N'Djamena, République du Tchad</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+        Conformément aux spécifications du cahier des charges MVP, la modification ou suspension des services n'entraîne jamais la suppression des rendez-vous déjà confirmés dans le module Calendrier (AD-11). Les tarifs et durées modifiés s'appliquent immédiatement à toute nouvelle demande initiée depuis l'application cliente (MA-01).
+      </p>
+</footer>
+</div>
+<!-- Modal / Side Drawer for Add & Edit Service -->
+<aside aria-labelledby="drawer-title" aria-modal="true" class="fixed inset-y-0 right-0 w-full sm:w-[560px] lg:w-[640px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto" id="service-drawer" role="dialog">
+<div>
+<!-- Drawer Header -->
+<div class="sticky top-0 bg-surface-container-lowest z-10 px-space-lg py-4 border-b border-surface-container flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold block" id="drawer-subtitle">Gestion du Rituel</span>
+<h2 class="font-headline-sm text-headline-sm text-primary" id="drawer-title">Édition Rituel Beauté</h2>
+</div>
+<button aria-label="Fermer le tiroir" class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Tabs -->
+<div class="flex items-center px-space-lg border-b border-surface-container bg-surface-container-low text-xs">
+<button class="drawer-tab px-4 py-3 font-label-md text-label-md text-primary border-b-2 border-primary" id="tab-btn-general" onclick="switchTab('general')">1. Général &amp; Logistique</button>
+<button class="drawer-tab px-4 py-3 font-label-md text-label-md text-outline hover:text-on-surface" id="tab-btn-translations" onclick="switchTab('translations')">2. Textes &amp; Traductions (FR/AR/EN)</button>
+<button class="drawer-tab px-4 py-3 font-label-md text-label-md text-outline hover:text-on-surface" id="tab-btn-media" onclick="switchTab('media')">3. Visuels &amp; Galerie</button>
+</div>
+<!-- Form Content -->
+<div class="p-space-lg space-y-5">
+<!-- TAB 1: General & Logistics -->
+<div class="space-y-4" id="tab-content-general">
+<!-- Code & Category -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block" for="srv-code">Référence Unique (Code)</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-mono text-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary" id="srv-code" type="text" value="#SRV-BRD-01"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block" for="srv-cat">Catégorie de Soin</label>
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="srv-cat">
+<option selected="" value="mariage">Mariage &amp; Cérémonies</option>
+<option value="chebe">Soins Ancestraux Chébé</option>
+<option value="gala">Soirée, Gala &amp; VIP</option>
+<option value="henne">Rituels Henné &amp; Teint</option>
+</select>
+</div>
+</div>
+<!-- Price & Duration -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block" for="srv-price">Tarif Prestation (XAF)</label>
+<div class="relative">
+<input class="w-full h-10 pl-3 pr-14 rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md font-bold focus:outline-none focus:ring-1 focus:ring-secondary" id="srv-price" type="number" value="120000"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-secondary font-bold">XAF</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block" for="srv-duration">Durée Estimée (Minutes)</label>
+<div class="relative">
+<input class="w-full h-10 pl-3 pr-14 rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md font-bold focus:outline-none focus:ring-1 focus:ring-secondary" id="srv-duration" type="number" value="180"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline">min</span>
+</div>
+</div>
+</div>
+<!-- Lead Makeup Artist Assignment (MVP strictly Soussou) -->
+<div class="bg-surface-container-low p-3.5 rounded-xl space-y-1.5">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Lead Makeup Artist Attitrée</label>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">ST</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Mme Soussou (Lead Artist &amp; Directrice)</p>
+<p class="text-xs text-outline">Praticienne exclusive configurée pour le MVP</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-lg">verified</span>
+</div>
+</div>
+<!-- Locations Available -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Lieux Autorisés pour la Réservation</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary cursor-pointer" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-on-surface block">Salon VIP Sabangali</span>
+<span class="text-xs text-outline block">Institut principal N'Djamena</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary cursor-pointer" type="checkbox"/>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-on-surface block">Suite / Déplacement VIP</span>
+<span class="text-xs text-outline block">Hôtel ou Domicile Nuptial</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Status Toggle Switch -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low">
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-primary font-bold block">Statut du Rituel</span>
+<span class="text-xs text-outline block">Activer pour rendre disponible sur MA-01 (Storefront Booking)</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="srv-status-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- TAB 2: Multilingual Texts (FR / AR / EN) -->
+<div class="hidden space-y-4" id="tab-content-translations">
+<!-- French Field -->
+<div class="space-y-2 p-3.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold" for="name-fr">Nom du Rituel (Français - Principal)</label>
+<span class="font-label-sm text-label-sm text-outline">FR</span>
+</div>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary" id="name-fr" type="text" value="Rituel Mariée Impériale Tchadienne"/>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mt-2" for="desc-fr">Description Complète (Français)</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="desc-fr" rows="3">Mise en beauté nuptiale complète alliant traditions ancestrales du Tchad et glamour contemporain. Préparation au Chébé Guéra, maquillage mariée nacré sur-mesure et drapé des parures royales.</textarea>
+</div>
+<!-- Arabic Field (RTL) -->
+<div class="space-y-2 p-3.5 rounded-xl bg-surface-container-low text-right" dir="rtl">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold" for="name-ar">اسم الطقس التجميلي (العربية - RTL)</label>
+<span class="font-label-sm text-label-sm text-outline">AR</span>
+</div>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md text-right focus:outline-none focus:ring-1 focus:ring-secondary" id="name-ar" type="text" value="طقس العروس التشادية الإمبراطورية"/>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mt-2" for="desc-ar">الوصف الكامل والمفصل للطقس</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm text-right focus:outline-none focus:ring-1 focus:ring-secondary" id="desc-ar" rows="3">جلسة تجميل ملكية كاملة تجمع بين طقوس الشيبيه الأصيلة ونقوش الجمال ومكياج العروس الفاخر مع تبخير الخمرة التقليدية الفواحة.</textarea>
+</div>
+<!-- English Field -->
+<div class="space-y-2 p-3.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold" for="name-en">Service Name (English)</label>
+<span class="font-label-sm text-label-sm text-outline">EN</span>
+</div>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary" id="name-en" type="text" value="Imperial Chadian Bridal Ritual"/>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mt-2" for="desc-en">English Ritual Overview</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="desc-en" rows="3">Complete bespoke luxury bridal service featuring Sahelian hair prep, long-lasting radiant bridal beauty makeup, and traditional Khomra aromatic ceremony.</textarea>
+</div>
+</div>
+<!-- TAB 3: Media & Gallery -->
+<div class="hidden space-y-4" id="tab-content-media">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Visuel Principal du Service</span>
+<div class="p-6 rounded-xl bg-surface-container-low text-center space-y-3 cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-4xl text-secondary">add_photo_alternate</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Glissez l'image de la prestation ou parcourez</p>
+<p class="text-xs text-outline">Format JPG, WebP ou PNG (Max 5MB • Ratio recommandé 4:3 ou 1:1)</p>
+</div>
+</div>
+</div>
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Aperçu Visuels Associés</span>
+<div class="grid grid-cols-3 gap-2">
+<div class="aspect-square rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Chadian wedding cosmetics set with bronze pigments, traditional perfumes, and natural lip stains." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB82nKdNDe9_srH3a8SZOh2W34ahwnbWlxsb3UV2YCyJQm_2viPMzUTFzwnLZD7q9HjduDJmgs1RZ6EbzfeHskXikB50j7WrRGiGX1QMoLA74TN0LejmHNJGlDc-VOt7-6c5GPo0eNQVDfKpbJZnSD8JtTxOpJQ_vvAp_3RvMovN8NO3Q-PloTqelJklTgzQkG1lwBZCgB6Hh62AnXSW_zB4Bk1JL3MBAXYxyYxO43"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container overflow-hidden">
+<img alt="Henné traditionnel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VFtAP1Y71-U09gDDvwJDmV6g3mrqGMmwya6GKTtynSSvE7DyaKH1Se9fMGh21kobtJZqkn48s8UXAK4eFosiXFieT2I9Wk_MUweuzdCQYif_-nkp5KhrNxllUBAg1K3lR0OTtW77xbSgAjh5NmjmH1SiWFK-DogPVimbi026oCesbv55l6cCHz_xgwkBRISEsM6VJlBrxeyxE9TJmiX-dWlEtZMtQ6fP8_wURKE6KM"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-low flex flex-col items-center justify-center text-outline">
+<span class="material-symbols-outlined text-2xl">add</span>
+<span class="text-[10px] uppercase font-bold mt-1">Ajouter</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="sticky bottom-0 bg-surface-container-lowest p-space-lg border-t border-surface-container flex items-center justify-between gap-3">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider transition-colors" onclick="closeDrawer()">
+        Annuler
+      </button>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2.5 rounded-xl bg-surface-container-highest text-secondary hover:text-primary font-label-md text-label-md flex items-center gap-1.5 uppercase tracking-wider transition-colors" onclick="previewClientFlow()" title="Aperçu MA-01">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Aperçu Client</span>
+</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm flex items-center gap-2" onclick="saveServiceForm()">
+<span class="material-symbols-outlined text-base">check</span>
+<span>Enregistrer</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Drawer Backdrop -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-40 hidden transition-opacity duration-300" id="drawer-backdrop" onclick="closeDrawer()"></div>
+<!-- Deactivation Confirmation Modal Dialog -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="deactivate-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-2xl space-y-4">
+<div class="flex items-center gap-3 text-secondary">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">pause_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Suspendre ce rituel ?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Vous êtes sur le point de suspendre la réservation en ligne de <strong class="text-primary" id="deactivate-service-name">Rituel Mariée Impériale Tchadienne</strong> (<span id="deactivate-service-code">#SRV-BRD-01</span>).
+      </p>
+<div class="bg-surface-container-low p-3 rounded-lg text-xs text-outline space-y-1">
+<div class="flex items-center gap-1.5 text-secondary font-bold">
+<span class="material-symbols-outlined text-sm">info</span>
+<span>Intégrité des historiques préservée :</span>
+</div>
+<p>Les clientes ayant déjà réservé ce rituel dans leur calendrier conserveront leur rendez-vous intact. Le service disparaîtra uniquement des nouvelles réservations sur MA-01.</p>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider" onclick="closeDeactivateModal()">
+          Conserver Actif
+        </button>
+<button class="px-4 py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-sm" onclick="executeDeactivation()">
+          Confirmer la Suspension
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    // State management for MVP Simulator
+    function setSimState(state) {
+      // Update buttons
+      document.querySelectorAll('#simulator-buttons button').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      const activeBtn = document.querySelector(`[data-state="${state}"]`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-primary', 'text-on-primary');
+        activeBtn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      }
+
+      // Reset views
+      document.getElementById('table-view').classList.remove('hidden');
+      document.getElementById('empty-state-view').classList.add('hidden');
+      document.getElementById('skeleton-view').classList.add('hidden');
+      document.getElementById('service-detail-section').classList.add('hidden');
+      closeDrawer();
+      closeDeactivateModal();
+
+      const rows = document.querySelectorAll('.service-row');
+      rows.forEach(r => r.classList.remove('hidden'));
+
+      if (state === 'normal') {
+        // Default clean state
+      } else if (state === 'drawer') {
+        openDrawer('edit-1');
+      } else if (state === 'detail') {
+        showDetailCard(1);
+      } else if (state === 'deactivate') {
+        confirmToggleStatus('Rituel Mariée Impériale Tchadienne', '#SRV-BRD-01', true);
+      } else if (state === 'inactive-filter') {
+        document.getElementById('statusFilter').value = 'inactif';
+        filterServices();
+      } else if (state === 'empty') {
+        document.getElementById('table-view').classList.add('hidden');
+        document.getElementById('empty-state-view').classList.remove('hidden');
+      } else if (state === 'loading') {
+        document.getElementById('table-view').classList.add('hidden');
+        document.getElementById('skeleton-view').classList.remove('hidden');
+      }
+    }
+
+    // Filter and search logic
+    function filterServices() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cat = document.getElementById('categoryFilter').value;
+      const stat = document.getElementById('statusFilter').value;
+      const loc = document.getElementById('locationFilter').value;
+
+      const rows = document.querySelectorAll('.service-row');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowCat = row.getAttribute('data-category');
+        const rowStat = row.getAttribute('data-status');
+        const rowLoc = row.getAttribute('data-location');
+
+        const matchesQuery = !query || text.includes(query);
+        const matchesCat = !cat || rowCat === cat;
+        const matchesStat = !stat || rowStat === stat;
+        const matchesLoc = !loc || rowLoc.includes(loc);
+
+        if (matchesQuery && matchesCat && matchesStat && matchesLoc) {
+          row.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        document.getElementById('table-view').classList.add('hidden');
+        document.getElementById('empty-state-view').classList.remove('hidden');
+      } else {
+        document.getElementById('table-view').classList.remove('hidden');
+        document.getElementById('empty-state-view').classList.add('hidden');
+      }
+    }
+
+    function quickFilter(type) {
+      document.querySelectorAll('.chip-filter').forEach(chip => {
+        chip.classList.remove('bg-primary', 'text-on-primary');
+        chip.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      const targetChip = document.querySelector(`[data-chip="${type}"]`);
+      if (targetChip) {
+        targetChip.classList.add('bg-primary', 'text-on-primary');
+        targetChip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      }
+
+      const catSelect = document.getElementById('categoryFilter');
+      if (type === 'all') {
+        catSelect.value = '';
+      } else {
+        catSelect.value = type;
+      }
+      filterServices();
+    }
+
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('categoryFilter').value = '';
+      document.getElementById('statusFilter').value = '';
+      document.getElementById('locationFilter').value = '';
+      quickFilter('all');
+      filterServices();
+    }
+
+    // Side Drawer Logic
+    function openDrawer(mode) {
+      const drawer = document.getElementById('service-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const title = document.getElementById('drawer-title');
+      const subtitle = document.getElementById('drawer-subtitle');
+
+      if (mode === 'nouveau') {
+        title.innerText = 'Créer un Nouveau Rituel';
+        subtitle.innerText = 'Ajout au Catalogue Maison Soussou';
+        document.getElementById('srv-code').value = '#SRV-NEW-' + Math.floor(10 + Math.random() * 90);
+        document.getElementById('name-fr').value = '';
+        document.getElementById('desc-fr').value = '';
+        document.getElementById('name-ar').value = '';
+        document.getElementById('desc-ar').value = '';
+        document.getElementById('name-en').value = '';
+        document.getElementById('desc-en').value = '';
+        document.getElementById('srv-price').value = 40000;
+        document.getElementById('srv-duration').value = 60;
+      } else {
+        title.innerText = 'Édition Rituel Beauté (#SRV-BRD-01)';
+        subtitle.innerText = 'Mise à jour tarifaire et protocole';
+      }
+
+      drawer.classList.remove('translate-x-full');
+      backdrop.classList.remove('hidden');
+    }
+
+    function closeDrawer() {
+      const drawer = document.getElementById('service-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.add('hidden');
+    }
+
+    function switchTab(tabId) {
+      // Hide all contents
+      ['general', 'translations', 'media'].forEach(id => {
+        document.getElementById(`tab-content-${id}`).classList.add('hidden');
+        const btn = document.getElementById(`tab-btn-${id}`);
+        btn.classList.remove('border-b-2', 'border-primary', 'text-primary');
+        btn.classList.add('text-outline');
+      });
+
+      document.getElementById(`tab-content-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      activeBtn.classList.add('border-b-2', 'border-primary', 'text-primary');
+      activeBtn.classList.remove('text-outline');
+    }
+
+    // Detail Section Logic
+    function showDetailCard(serviceId) {
+      const detailSec = document.getElementById('service-detail-section');
+      detailSec.classList.remove('hidden');
+      detailSec.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function closeDetailCard() {
+      document.getElementById('service-detail-section').classList.add('hidden');
+    }
+
+    // Modal Confirmation Logic
+    function confirmToggleStatus(name, code, currentStatus) {
+      document.getElementById('deactivate-service-name').innerText = name;
+      document.getElementById('deactivate-service-code').innerText = code;
+      document.getElementById('deactivate-modal').classList.remove('hidden');
+    }
+
+    function closeDeactivateModal() {
+      document.getElementById('deactivate-modal').classList.add('hidden');
+    }
+
+    function executeDeactivation() {
+      closeDeactivateModal();
+      alert('Statut du rituel mis à jour avec succès. Le calendrier AD-11 conserve tous les créneaux déjà réservés.');
+    }
+
+    function saveServiceForm() {
+      closeDrawer();
+      alert('Rituel enregistré et synchronisé avec succès pour la réservation cliente (MA-01).');
+    }
+
+    function previewClientFlow() {
+      alert('Ouverture de la vue cliente MA-01 : Aperçu direct du rituel dans le flux de réservation...');
+    }
+
+    function exportMenuPDF() {
+      alert('Génération en cours du Menu Tarifaire Maison Soussou TCHAD (Édition Sabangali N\'Djamena PDF)...');
+    }
+  </script>
+</div></main></div></body></html>

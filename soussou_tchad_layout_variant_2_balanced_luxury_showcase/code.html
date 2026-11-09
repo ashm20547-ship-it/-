@@ -1,0 +1,802 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Soussou TCHAD - Beauty • Care • Elegance</title>
+<!-- Tailwind CSS CDN with forms and container-queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts: Playfair Display, Great Vibes, Montserrat, Cormorant Garamond -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Great+Vibes&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-burgundy': '#6F1D2B',
+            'brand-burgundy-dark': '#551520',
+            'brand-wine': '#832232',
+            'brand-rose': '#D9828B',
+            'brand-blush': '#F9ECEB',
+            'brand-nude': '#F6EAE2',
+            'brand-gold': '#D4AF37',
+            'brand-gold-warm': '#CCA062',
+            'brand-cream': '#FCF8F5'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            cormorant: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-typography">
+    .font-script-banner {
+      font-family: 'Great Vibes', cursive;
+    }
+    .brand-brush-title {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.5px;
+    }
+  </style>
+<style data-purpose="custom-decorations">
+    /* Subtle luxury box shadows and decorative gradients */
+    .hero-glow {
+      box-shadow: 0 20px 45px -15px rgba(111, 29, 43, 0.15);
+    }
+    .gold-ring-gradient {
+      border: 3px solid #D8A47F;
+      box-shadow: 0 0 0 2px #faebe5, 0 8px 16px -4px rgba(184, 115, 87, 0.3);
+    }
+    .category-card:hover .gold-ring-gradient {
+      transform: scale(1.06);
+      border-color: #CCA062;
+      box-shadow: 0 0 0 3px #F4DDD3, 0 12px 24px -4px rgba(111, 29, 43, 0.35);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #e2c1b4;
+      border-radius: 9999px;
+    }
+
+    /* Carousel Transition & Animation Styles */
+    .hero-carousel-slide {
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hero-carousel-slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      z-index: 10;
+      pointer-events: auto;
+    }
+    .hero-carousel-slide.inactive {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.02);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Progress bar indicator item styles */
+    .carousel-indicator-bar {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+    }
+    .carousel-indicator-bar.active-indicator {
+      width: 2.75rem;
+      background-color: rgba(111, 29, 43, 0.22);
+    }
+    .carousel-indicator-bar.inactive-indicator {
+      width: 0.625rem;
+      background-color: rgba(111, 29, 43, 0.28);
+    }
+    .carousel-indicator-bar.inactive-indicator:hover {
+      background-color: rgba(111, 29, 43, 0.6);
+    }
+
+    /* Progress inner fill bar */
+    .indicator-progress-fill {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      background: linear-gradient(90deg, #6F1D2B, #9E2B3D);
+      border-radius: 9999px;
+    }
+
+    .carousel-indicator-bar.active-indicator .indicator-progress-fill.running {
+      animation: indicatorProgressAnim 6000ms linear forwards;
+    }
+    .carousel-indicator-bar.active-indicator.is-paused .indicator-progress-fill.running {
+      animation-play-state: paused;
+    }
+
+    /* Top luxury ambient timer bar */
+    #heroProgressBar {
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, #CCA062, #DDA15E, #6F1D2B);
+      transition: width 0.05s linear;
+    }
+
+    @keyframes indicatorProgressAnim {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-carousel-slide {
+        transition: none !important;
+      }
+      .carousel-indicator-bar.active-indicator .indicator-progress-fill.running {
+        animation: none !important;
+        width: 100% !important;
+      }
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-[#FBF6F3] text-gray-800 font-sans antialiased selection:bg-brand-burgundy selection:text-white">
+<!-- BEGIN: TopAnnouncementBar -->
+<aside class="bg-brand-burgundy text-white text-[12px] font-medium tracking-wide py-2 px-6 border-b border-brand-burgundy-dark/50" data-purpose="announcement-bar">
+<div class="max-w-[1440px] mx-auto flex flex-wrap justify-between items-center gap-2">
+<!-- Left side perks -->
+<div class="flex items-center space-x-6">
+<span class="flex items-center gap-2">
+<i class="fa-solid fa-gift text-brand-gold"></i>
+<span class="">Free delivery for orders over <strong class="text-white">50,000 XAF</strong></span>
+</span>
+<span class="text-white/40">|</span>
+<span class="flex items-center gap-2">
+<i class="fa-solid fa-truck-fast text-brand-gold"></i>
+<span class="">Fast &amp; Secure Delivery</span>
+</span>
+<span class="text-white/40">|</span>
+<span class="flex items-center gap-2">
+<i class="fa-regular fa-heart text-brand-gold"></i>
+<span class="">Beauty for You ♥</span>
+</span>
+</div>
+<!-- Right side language selection -->
+<div class="flex items-center space-x-4">
+<div class="flex items-center gap-1 cursor-pointer hover:text-brand-gold transition">
+<span class="">English</span>
+<i class="fa-solid fa-chevron-down text-[10px]"></i>
+</div>
+<span class="text-white/40">|</span>
+<a class="hover:text-brand-gold transition font-sans" href="#ar">العربية</a>
+<span class="text-white/40">|</span>
+<a class="hover:text-brand-gold transition" href="#fr">Français</a>
+</div>
+</div>
+</aside>
+<!-- END: TopAnnouncementBar -->
+<!-- BEGIN: MainHeader (Variant 2: Centered Symmetrical Luxury Structure) -->
+<header class="bg-[#F8EFEA] pt-5 pb-3 border-b border-[#ebdcd5]">
+<div class="max-w-[1440px] mx-auto px-6">
+<!-- Top Symmetrical Luxury Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-6 py-2">
+<!-- Left: Integrated Search Bar -->
+<div class="lg:col-span-4 order-2 lg:order-1">
+<form action="#" class="relative flex items-center shadow-sm w-full max-w-md" method="GET">
+<input class="w-full pl-5 pr-12 py-2.5 rounded-full border border-[#D9C4BA] bg-white/95 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-burgundy focus:border-brand-burgundy transition shadow-inner" placeholder="Search for products..." type="text">
+<button aria-label="Search" class="absolute right-1 top-1 bottom-1 w-10 bg-brand-burgundy hover:bg-brand-burgundy-dark text-white rounded-full flex items-center justify-center transition" type="submit">
+<i class="fa-solid fa-magnifying-glass text-xs"></i>
+</button>
+</form>
+</div>
+<!-- Center: Brand identity logo & slogan (Prominent Centered Axis) -->
+<div class="lg:col-span-4 order-1 lg:order-2 flex justify-center text-center">
+<a class="flex flex-col items-center group text-decoration-none" href="#"><div class="relative w-24 h-24 rounded-full p-1 bg-white border-2 border-[#CCA062] shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 transition-transform group-hover:scale-105"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2SniR1df57dNnmGvrM0Cbquo_pxip1NyqG9vuJavqy_u4lZihigZIy5UdKxQS15_qDIlEhEMVlcJUJXfYdeywkunN5X3YlcWWVywqDjiY-75vbdeoFAmngE-QpL_BF8A30jciw0z5KUdM5-XJNheCmqpA5vARMzcuoumilqkHgVpXIzzLZIWKJKO_8EV_cCnn9cnDeXz2k1Dsz0HsnMHZBO2bCFcR1pqUsHxNyxE6Gesf_Dp2RlLb5A" alt="Soussou Tchad Imperial Beauty" class="w-full h-full object-contain rounded-full"></div><div class="flex items-center gap-2 mt-2"><span class="h-[1px] w-6 bg-brand-gold-warm"></span><span class="text-[11px] uppercase tracking-widest text-[#7D4638] font-medium font-serif italic">Haute Beauté • N'Djamena</span><span class="h-[1px] w-6 bg-brand-gold-warm"></span></div></a>
+</div>
+<!-- Right: User Profile Actions & Fast Utilities -->
+<div class="lg:col-span-4 order-3 flex items-center justify-end space-x-6 text-brand-burgundy">
+<nav aria-label="User shortcuts" class="flex items-center space-x-6 text-brand-burgundy">
+<!-- Account Button -->
+<div class="flex items-center gap-1.5 cursor-pointer hover:text-brand-burgundy-dark transition">
+<i class="fa-regular fa-user text-xl"></i>
+<span class="text-xs font-semibold">Account</span>
+<i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+</div>
+<!-- Wishlist -->
+<a class="flex items-center gap-1.5 hover:text-brand-burgundy-dark transition relative" href="#wishlist">
+<div class="relative">
+<i class="fa-regular fa-heart text-2xl"></i>
+<span class="absolute -top-1.5 -right-2 bg-brand-burgundy text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border border-white">0</span>
+</div>
+<span class="text-xs font-semibold ml-1">Wishlist</span>
+</a>
+<!-- Cart -->
+<a class="flex items-center gap-1.5 hover:text-brand-burgundy-dark transition relative" href="#cart">
+<div class="relative">
+<i class="fa-solid fa-bag-shopping text-2xl"></i>
+<span class="absolute -top-1.5 -right-2 bg-brand-burgundy text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border border-white">0</span>
+</div>
+<span class="text-xs font-semibold ml-1">Cart</span>
+</a>
+</nav>
+</div>
+</div>
+<!-- Centered Primary Navigation Bar -->
+<nav class="mt-4 mb-1 flex items-center justify-between bg-brand-burgundy text-white rounded-xl px-4 py-1.5 shadow-md" data-purpose="primary-navigation">
+<!-- Left balanced spacer to maintain center alignment -->
+<div class="hidden lg:flex items-center w-36"></div>
+<!-- Center Menu Links -->
+<div class="flex items-center justify-center space-x-1 lg:space-x-3 text-xs font-medium mx-auto">
+<!-- Active Home Button -->
+<a class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#DDA15E] to-[#C98A47] text-white font-semibold shadow-sm" href="#">
+<i class="fa-solid fa-house"></i>
+<span class="">Home</span>
+</a>
+<!-- Shop Dropdown -->
+<a class="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-white/10 transition" href="#shop">
+<i class="fa-solid fa-basket-shopping text-brand-gold"></i>
+<span class="">Shop</span>
+<i class="fa-solid fa-chevron-down text-[10px] ml-1"></i>
+</a>
+<span class="text-white/20">|</span>
+<!-- Makeup Artist Link -->
+<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition" href="#makeup-artist">
+<i class="fa-solid fa-wand-magic text-brand-gold"></i>
+<span class="">Makeup Artist</span>
+</a>
+<span class="text-white/20">|</span>
+<!-- About Us -->
+<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition" href="#about">
+<i class="fa-solid fa-circle-info text-brand-gold"></i>
+<span class="">About Us</span>
+</a>
+<span class="text-white/20">|</span>
+<!-- Contact Us -->
+<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition" href="#contact">
+<i class="fa-solid fa-envelope text-brand-gold"></i>
+<span class="">Contact Us</span>
+</a>
+</div>
+<!-- Right Book a service CTA -->
+<div class="flex items-center justify-end">
+<a class="flex items-center gap-2 bg-gradient-to-r from-[#DDA15E] to-[#C98A47] hover:from-[#e3a868] hover:to-[#d49450] text-white text-xs font-bold px-4 py-2 rounded-lg shadow transition transform hover:scale-[1.02]" href="#booking">
+<i class="fa-regular fa-calendar-check text-sm"></i>
+<span class="">Book a Service</span>
+</a>
+</div>
+</nav>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="max-w-[1440px] mx-auto px-6 py-6">
+<!-- Unified Hero & Value Highlight Band -->
+<div class="flex flex-col gap-5">
+<!-- Hero Slider / Banner container -->
+<section aria-label="Featured Promotions Carousel" class="relative rounded-3xl overflow-hidden shadow-xl border border-[#ebd2cb] hero-glow bg-[#faede8] group select-none" data-purpose="hero-carousel" id="heroCarouselSection">
+<!-- Top ambient cycle progress line -->
+<div class="absolute top-0 left-0 right-0 z-30 pointer-events-none h-[3px] bg-black/10 overflow-hidden">
+<div class="h-full" id="heroProgressBar" style="width: 4.75833%;"></div>
+</div>
+<div class="relative w-full aspect-[1427/366] overflow-hidden"><div aria-hidden="false" aria-label="1 of 3: Soussou Tchad Beauty Collection" aria-roledescription="slide" class="hero-carousel-slide absolute inset-0 w-full h-full active" data-slide-index="0" role="group"><div class="absolute inset-0 flex items-center justify-end"><img alt="Beauty in Every Detail" class="w-full h-full object-cover object-center block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbnyqVQrpPaPhYk-4zbY_DhLaFrBfuUJPnb4ZKm27WUM3aO36P14A6YsANe9nzVGTxaoc_7YWyF2DK2Q_4gynllWpBFquJxmqNVgSOmguBcDITIMvCnUzZ39l9zHYzmmVdl3wsR8m0NSW2DobWVoWhpU29bJLXxNrlXOpI91Jo1JLVnHONc93wgPtPxhjoOAVsfoJYA1spm4djucv-RtUhZGUzQU5Co0EWC3RqlSSOwaU0RvjgLy-DYA"><div class="absolute inset-0 bg-gradient-to-r from-[#2c0812]/90 via-[#48111e]/70 to-transparent"></div></div><div class="relative z-10 h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-2xl text-white"><div class="inline-flex items-center gap-2 self-start bg-brand-gold/20 backdrop-blur-md border border-brand-gold/50 px-3.5 py-1 rounded-full mb-3 text-brand-gold text-[11px] sm:text-xs font-semibold tracking-widest uppercase"><i class="fa-solid fa-crown text-[10px]"></i><span class="">Édition Prestige • Nouvelle Saison</span></div><h1 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white drop-shadow-sm">Beauty in <br><span class="italic text-brand-gold font-normal">Every Detail</span></h1><p class="text-xs sm:text-sm lg:text-base text-rose-100/90 mt-3 max-w-lg leading-relaxed font-light">Discover our beauty products and professional makeup services crafted for radiant elegance.</p><div class="mt-6 flex flex-wrap items-center gap-3"><a class="inline-flex items-center gap-2 bg-gradient-to-r from-[#DDA15E] to-[#C98A47] hover:from-[#e3a868] hover:to-[#d49450] text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-lg transition transform hover:scale-105" href="#shop"><span class="">Shop Now</span><i class="fa-solid fa-arrow-right text-[10px]"></i></a><a class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full transition" href="#booking"><i class="fa-regular fa-calendar-check text-[11px]"></i><span class="">Book a Service</span></a></div></div></div><div aria-hidden="true" aria-label="2 of 3: Bridal Artistry &amp; Ceremony" aria-roledescription="slide" class="hero-carousel-slide absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-r from-[#290710] via-[#521321] to-[#6f1d2b] inactive" data-slide-index="1" role="group"><div class="absolute inset-0 flex items-center justify-end"><img alt="Chadian Royal Bridal Makeup &amp; Traditional Elegance" class="w-full md:w-3/5 h-full object-cover object-top md:object-center transform md:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UhihlD8tlQW1UAmeq4ppfsYWsWu60XwHE3aTpJN9GBi-wiafUFN_9AWKxW6rGlAkMaLFLundFVxWnXgvbMEcNXReROle4l2_bItLRHigPsrDdRj0C1J9Utg8VP5SiPR3sKtl9QWpJod5Tia9eyhlTMNPmGTeJqxLZ7RhhbGEzCp_OA3IKc0k-E_y9qtQ-LyCgnN7-RZAq7Uyvsj95VPtL6YYV2nVM4LPPOWA0ZQhrfXw"><div class="absolute inset-0 bg-gradient-to-r from-[#320813] via-[#48111e]/90 md:via-[#48111e]/75 to-transparent"></div><div class="absolute inset-0 bg-gradient-to-t from-[#2c0812] via-transparent to-transparent opacity-60"></div></div><div class="relative z-10 h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-2xl text-white"><div class="inline-flex items-center gap-2 self-start bg-brand-gold/20 backdrop-blur-md border border-brand-gold/50 px-3.5 py-1 rounded-full mb-3 text-brand-gold text-[11px] sm:text-xs font-semibold tracking-widest uppercase"><i class="fa-solid fa-crown text-[10px]"></i><span class="">Mariée Royale &amp; Cérémonies</span></div><h2 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight drop-shadow-sm text-white">Collection Cérémoniale &amp;<br><span class="italic text-brand-gold font-normal">Mariée Royale</span></h2><p class="text-xs sm:text-sm lg:text-base text-rose-100/90 mt-3 max-w-lg leading-relaxed font-light">Réservez votre séance de mise en beauté sur-mesure. Éclat sahélien, parures somptueuses et art du maquillage d'exception pour vos moments précieux.</p><div class="mt-6 flex flex-wrap items-center gap-3"><a class="inline-flex items-center gap-2 bg-gradient-to-r from-[#DDA15E] to-[#C98A47] hover:from-[#e3a868] hover:to-[#d49450] text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-lg transition transform hover:scale-105" href="#booking"><i class="fa-regular fa-calendar-check"></i><span class="">Réserver ma séance</span></a><a class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full transition" href="#makeup-artist"><span class="">Voir les forfaits</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a></div></div></div><div aria-hidden="true" aria-label="3 of 3: Salon &amp; Skincare Radiance" aria-roledescription="slide" class="hero-carousel-slide absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-r from-[#1d1210] via-[#3a201c] to-[#5b322a] inactive" data-slide-index="2" role="group"><div class="absolute inset-0 flex items-center justify-end"><img alt="Salon de beauté prestigieux et rituels botaniques Soussou Tchad" class="w-full md:w-3/5 h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XrOxIKBRvsrbwcouTbdKdgEA9FaiLW3Lqahx2mDgXrc7tpJhUxagWG5pChzVy2Z7Lz94zEuH3Z4FoSvDOn7FK0Vckhd14jXVoFqPgPySCbTUoLKpIaLu5Vn90XCyxovTkrPNlAIkO4e_2E0sx31OBOkqiwKEktusmIZzFD-qEcMZNz0CAJ43NuQ1qGA-3jWuvQgUgUZwBLiEs9T6M0J7o4-EgNGSAvgu09fGRUuOsTRA"><div class="absolute inset-0 bg-gradient-to-r from-[#1d1210] via-[#2f1b17]/95 md:via-[#2f1b17]/80 to-transparent"></div><div class="absolute inset-0 bg-gradient-to-t from-[#1d1210]/70 via-transparent to-transparent"></div></div><div class="relative z-10 h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-2xl text-white"><div class="inline-flex items-center gap-2 self-start bg-[#CCA062]/20 backdrop-blur-md border border-[#CCA062]/40 px-3.5 py-1 rounded-full mb-3 text-[#edd0a4] text-[11px] sm:text-xs font-semibold tracking-widest uppercase"><i class="fa-solid fa-spa text-[10px]"></i><span class="">Rituels Prestigieux • N'Djamena</span></div><h2 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white">Soins &amp; Éclat<br><span class="italic text-brand-gold font-normal">du Sahel</span></h2><p class="text-xs sm:text-sm lg:text-base text-stone-200/90 mt-3 max-w-lg leading-relaxed font-light">Découvrez nos rituels botaniques et l'atmosphère chaleureuse de nos salons exclusifs. Prenez soin de votre peau avec nos soins signature et élixirs précieux.</p><div class="mt-6 flex flex-wrap items-center gap-3"><a class="inline-flex items-center gap-2 bg-gradient-to-r from-[#DDA15E] to-[#C98A47] hover:from-[#e3a868] hover:to-[#d49450] text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-lg transition transform hover:scale-105" href="#skincare"><i class="fa-solid fa-sparkles"></i><span class="">Découvrir les Rituels</span></a><a class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full transition" href="#booking"><span class="">Visiter le Salon</span><i class="fa-solid fa-arrow-right text-[10px]"></i></a></div></div></div><button aria-label="Previous slide" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/85 hover:bg-white text-brand-burgundy shadow-lg flex items-center justify-center transition backdrop-blur-md z-30 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-burgundy/50" id="carouselPrevBtn" type="button"><i class="fa-solid fa-chevron-left text-sm"></i></button><button aria-label="Next slide" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/85 hover:bg-white text-brand-burgundy shadow-lg flex items-center justify-center transition backdrop-blur-md z-30 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-burgundy/50" id="carouselNextBtn" type="button"><i class="fa-solid fa-chevron-right text-sm"></i></button><div aria-label="Carousel pagination" class="absolute bottom-3.5 sm:bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-md shadow-sm border border-white/50" id="carouselIndicators" role="tablist"><button aria-label="Slide 1" aria-selected="true" class="carousel-indicator-bar h-2.5 rounded-full focus:outline-none active-indicator" data-slide-target="0" role="tab"><span class="indicator-progress-fill running"></span></button><button aria-label="Slide 2" aria-selected="false" class="carousel-indicator-bar h-2.5 rounded-full focus:outline-none inactive-indicator" data-slide-target="1" role="tab"><span class="indicator-progress-fill"></span></button><button aria-label="Slide 3" aria-selected="false" class="carousel-indicator-bar h-2.5 rounded-full focus:outline-none inactive-indicator" data-slide-target="2" role="tab"><span class="indicator-progress-fill"></span></button></div></div>
+</section>
+<!-- END: HeroBanner -->
+<!-- Integrated Value Propositions Strip (Compact Unified 4-Column Header Band) -->
+<section class="bg-white/90 backdrop-blur-sm border border-[#F0DCD3] rounded-2xl py-4 px-6 shadow-sm" data-purpose="features-strip">
+<div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#F0DCD3] gap-3 md:gap-0">
+<!-- Feature 1 -->
+<div class="flex items-center justify-center gap-3.5 px-4 py-2 hover:bg-[#faede8]/40 rounded-xl transition">
+<div class="w-11 h-11 rounded-xl bg-[#faede8] text-[#9A3845] flex items-center justify-center text-lg shrink-0 shadow-inner">
+<i class="fa-solid fa-truck"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900 leading-tight">Free Delivery</h4>
+<p class="text-xs text-gray-500 mt-0.5">from 50,000 XAF</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-center justify-center gap-3.5 px-4 py-2 hover:bg-[#faede8]/40 rounded-xl transition">
+<div class="w-11 h-11 rounded-xl bg-[#faede8] text-[#9A3845] flex items-center justify-center text-lg shrink-0 shadow-inner">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900 leading-tight">Secure Payment</h4>
+<p class="text-xs text-gray-500 mt-0.5">Cash on Delivery</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-center justify-center gap-3.5 px-4 py-2 hover:bg-[#faede8]/40 rounded-xl transition">
+<div class="w-11 h-11 rounded-xl bg-[#faede8] text-[#9A3845] flex items-center justify-center text-lg shrink-0 shadow-inner">
+<i class="fa-solid fa-headset"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900 leading-tight">24/7 Support</h4>
+<p class="text-xs text-gray-500 mt-0.5">Always Here</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="flex items-center justify-center gap-3.5 px-4 py-2 hover:bg-[#faede8]/40 rounded-xl transition">
+<div class="w-11 h-11 rounded-xl bg-[#faede8] text-[#9A3845] flex items-center justify-center text-lg shrink-0 shadow-inner">
+<i class="fa-solid fa-gift"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-gray-900 leading-tight">Special Offers</h4>
+<p class="text-xs text-gray-500 mt-0.5">&amp; Exclusive Deals</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ValuePropositions -->
+</div>
+<!-- BEGIN: ShopByCategory (Centered Expansive Showcase Grid) -->
+<section class="mt-14" data-purpose="category-section">
+<!-- Section Title with decorative gold lines -->
+<div class="flex items-center justify-center gap-4 mb-9">
+<div class="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#b47a69]"></div>
+<h2 class="text-2xl lg:text-3xl font-serif font-bold text-brand-burgundy tracking-wide">
+          Shop by Category
+        </h2>
+<div class="h-[1px] w-24 bg-gradient-to-l from-transparent to-[#b47a69]"></div>
+</div>
+<!-- Expansive 5-Column Centered Circular Layout -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto px-4">
+<!-- Category 1: Makeup -->
+<a class="category-card flex flex-col items-center group p-3 rounded-2xl hover:bg-white/60 transition" href="#makeup">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full gold-ring-gradient bg-gradient-to-b from-[#fbeee9] to-[#f4d9d0] flex items-center justify-center overflow-hidden transition duration-300 relative shadow-md">
+<div class="flex items-center justify-center text-[#9c2f42] group-hover:scale-110 transition duration-300">
+<i class="fa-solid fa-wand-magic-sparkles text-3xl"></i>
+</div>
+</div>
+<span class="mt-3.5 text-sm font-semibold text-gray-800 group-hover:text-brand-burgundy transition">
+              Makeup
+            </span>
+</a>
+<!-- Category 2: Skincare -->
+<a class="category-card flex flex-col items-center group p-3 rounded-2xl hover:bg-white/60 transition" href="#skincare">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full gold-ring-gradient bg-gradient-to-b from-[#fbeee9] to-[#f4d9d0] flex items-center justify-center overflow-hidden transition duration-300 relative shadow-md">
+<div class="flex items-center justify-center text-[#b87860] group-hover:scale-110 transition duration-300">
+<i class="fa-solid fa-spa text-3xl"></i>
+</div>
+</div>
+<span class="mt-3.5 text-sm font-semibold text-gray-800 group-hover:text-brand-burgundy transition">
+              Skincare
+            </span>
+</a>
+<!-- Category 3: Fragrances -->
+<a class="category-card flex flex-col items-center group p-3 rounded-2xl hover:bg-white/60 transition" href="#fragrances">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full gold-ring-gradient bg-gradient-to-b from-[#fbeee9] to-[#f4d9d0] flex items-center justify-center overflow-hidden transition duration-300 relative shadow-md">
+<div class="flex items-center justify-center text-[#c28e46] group-hover:scale-110 transition duration-300">
+<i class="fa-solid fa-bottle-droplet text-3xl"></i>
+</div>
+</div>
+<span class="mt-3.5 text-sm font-semibold text-gray-800 group-hover:text-brand-burgundy transition">
+              Fragrances
+            </span>
+</a>
+<!-- Category 4: Hair Care -->
+<a class="category-card flex flex-col items-center group p-3 rounded-2xl hover:bg-white/60 transition" href="#haircare">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full gold-ring-gradient bg-gradient-to-b from-[#fbeee9] to-[#f4d9d0] flex items-center justify-center overflow-hidden transition duration-300 relative shadow-md">
+<div class="flex items-center justify-center text-[#8e4a38] group-hover:scale-110 transition duration-300">
+<i class="fa-solid fa-pump-soap text-3xl"></i>
+</div>
+</div>
+<span class="mt-3.5 text-sm font-semibold text-gray-800 group-hover:text-brand-burgundy transition">
+              Hair Care
+            </span>
+</a>
+<!-- Category 5: Beauty Tools -->
+<a class="category-card flex flex-col items-center group p-3 rounded-2xl hover:bg-white/60 transition" href="#beauty-tools">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full gold-ring-gradient bg-gradient-to-b from-[#fbeee9] to-[#f4d9d0] flex items-center justify-center overflow-hidden transition duration-300 relative shadow-md">
+<div class="flex items-center justify-center text-[#75362e] group-hover:scale-110 transition duration-300">
+<i class="fa-solid fa-paintbrush text-3xl"></i>
+</div>
+</div>
+<span class="mt-3.5 text-sm font-semibold text-gray-800 group-hover:text-brand-burgundy transition">
+              Beauty Tools
+            </span>
+</a>
+</div>
+</section>
+<!-- END: ShopByCategory -->
+<!-- BEGIN: Professional Makeup Artist Exclusive Banner (Standalone Full-Width Horizontal Feature) -->
+<section class="mt-12" data-purpose="exclusive-artist-banner">
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#f1d0ca] via-[#eed1cb] to-[#d8afaa] p-8 md:p-10 shadow-md border border-[#ebd2cb]">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<!-- Left: Text & Booking Info -->
+<div class="max-w-xl text-center md:text-left">
+<div class="inline-flex items-center gap-2 mb-2.5 bg-white/50 backdrop-blur-sm px-3.5 py-1 rounded-full border border-white/60">
+<i class="fa-regular fa-calendar-check text-brand-burgundy text-xs"></i>
+<span class="text-[11px] font-bold text-brand-burgundy tracking-wide uppercase">Exclusive Service</span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-serif italic font-bold text-[#5e1927] leading-tight">
+Professional<br>Makeup Artist
+</h3>
+<p class="text-sm text-gray-700 mt-2 mb-5">
+Book your appointment easily online
+</p>
+<a class="inline-flex items-center gap-2 bg-brand-burgundy hover:bg-brand-burgundy-dark text-white text-xs font-semibold px-6 py-2.5 rounded-full shadow transition transform hover:scale-105" href="#book-artist">
+<span class="">Book Now</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Right: Visual Badge & Emblem -->
+<div class="flex items-center gap-6">
+<div class="relative w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-white/70 shadow-lg bg-gradient-to-tr from-[#8a4a44] to-[#f5c2b8] flex items-center justify-center overflow-hidden flex-shrink-0">
+<i class="fa-solid fa-user-tie text-white/80 text-5xl"></i>
+<div class="absolute inset-0 bg-brand-burgundy/10"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Professional Makeup Artist Exclusive Banner -->
+<!-- BEGIN: PromotionalBannersGrid (Equal-Weight 3-Column Luxury Card Grid) -->
+<section class="mt-14 mb-16" data-purpose="promotions-grid">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Promo 1: Special Offer 50% OFF -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-[#681926] via-[#852335] to-[#4e101b] text-white p-7 flex flex-col justify-between min-h-[240px] border border-rose-900/30 transition hover:shadow-xl">
+<!-- Decorative Background Accents -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-white/10 blur-xl"></div>
+<div class="absolute right-4 top-4 text-brand-gold opacity-30 text-6xl group-hover:scale-110 transition duration-500">
+<i class="fa-solid fa-gift"></i>
+</div>
+<div>
+<span class="inline-block uppercase tracking-wider text-[11px] font-semibold text-brand-gold bg-black/20 px-2.5 py-0.5 rounded-full mb-3">
+              Limited Time
+            </span>
+<h3 class="text-2xl font-serif italic font-bold leading-tight">
+              Special Offer
+            </h3>
+<p class="text-3xl font-extrabold text-white mt-2">
+              Up to <span class="text-brand-gold">50%</span> OFF
+            </p>
+</div>
+<div class="pt-5 border-t border-white/10 mt-4">
+<a class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white hover:text-brand-gold transition" href="#offer">
+<span class="">Claim Discount</span>
+<i class="fa-solid fa-chevron-right text-[10px]"></i>
+</a>
+</div>
+</div>
+<!-- Promo 2: Radiant Skin -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-[#eedfd9] via-[#faede8] to-[#e4cecb] p-7 flex flex-col justify-between min-h-[240px] border border-[#e5cdc7] transition hover:shadow-xl">
+<div class="absolute right-3 bottom-3 text-[#b47a69]/20 text-7xl group-hover:rotate-12 transition duration-500">
+<i class="fa-solid fa-leaf"></i>
+</div>
+<div>
+<span class="inline-block uppercase tracking-wider text-[11px] font-semibold text-[#8b3d4d] bg-white/60 px-2.5 py-0.5 rounded-full mb-3">
+              Natural Skincare
+            </span>
+<h3 class="text-2xl font-serif font-bold text-gray-900 leading-tight">
+              Radiant Skin<br>
+<span class="font-normal italic text-brand-burgundy">All Day Long</span>
+</h3>
+<p class="text-xs text-gray-600 mt-2 max-w-[220px]">
+              Infused with pure botanical serums and replenishing nutrients.
+            </p>
+</div>
+<div class="pt-5 border-t border-black/5 mt-4">
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-burgundy hover:text-black transition" href="#skincare">
+<span class="">View Collection</span>
+<i class="fa-solid fa-chevron-right text-[10px]"></i>
+</a>
+</div>
+</div>
+<!-- Promo 3: Beauty Care - Your Natural Glow -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-[#a6394e] via-[#8d2c3e] to-[#601826] text-white p-7 flex flex-col justify-between min-h-[240px] border border-rose-900/30 transition hover:shadow-xl">
+<div class="absolute -right-4 -bottom-4 text-white/10 text-8xl group-hover:scale-110 transition duration-500">
+<i class="fa-solid fa-certificate"></i>
+</div>
+<div>
+<span class="inline-block uppercase tracking-wider text-[11px] font-semibold text-[#f8d4cf] bg-black/20 px-2.5 py-0.5 rounded-full mb-3">
+              Signature Line
+            </span>
+<h3 class="text-2xl font-serif italic font-bold leading-tight">
+              Beauty Care
+            </h3>
+<p class="text-sm font-medium text-pink-100 mt-2">
+              Your Natural Glow
+            </p>
+</div>
+<div class="pt-5 border-t border-white/10 mt-4">
+<a class="inline-flex items-center gap-2 bg-white/20 hover:bg-white text-white hover:text-brand-burgundy text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-sm transition" href="#glow">
+<span class="">Discover More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PromotionalBannersGrid -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-burgundy-dark text-white/80 text-xs border-t border-brand-burgundy pt-12 pb-8">
+<div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<!-- Footer Brand Column -->
+<div>
+<h4 class="text-lg font-serif font-bold text-white mb-3">Soussou TCHAD</h4>
+<p class="text-white/60 leading-relaxed mb-4">
+          Discover high quality beauty products, authentic cosmetics and professional makeup artistry tailored for your radiant grace.
+        </p>
+<div class="flex space-x-3 text-white">
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-burgundy transition" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-burgundy transition" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-burgundy transition" href="#"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+</div>
+<!-- Quick links -->
+<div>
+<h4 class="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-3">Quick Links</h4>
+<ul class="space-y-2">
+<li class=""><a class="hover:text-white transition" href="#">About Us</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Makeup Services</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Special Discounts</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Store Locations</a></li>
+</ul>
+</div>
+<!-- Customer Service -->
+<div>
+<h4 class="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-3">Customer Service</h4>
+<ul class="space-y-2">
+<li class=""><a class="hover:text-white transition" href="#">Delivery Information</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Track Your Order</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Returns &amp; Refunds</a></li>
+<li class=""><a class="hover:text-white transition" href="#">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div>
+<h4 class="text-sm font-semibold uppercase tracking-wider text-brand-gold mb-3">Stay Connected</h4>
+<p class="text-white/60 mb-3">Subscribe to receive exclusive beauty updates and VIP promo codes.</p>
+<div class="flex">
+<input class="bg-white/10 border border-white/20 rounded-l-lg px-3 py-2 text-xs text-white placeholder-white/40 focus:outline-none focus:ring-1 focus:ring-brand-gold w-full" placeholder="Your email..." type="email">
+<button class="bg-brand-gold text-brand-burgundy font-bold px-4 py-2 rounded-r-lg hover:bg-white transition text-xs">Join</button>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright -->
+<div class="max-w-[1440px] mx-auto px-6 pt-6 border-t border-white/10 text-center text-[11px] text-white/50">
+      © 2024 Soussou TCHAD Beauty • Care • Elegance. All rights reserved.
+    </div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Carousel Interactive Script -->
+<script>
+  (function () {
+    const slides = document.querySelectorAll('.hero-carousel-slide');
+    const prevBtn = document.getElementById('carouselPrevBtn');
+    const nextBtn = document.getElementById('carouselNextBtn');
+    const indicators = document.querySelectorAll('[data-slide-target]');
+    const container = document.getElementById('heroCarouselSection');
+    const heroProgressBar = document.getElementById('heroProgressBar');
+
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalDuration = 6000; // 6 seconds for optimal, relaxed viewing
+    let timerStartTime = null;
+    let elapsedBeforePause = 0;
+    let animFrameId = null;
+    let isHovered = false;
+
+    function resetProgressVisuals() {
+      if (heroProgressBar) {
+        heroProgressBar.style.width = '0%';
+      }
+      indicators.forEach((indicator) => {
+        indicator.classList.remove('is-paused');
+        const fill = indicator.querySelector('.indicator-progress-fill');
+        if (fill) {
+          fill.classList.remove('running');
+          // Force layout recalculation to restart CSS keyframe cleanly
+          void fill.offsetWidth;
+        }
+      });
+    }
+
+    function triggerProgressVisuals() {
+      resetProgressVisuals();
+      const activeIndicator = indicators[currentIndex];
+      if (activeIndicator) {
+        const fill = activeIndicator.querySelector('.indicator-progress-fill');
+        if (fill) {
+          fill.classList.add('running');
+          if (isHovered) {
+            activeIndicator.classList.add('is-paused');
+          }
+        }
+      }
+    }
+
+    function showSlide(index) {
+      // Normalize index
+      if (index >= totalSlides) currentIndex = 0;
+      else if (index < 0) currentIndex = totalSlides - 1;
+      else currentIndex = index;
+
+      // Update slides
+      slides.forEach((slide, i) => {
+        if (i === currentIndex) {
+          slide.classList.remove('inactive');
+          slide.classList.add('active');
+          slide.setAttribute('aria-hidden', 'false');
+        } else {
+          slide.classList.remove('active');
+          slide.classList.add('inactive');
+          slide.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      // Update indicators structure
+      indicators.forEach((indicator, i) => {
+        const isActive = i === currentIndex;
+        indicator.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        if (isActive) {
+          indicator.classList.remove('inactive-indicator');
+          indicator.classList.add('active-indicator');
+        } else {
+          indicator.classList.remove('active-indicator');
+          indicator.classList.add('inactive-indicator');
+        }
+      });
+
+      elapsedBeforePause = 0;
+      timerStartTime = performance.now();
+      triggerProgressVisuals();
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    function loopStep(timestamp) {
+      const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReducedMotion) return;
+
+      if (!isHovered) {
+        if (!timerStartTime) timerStartTime = timestamp;
+        const totalElapsed = elapsedBeforePause + (timestamp - timerStartTime);
+        const progressFraction = Math.min(totalElapsed / intervalDuration, 1);
+
+        if (heroProgressBar) {
+          heroProgressBar.style.width = (progressFraction * 100) + '%';
+        }
+
+        if (totalElapsed >= intervalDuration) {
+          timerStartTime = timestamp;
+          elapsedBeforePause = 0;
+          nextSlide();
+        }
+      }
+
+      animFrameId = requestAnimationFrame(loopStep);
+    }
+
+    function startAutoPlay() {
+      if (animFrameId) cancelAnimationFrame(animFrameId);
+      timerStartTime = performance.now();
+      animFrameId = requestAnimationFrame(loopStep);
+    }
+
+    function pauseAutoPlay() {
+      if (timerStartTime) {
+        elapsedBeforePause += performance.now() - timerStartTime;
+        timerStartTime = null;
+      }
+      const activeIndicator = indicators[currentIndex];
+      if (activeIndicator) {
+        activeIndicator.classList.add('is-paused');
+      }
+    }
+
+    function resumeAutoPlay() {
+      timerStartTime = performance.now();
+      const activeIndicator = indicators[currentIndex];
+      if (activeIndicator) {
+        activeIndicator.classList.remove('is-paused');
+      }
+    }
+
+    function resetTimer() {
+      elapsedBeforePause = 0;
+      timerStartTime = performance.now();
+      triggerProgressVisuals();
+    }
+
+    // Event listeners for Navigation buttons
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
+      });
+    }
+
+    // Indicator dots click
+    indicators.forEach((indicator) => {
+      indicator.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = parseInt(indicator.getAttribute('data-slide-target'), 10);
+        if (!isNaN(target)) {
+          showSlide(target);
+        }
+      });
+    });
+
+    // Pause on hover
+    if (container) {
+      container.addEventListener('mouseenter', () => {
+        isHovered = true;
+        pauseAutoPlay();
+      });
+      container.addEventListener('mouseleave', () => {
+        isHovered = false;
+        resumeAutoPlay();
+      });
+
+      // Touch swipe support for mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 40) {
+          if (diff < 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+        }
+      }, { passive: true });
+    }
+
+    // Keyboard navigation when focused
+    window.addEventListener('keydown', (e) => {
+      if (document.activeElement && container && container.contains(document.activeElement)) {
+        if (e.key === 'ArrowRight') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        }
+      }
+    });
+
+    // Initial setup with 6000ms duration
+    showSlide(0);
+    startAutoPlay();
+  })();
+</script>
+<!-- END: Carousel Interactive Script -->
+
+
+</body></html>
